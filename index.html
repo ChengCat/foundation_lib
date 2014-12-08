@@ -2,9 +2,9 @@
 <html>
 
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Foundation library : Cross-platform public domain foundation library in C providing basic support data types and functions to write applications and games in a platform-independent fashion." />
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Foundation library : Cross-platform public domain foundation library in C providing basic support data types and functions to write applications and games in a platform-independent fashion.">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
@@ -32,7 +32,7 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h1>
-<a name="foundation-library-----public-domain" class="anchor" href="#foundation-library-----public-domain"><span class="octicon octicon-link"></span></a>Foundation Library  -  Public Domain</h1>
+<a id="foundation-library-----public-domain" class="anchor" href="#foundation-library-----public-domain" aria-hidden="true"><span class="octicon octicon-link"></span></a>Foundation Library  -  Public Domain</h1>
 
 <p>This library provides a cross-platform foundation library in C providing basic support data types and
 functions to write applications and games in a platform-independent fashion. It provides:</p>
@@ -41,6 +41,7 @@ functions to write applications and games in a platform-independent fashion. It 
 <li>Abstractions and unification of basic data types</li>
 <li>Pluggable memory management</li>
 <li>Threads and synchronization</li>
+<li>Atomic operations</li>
 <li>Timing and profiling</li>
 <li>Object lifetime management</li>
 <li>Events processing</li>
@@ -52,9 +53,12 @@ functions to write applications and games in a platform-independent fashion. It 
 <li>Murmur hasing and statically hashed strings</li>
 <li>Math support for 32 and 64 bit floats</li>
 <li>Configuration repository with config file I/O</li>
-<li>Application environment queries and control</li>
-<li>Crash utilities (SEH, Mach exception handlers, signals)</li>
-</ul><p>It is written with the following API design principles in mind:</p>
+<li>Application, environment and system queries and control</li>
+<li>Regular expressions</li>
+<li>Crash utilities (SEH, signals)</li>
+</ul>
+
+<p>It is written with the following API design principles in mind:</p>
 
 <ul>
 <li>Consistent. All functions, parameters and types should follow a well defined pattern in order to make it easy to remember how function names are constructed and how to pass the expected parameters.</li>
@@ -62,9 +66,26 @@ functions to write applications and games in a platform-independent fashion. It 
 <li>Specialized. A function in an API should perform a single task. Functions should not do completely different unrelated tasks or change behaviour depending on the contents of the variables passed in.</li>
 <li>Compact. The API needs to be compact, meaning the user can use it without using a manual. Note though that "compact" does not mean "small". A consistent naming scheme makes the API easier to use and remember.</li>
 <li>Contained. Third party dependencies are kept to an absolute minimum and prefer to use primitive or well-defined data types.</li>
-</ul><p>The latest source code maintained by Rampant Pixels is always available at</p>
+</ul>
+
+<p>Platforms and architectures currently supported:</p>
+
+<ul>
+<li>Windows (x86, x86-64), Vista or later</li>
+<li>MacOS X (x86-64), 10.7+</li>
+<li>Linux (x86, x86-64, PPC, ARM)</li>
+<li>iOS (ARM7, ARM7s, ARM64), 5.0+</li>
+<li>Android (ARM6, ARM7, ARM8-AARCH64, x86, x86-64, MIPS, MIPS64)</li>
+<li>Raspberry Pi (ARM6)</li>
+</ul>
+
+<p>The latest source code maintained by Rampant Pixels is always available at</p>
 
 <p><a href="https://github.com/rampantpixels/foundation_lib">https://github.com/rampantpixels/foundation_lib</a></p>
+
+<p>Pre-generated documentation in HTML format for the latest release can be found at</p>
+
+<p><a href="http://rampantpixels.github.io/foundation_lib/doc">http://rampantpixels.github.io/foundation_lib/doc</a></p>
 
 <p>This library is put in the public domain; you can redistribute it and/or modify it without any restrictions.</p>
       </section>
