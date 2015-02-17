@@ -122,6 +122,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a7763f95272a75750d3d2e35c06d6e969"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="platform_8h.html#a7763f95272a75750d3d2e35c06d6e969">FOUNDATION_PLATFORM_WINDOWS</a></td></tr>
 <tr class="memdesc:a7763f95272a75750d3d2e35c06d6e969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Windows platform flag.  <a href="#a7763f95272a75750d3d2e35c06d6e969">More...</a><br /></td></tr>
 <tr class="separator:a7763f95272a75750d3d2e35c06d6e969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7885298574d0bd129b79a637eed24ad2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="platform_8h.html#a7885298574d0bd129b79a637eed24ad2">FOUNDATION_PLATFORM_PNACL</a></td></tr>
+<tr class="memdesc:a7885298574d0bd129b79a637eed24ad2"><td class="mdescLeft">&#160;</td><td class="mdescRight">PNaCl platform flag.  <a href="#a7885298574d0bd129b79a637eed24ad2">More...</a><br /></td></tr>
+<tr class="separator:a7885298574d0bd129b79a637eed24ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59ac67d04d6ff234254422f2f3aad555"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="platform_8h.html#a59ac67d04d6ff234254422f2f3aad555">FOUNDATION_PLATFORM_APPLE</a></td></tr>
 <tr class="memdesc:a59ac67d04d6ff234254422f2f3aad555"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apple platform group flag.  <a href="#a59ac67d04d6ff234254422f2f3aad555">More...</a><br /></td></tr>
 <tr class="separator:a59ac67d04d6ff234254422f2f3aad555"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -477,6 +480,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Defined to 1 if compiling for Windows, 0 otherwise </p>
+
+</div>
+</div>
+<a class="anchor" id="a7885298574d0bd129b79a637eed24ad2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FOUNDATION_PLATFORM_PNACL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Defined to 1 if compiling for PNaCl, 0 otherwise </p>
 
 </div>
 </div>
@@ -1376,7 +1392,7 @@ int val = currentarr[2];</pre> <dl class="params"><dt>Parameters</dt><dd>
 </div><div class="memdoc">
 <p>Floating point type guaranteed to be 32-bit in size </p>
 
-<p>Definition at line <a class="el" href="platform_8h_source.html#l00722">722</a> of file <a class="el" href="platform_8h_source.html">platform.h</a>.</p>
+<p>Definition at line <a class="el" href="platform_8h_source.html#l00735">735</a> of file <a class="el" href="platform_8h_source.html">platform.h</a>.</p>
 
 </div>
 </div>
@@ -1391,7 +1407,7 @@ int val = currentarr[2];</pre> <dl class="params"><dt>Parameters</dt><dd>
 </div><div class="memdoc">
 <p>Floating point type guaranteed to be 64-bit in size </p>
 
-<p>Definition at line <a class="el" href="platform_8h_source.html#l00723">723</a> of file <a class="el" href="platform_8h_source.html">platform.h</a>.</p>
+<p>Definition at line <a class="el" href="platform_8h_source.html#l00736">736</a> of file <a class="el" href="platform_8h_source.html">platform.h</a>.</p>
 
 </div>
 </div>
@@ -1406,7 +1422,7 @@ int val = currentarr[2];</pre> <dl class="params"><dt>Parameters</dt><dd>
 </div><div class="memdoc">
 <p>Floating point type of the size chosen in build config (32 or 64 bit). See FOUNDATION_SIZE_REAL for declaring size used. </p>
 
-<p>Definition at line <a class="el" href="platform_8h_source.html#l00746">746</a> of file <a class="el" href="platform_8h_source.html">platform.h</a>.</p>
+<p>Definition at line <a class="el" href="platform_8h_source.html#l00759">759</a> of file <a class="el" href="platform_8h_source.html">platform.h</a>.</p>
 
 </div>
 </div>
@@ -1451,7 +1467,7 @@ int val = currentarr[2];</pre> <dl class="params"><dt>Parameters</dt><dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>128-bit integer value </dd></dl>
 
-<p>Definition at line <a class="el" href="platform_8h_source.html#l00862">862</a> of file <a class="el" href="platform_8h_source.html">platform.h</a>.</p>
+<p>Definition at line <a class="el" href="platform_8h_source.html#l00875">875</a> of file <a class="el" href="platform_8h_source.html">platform.h</a>.</p>
 
 </div>
 </div>
@@ -1478,7 +1494,7 @@ int val = currentarr[2];</pre> <dl class="params"><dt>Parameters</dt><dd>
 </div><div class="memdoc">
 <p>Declare a zero (null) 128-bit unsigned int value </p><dl class="section return"><dt>Returns</dt><dd>Zero 128-bit value </dd></dl>
 
-<p>Definition at line <a class="el" href="platform_8h_source.html#l00863">863</a> of file <a class="el" href="platform_8h_source.html">platform.h</a>.</p>
+<p>Definition at line <a class="el" href="platform_8h_source.html#l00876">876</a> of file <a class="el" href="platform_8h_source.html">platform.h</a>.</p>
 
 </div>
 </div>
@@ -1522,7 +1538,7 @@ int val = currentarr[2];</pre> <dl class="params"><dt>Parameters</dt><dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if values are equal, false if not </dd></dl>
 
-<p>Definition at line <a class="el" href="platform_8h_source.html#l00864">864</a> of file <a class="el" href="platform_8h_source.html">platform.h</a>.</p>
+<p>Definition at line <a class="el" href="platform_8h_source.html#l00877">877</a> of file <a class="el" href="platform_8h_source.html">platform.h</a>.</p>
 
 </div>
 </div>
@@ -1555,7 +1571,7 @@ int val = currentarr[2];</pre> <dl class="params"><dt>Parameters</dt><dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if value is zero (null), false if not </dd></dl>
 
-<p>Definition at line <a class="el" href="platform_8h_source.html#l00865">865</a> of file <a class="el" href="platform_8h_source.html">platform.h</a>.</p>
+<p>Definition at line <a class="el" href="platform_8h_source.html#l00878">878</a> of file <a class="el" href="platform_8h_source.html">platform.h</a>.</p>
 
 </div>
 </div>
@@ -1613,7 +1629,7 @@ int val = currentarr[2];</pre> <dl class="params"><dt>Parameters</dt><dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>256-bit integer value </dd></dl>
 
-<p>Definition at line <a class="el" href="platform_8h_source.html#l00867">867</a> of file <a class="el" href="platform_8h_source.html">platform.h</a>.</p>
+<p>Definition at line <a class="el" href="platform_8h_source.html#l00880">880</a> of file <a class="el" href="platform_8h_source.html">platform.h</a>.</p>
 
 </div>
 </div>
@@ -1640,7 +1656,7 @@ int val = currentarr[2];</pre> <dl class="params"><dt>Parameters</dt><dd>
 </div><div class="memdoc">
 <p>Declare a zero (null) 256-bit unsigned int value </p><dl class="section return"><dt>Returns</dt><dd>Zero 256-bit value </dd></dl>
 
-<p>Definition at line <a class="el" href="platform_8h_source.html#l00868">868</a> of file <a class="el" href="platform_8h_source.html">platform.h</a>.</p>
+<p>Definition at line <a class="el" href="platform_8h_source.html#l00881">881</a> of file <a class="el" href="platform_8h_source.html">platform.h</a>.</p>
 
 </div>
 </div>
@@ -1684,7 +1700,7 @@ int val = currentarr[2];</pre> <dl class="params"><dt>Parameters</dt><dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if values are equal, false if not </dd></dl>
 
-<p>Definition at line <a class="el" href="platform_8h_source.html#l00869">869</a> of file <a class="el" href="platform_8h_source.html">platform.h</a>.</p>
+<p>Definition at line <a class="el" href="platform_8h_source.html#l00882">882</a> of file <a class="el" href="platform_8h_source.html">platform.h</a>.</p>
 
 </div>
 </div>
@@ -1717,14 +1733,14 @@ int val = currentarr[2];</pre> <dl class="params"><dt>Parameters</dt><dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if value is zero (null), false if not </dd></dl>
 
-<p>Definition at line <a class="el" href="platform_8h_source.html#l00870">870</a> of file <a class="el" href="platform_8h_source.html">platform.h</a>.</p>
+<p>Definition at line <a class="el" href="platform_8h_source.html#l00883">883</a> of file <a class="el" href="platform_8h_source.html">platform.h</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 8 2014 13:26:44 for Foundation Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

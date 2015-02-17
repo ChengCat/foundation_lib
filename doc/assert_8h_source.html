@@ -113,26 +113,26 @@
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#if FOUNDATION_COMPILER_CLANG || FOUNDATION_COMPILER_INTEL || ( FOUNDATION_COMPILER_GCC &amp;&amp; ( ( __GNUC__ &gt; 4 ) || ( ( __GNUC__ == 4 ) &amp;&amp; ( __GNUC_MINOR__ &gt;= 6 ) ) ) )</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#if FOUNDATION_COMPILER_CLANG || ( FOUNDATION_COMPILER_GCC &amp;&amp; ( ( __GNUC__ &gt; 4 ) || ( ( __GNUC__ == 4 ) &amp;&amp; ( __GNUC_MINOR__ &gt;= 6 ) ) ) )</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#  define FOUNDATION_STATIC_ASSERT( cond, msg ) _Static_assert( cond, msg )</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#elif FOUNDATION_COMPILER_MSVC &amp;&amp; ( _MSC_VER &gt; 1600 )</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#  define FOUNDATION_STATIC_ASSERT( cond, msg ) static_assert( cond, msg )</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#elif defined( __COUNTER__ )</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#  define FOUNDATION_STATIC_ASSERT( cond, msg ) </span><span class="comment">/*lint -e{506, 751, 778} */</span><span class="preprocessor"> typedef char FOUNDATION_PREPROCESSOR_JOIN( _static_assert_at_line_, __COUNTER__ )[(cond)?1:-1]</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#  define FOUNDATION_STATIC_ASSERT( cond, msg ) </span><span class="comment">/*lint -e{506, 751, 778} */</span><span class="preprocessor"> typedef char FOUNDATION_PREPROCESSOR_JOIN( _static_assert_number_, __COUNTER__ )[(cond)?1:-1]</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#  define FOUNDATION_STATIC_ASSERT( cond, msg ) </span><span class="comment">/*lint -e{506, 751, 778} */</span><span class="preprocessor"> typedef char FOUNDATION_PREPROCESSOR_JOIN( _static_assert_at_line_, __LINE__ )[(cond)?1:-1]</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="ttc" id="types_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">Foundation data types. </div></div>
 <div class="ttc" id="platform_8h_html"><div class="ttname"><a href="platform_8h.html">platform.h</a></div><div class="ttdoc">Platform abstractions. </div></div>
-<div class="ttc" id="types_8h_html_a923da643003dde48509a60668da47f2b"><div class="ttname"><a href="types_8h.html#a923da643003dde48509a60668da47f2b">assert_handler_fn</a></div><div class="ttdeci">int(* assert_handler_fn)(uint64_t context, const char *condition, const char *file, int line, const char *msg)</div><div class="ttdoc">Assert handler callback. </div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00275">types.h:275</a></div></div>
+<div class="ttc" id="types_8h_html_a923da643003dde48509a60668da47f2b"><div class="ttname"><a href="types_8h.html#a923da643003dde48509a60668da47f2b">assert_handler_fn</a></div><div class="ttdeci">int(* assert_handler_fn)(uint64_t context, const char *condition, const char *file, int line, const char *msg)</div><div class="ttdoc">Assert handler callback. </div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00282">types.h:282</a></div></div>
 <div class="ttc" id="crash_8h_html"><div class="ttname"><a href="crash_8h.html">crash.h</a></div><div class="ttdoc">Crash guards and dump utilities. </div></div>
 <div class="ttc" id="platform_8h_html_ab5d798081ff1e38fc8d86a56b852da8e"><div class="ttname"><a href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a></div><div class="ttdeci">#define FOUNDATION_API</div><div class="ttdoc">Declare a function visible to users of the library. </div></div>
 <div class="ttc" id="assert_8h_html_a8409975ce53f76542320012dfd2ff917"><div class="ttname"><a href="assert_8h.html#a8409975ce53f76542320012dfd2ff917">assert_handler</a></div><div class="ttdeci">FOUNDATION_API assert_handler_fn assert_handler(void)</div><div class="ttdoc">Get the currently set global assert handler. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 8 2014 13:26:44 for Foundation Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -112,50 +112,51 @@
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#  import &lt;Foundation/NSArray.h&gt;</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#  import &lt;Foundation/NSTimer.h&gt;</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#  import &lt;Foundation/NSUndoManager.h&gt;</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#  if FOUNDATION_PLATFORM_MACOSX</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#    import &lt;Foundation/NSRunLoop.h&gt;</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#    import &lt;Foundation/NSExtensionContext.h&gt;</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#    import &lt;AppKit/NSApplication.h&gt;</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#    import &lt;AppKit/NSAlert.h&gt;</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#    import &lt;AppKit/NSWindow.h&gt;</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#    import &lt;AppKit/NSViewController.h&gt;</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#  elif FOUNDATION_PLATFORM_IOS</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#    import &lt;Foundation/NSUUID.h&gt;</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#    import &lt;Foundation/NSCoder.h&gt;</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#    import &lt;Foundation/NSAttributedString.h&gt;</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#    import &lt;Foundation/NSIndexPath.h&gt;</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#    import &lt;Foundation/NSBundle.h&gt;</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#    import &lt;Foundation/NSUserActivity.h&gt;</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#    import &lt;Foundation/NSMapTable.h&gt;</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#    import &lt;UIKit/UIApplication.h&gt;</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#    import &lt;UIKit/UIWindow.h&gt;</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#    import &lt;UIKit/UIScreen.h&gt;</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#    import &lt;UIKit/UIView.h&gt;</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#    import &lt;UIKit/UIViewController.h&gt;</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#    import &lt;QuartzCore/QuartzCore.h&gt;</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#  endif</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#  include &lt;CoreFoundation/CoreFoundation.h&gt;</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#  if FOUNDATION_PLATFORM_MACOSX</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#    include &lt;Carbon/Carbon.h&gt;</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#    include &lt;ApplicationServices/ApplicationServices.h&gt;</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#  endif</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#include &lt;errno.h&gt;</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#undef radixsort</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#undef semaphore_t</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#undef _UUID_T</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#undef uuid_generate_random</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#undef uuid_generate_time</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#undef uuid_is_null</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#undef task_t</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#  import &lt;Foundation/NSFileManager.h&gt;</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#  if FOUNDATION_PLATFORM_MACOSX</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#    import &lt;Foundation/NSRunLoop.h&gt;</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#    import &lt;Foundation/NSExtensionContext.h&gt;</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#    import &lt;AppKit/NSApplication.h&gt;</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#    import &lt;AppKit/NSAlert.h&gt;</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#    import &lt;AppKit/NSWindow.h&gt;</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#    import &lt;AppKit/NSViewController.h&gt;</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#  elif FOUNDATION_PLATFORM_IOS</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#    import &lt;Foundation/NSUUID.h&gt;</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#    import &lt;Foundation/NSCoder.h&gt;</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#    import &lt;Foundation/NSAttributedString.h&gt;</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#    import &lt;Foundation/NSIndexPath.h&gt;</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#    import &lt;Foundation/NSBundle.h&gt;</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#    import &lt;Foundation/NSUserActivity.h&gt;</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#    import &lt;Foundation/NSMapTable.h&gt;</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#    import &lt;UIKit/UIApplication.h&gt;</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#    import &lt;UIKit/UIWindow.h&gt;</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#    import &lt;UIKit/UIScreen.h&gt;</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#    import &lt;UIKit/UIView.h&gt;</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#    import &lt;UIKit/UIViewController.h&gt;</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#    import &lt;QuartzCore/QuartzCore.h&gt;</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#  endif</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#  include &lt;CoreFoundation/CoreFoundation.h&gt;</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#  if FOUNDATION_PLATFORM_MACOSX</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#    include &lt;Carbon/Carbon.h&gt;</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#    include &lt;ApplicationServices/ApplicationServices.h&gt;</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#  endif</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#include &lt;errno.h&gt;</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#undef radixsort</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#undef semaphore_t</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#undef _UUID_T</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#undef uuid_generate_random</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#undef uuid_generate_time</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#undef uuid_is_null</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#undef task_t</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="types_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">Foundation data types. </div></div>
 <div class="ttc" id="uuid_8h_html"><div class="ttname"><a href="uuid_8h.html">uuid.h</a></div><div class="ttdoc">UUID. </div></div>
 <div class="ttc" id="platform_8h_html"><div class="ttname"><a href="platform_8h.html">platform.h</a></div><div class="ttdoc">Platform abstractions. </div></div>
@@ -164,7 +165,7 @@
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 8 2014 13:26:44 for Foundation Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
