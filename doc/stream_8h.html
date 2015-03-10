@@ -72,6 +72,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad0f31f0e0b94dd6b20658e319e16206e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#ad0f31f0e0b94dd6b20658e319e16206e">stream_deallocate</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream)</td></tr>
 <tr class="memdesc:ad0f31f0e0b94dd6b20658e319e16206e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocate stream.  <a href="#ad0f31f0e0b94dd6b20658e319e16206e">More...</a><br /></td></tr>
 <tr class="separator:ad0f31f0e0b94dd6b20658e319e16206e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89cebc9538cc7e65a1e7551f7e0faf4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a89cebc9538cc7e65a1e7551f7e0faf4e">stream_initialize</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream, <a class="el" href="types_8h.html#ac86c1d61ecdc0e94d0729a997f6faed7">byteorder_t</a> order)</td></tr>
+<tr class="memdesc:a89cebc9538cc7e65a1e7551f7e0faf4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize stream.  <a href="#a89cebc9538cc7e65a1e7551f7e0faf4e">More...</a><br /></td></tr>
+<tr class="separator:a89cebc9538cc7e65a1e7551f7e0faf4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20ca82731d66e8d775f6f30849549012"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a20ca82731d66e8d775f6f30849549012">stream_finalize</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream)</td></tr>
 <tr class="memdesc:a20ca82731d66e8d775f6f30849549012"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalize stream.  <a href="#a20ca82731d66e8d775f6f30849549012">More...</a><br /></td></tr>
 <tr class="separator:a20ca82731d66e8d775f6f30849549012"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,6 +240,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ad7b1dfe8c49e55aae0920f2a3b021127"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="structstream__t.html">stream_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#ad7b1dfe8c49e55aae0920f2a3b021127">stream_open_stdin</a> (void)</td></tr>
 <tr class="memdesc:ad7b1dfe8c49e55aae0920f2a3b021127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open stdin stream.  <a href="#ad7b1dfe8c49e55aae0920f2a3b021127">More...</a><br /></td></tr>
 <tr class="separator:ad7b1dfe8c49e55aae0920f2a3b021127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03fcbcec62550194f388f1a10c044045"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a03fcbcec62550194f388f1a10c044045">stream_set_protocol_handler</a> (const char *protocol, <a class="el" href="types_8h.html#a47befd7db8b222645c0273876b707ddf">stream_open_fn</a> fn)</td></tr>
+<tr class="memdesc:a03fcbcec62550194f388f1a10c044045"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set protocol handler.  <a href="#a03fcbcec62550194f388f1a10c044045">More...</a><br /></td></tr>
+<tr class="separator:a03fcbcec62550194f388f1a10c044045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9137e8b73d09b5eb93122490c25f0633"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="types_8h.html#a47befd7db8b222645c0273876b707ddf">stream_open_fn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a9137e8b73d09b5eb93122490c25f0633">stream_protocol_handler</a> (const char *protocol, unsigned int length)</td></tr>
+<tr class="memdesc:a9137e8b73d09b5eb93122490c25f0633"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get protocol handler.  <a href="#a9137e8b73d09b5eb93122490c25f0633">More...</a><br /></td></tr>
+<tr class="separator:a9137e8b73d09b5eb93122490c25f0633"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base abstraction of I/O streams. </p>
@@ -316,6 +325,39 @@ Functions</h2></td></tr>
 <p>Deallocate stream previously allocated by any stream specific allocation function or from a call to <a class="el" href="stream_8h.html#a0b0f039b26b8634812c0adc167f99c79" title="Open stream. ">stream_open</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">stream</td><td>Stream </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a89cebc9538cc7e65a1e7551f7e0faf4e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stream_initialize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstream__t.html">stream_t</a> *&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ac86c1d61ecdc0e94d0729a997f6faed7">byteorder_t</a>&#160;</td>
+          <td class="paramname"><em>order</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialize stream structure with default values </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>Stream </td></tr>
+    <tr><td class="paramname">order</td><td>Byte order of stream </td></tr>
   </table>
   </dd>
 </dl>
@@ -1846,6 +1888,73 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Allocate a stream for stdin </p><dl class="section return"><dt>Returns</dt><dd>Stream wrapping stdin </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a03fcbcec62550194f388f1a10c044045"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stream_set_protocol_handler </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>protocol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a47befd7db8b222645c0273876b707ddf">stream_open_fn</a>&#160;</td>
+          <td class="paramname"><em>fn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set function to handle opening streams for the given protocol </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">protocol</td><td>Protocol </td></tr>
+    <tr><td class="paramname">fn</td><td>Handler function </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9137e8b73d09b5eb93122490c25f0633"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a47befd7db8b222645c0273876b707ddf">stream_open_fn</a> stream_protocol_handler </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>protocol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the assigned handler for the given protocol </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">protocol</td><td>Procotol string </td></tr>
+    <tr><td class="paramname">length</td><td>Length of protocol string, 0 for entire string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Handler function, 0 if none registered </dd></dl>
 
 </div>
 </div>

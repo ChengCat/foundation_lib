@@ -52,13 +52,13 @@
 </div><!--header-->
 <div class="contents">
 <a href="bits_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* bits.h  -  Foundation library  -  Public Domain  -  2013 Mattias Jansson / Rampant Pixels</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This library provides a cross-platform foundation library in C11 providing basic support data types and</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * functions to write applications and games in a platform-independent fashion. The latest source code is</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * always available at</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * https://github.com/rampantpixels/foundation_lib</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * This library is put in the public domain; you can redistribute it and/or modify it without any restrictions.</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> */</span></div>
@@ -84,8 +84,8 @@
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">static</span> <a class="code" href="platform_8h.html#a724fb9f82013c782db5c3c12ea36aac8">FORCEINLINE</a> <a class="code" href="platform_8h.html#a0775036fb661c08907d8b650717f9e18">CONSTCALL</a> uint64_t  <a class="code" href="bits_8h.html#a9c6f4e1973085f7631543bc042d5420f">byteorder_littleendian64</a>( uint64_t arg );</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">static</span> <a class="code" href="platform_8h.html#a724fb9f82013c782db5c3c12ea36aac8">FORCEINLINE</a> <a class="code" href="platform_8h.html#a5b0965f82bb7fca45cb8c3e932a9edfb">PURECALL</a>  <span class="keywordtype">void</span>      <a class="code" href="bits_8h.html#a479ec5903d088dd05ede8fe66197d87e">byteorder_littleendian</a>( <span class="keywordtype">void</span>* <a class="code" href="platform_8h.html#aae3356b63849abbe8789dd41648ee90a">RESTRICT</a> buffer, <span class="keyword">const</span> <span class="keywordtype">int</span> size );</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="bits_8h.html#a49d4eba63bee40f89529992c1473d8a5">   36</a></span>&#160;<span class="keyword">static</span> <a class="code" href="platform_8h.html#a724fb9f82013c782db5c3c12ea36aac8">FORCEINLINE</a> <a class="code" href="platform_8h.html#a0775036fb661c08907d8b650717f9e18">CONSTCALL</a> uint16_t <a class="code" href="bits_8h.html#a49d4eba63bee40f89529992c1473d8a5">byteorder_swap16</a>( uint16_t arg )</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#if FOUNDATION_COMPILER_MSVC</span></div>
@@ -197,50 +197,56 @@
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;{</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">#if FOUNDATION_ARCH_ENDIAN_LITTLE</span></div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <a class="code" href="bits_8h.html#a198e143b8c8a1369f63fe766b97f0401">byteorder_swap</a>( buffer, size );</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;}</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="bits_8h.html#aa2e29b265afcc27e8922ae2ad1b79be4">  151</a></span>&#160;<span class="keyword">static</span> <a class="code" href="platform_8h.html#a724fb9f82013c782db5c3c12ea36aac8">FORCEINLINE</a> <a class="code" href="platform_8h.html#a0775036fb661c08907d8b650717f9e18">CONSTCALL</a> uint16_t <a class="code" href="bits_8h.html#aa2e29b265afcc27e8922ae2ad1b79be4">byteorder_littleendian16</a>( uint16_t arg )</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;{</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">#if FOUNDATION_ARCH_ENDIAN_LITTLE</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordflow">return</span> arg;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="bits_8h.html#a49d4eba63bee40f89529992c1473d8a5">byteorder_swap16</a>( arg );</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;}</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
-<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="bits_8h.html#a9c95d022ad00bea693958f82e2f11ec2">  161</a></span>&#160;<span class="keyword">static</span> <a class="code" href="platform_8h.html#a724fb9f82013c782db5c3c12ea36aac8">FORCEINLINE</a> <a class="code" href="platform_8h.html#a0775036fb661c08907d8b650717f9e18">CONSTCALL</a> uint32_t <a class="code" href="bits_8h.html#a9c95d022ad00bea693958f82e2f11ec2">byteorder_littleendian32</a>( uint32_t arg )</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;{</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">#if FOUNDATION_ARCH_ENDIAN_LITTLE</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordflow">return</span> arg;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="bits_8h.html#a2faf4e4f688c76798cb8d0542897fc46">byteorder_swap32</a>( arg );</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;}</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="bits_8h.html#a9c6f4e1973085f7631543bc042d5420f">  171</a></span>&#160;<span class="keyword">static</span> <a class="code" href="platform_8h.html#a724fb9f82013c782db5c3c12ea36aac8">FORCEINLINE</a> <a class="code" href="platform_8h.html#a0775036fb661c08907d8b650717f9e18">CONSTCALL</a> uint64_t <a class="code" href="bits_8h.html#a9c6f4e1973085f7631543bc042d5420f">byteorder_littleendian64</a>( uint64_t arg )</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;{</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor">#if FOUNDATION_ARCH_ENDIAN_LITTLE</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordflow">return</span> arg;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="bits_8h.html#a4a9363cf434b52ca9481acae4a100bda">byteorder_swap64</a>( arg );</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;}</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
-<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="bits_8h.html#a479ec5903d088dd05ede8fe66197d87e">  181</a></span>&#160;<span class="keyword">static</span> <a class="code" href="platform_8h.html#a724fb9f82013c782db5c3c12ea36aac8">FORCEINLINE</a> <a class="code" href="platform_8h.html#a5b0965f82bb7fca45cb8c3e932a9edfb">PURECALL</a> <span class="keywordtype">void</span> <a class="code" href="bits_8h.html#a479ec5903d088dd05ede8fe66197d87e">byteorder_littleendian</a>( <span class="keywordtype">void</span>* <a class="code" href="platform_8h.html#aae3356b63849abbe8789dd41648ee90a">RESTRICT</a> buffer, <span class="keyword">const</span> <span class="keywordtype">int</span> size )</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;{</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="preprocessor">#if FOUNDATION_ARCH_ENDIAN_BIG</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <a class="code" href="bits_8h.html#a198e143b8c8a1369f63fe766b97f0401">byteorder_swap</a>( buffer, size );</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;}</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    FOUNDATION_UNUSED( buffer );</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    FOUNDATION_UNUSED( size );</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;}</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="bits_8h.html#aa2e29b265afcc27e8922ae2ad1b79be4">  154</a></span>&#160;<span class="keyword">static</span> <a class="code" href="platform_8h.html#a724fb9f82013c782db5c3c12ea36aac8">FORCEINLINE</a> <a class="code" href="platform_8h.html#a0775036fb661c08907d8b650717f9e18">CONSTCALL</a> uint16_t <a class="code" href="bits_8h.html#aa2e29b265afcc27e8922ae2ad1b79be4">byteorder_littleendian16</a>( uint16_t arg )</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;{</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">#if FOUNDATION_ARCH_ENDIAN_LITTLE</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">return</span> arg;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="bits_8h.html#a49d4eba63bee40f89529992c1473d8a5">byteorder_swap16</a>( arg );</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;}</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="bits_8h.html#a9c95d022ad00bea693958f82e2f11ec2">  164</a></span>&#160;<span class="keyword">static</span> <a class="code" href="platform_8h.html#a724fb9f82013c782db5c3c12ea36aac8">FORCEINLINE</a> <a class="code" href="platform_8h.html#a0775036fb661c08907d8b650717f9e18">CONSTCALL</a> uint32_t <a class="code" href="bits_8h.html#a9c95d022ad00bea693958f82e2f11ec2">byteorder_littleendian32</a>( uint32_t arg )</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;{</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor">#if FOUNDATION_ARCH_ENDIAN_LITTLE</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordflow">return</span> arg;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="bits_8h.html#a2faf4e4f688c76798cb8d0542897fc46">byteorder_swap32</a>( arg );</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;}</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="bits_8h.html#a9c6f4e1973085f7631543bc042d5420f">  174</a></span>&#160;<span class="keyword">static</span> <a class="code" href="platform_8h.html#a724fb9f82013c782db5c3c12ea36aac8">FORCEINLINE</a> <a class="code" href="platform_8h.html#a0775036fb661c08907d8b650717f9e18">CONSTCALL</a> uint64_t <a class="code" href="bits_8h.html#a9c6f4e1973085f7631543bc042d5420f">byteorder_littleendian64</a>( uint64_t arg )</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;{</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="preprocessor">#if FOUNDATION_ARCH_ENDIAN_LITTLE</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">return</span> arg;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="bits_8h.html#a4a9363cf434b52ca9481acae4a100bda">byteorder_swap64</a>( arg );</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;}</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="bits_8h.html#a479ec5903d088dd05ede8fe66197d87e">  184</a></span>&#160;<span class="keyword">static</span> <a class="code" href="platform_8h.html#a724fb9f82013c782db5c3c12ea36aac8">FORCEINLINE</a> <a class="code" href="platform_8h.html#a5b0965f82bb7fca45cb8c3e932a9edfb">PURECALL</a> <span class="keywordtype">void</span> <a class="code" href="bits_8h.html#a479ec5903d088dd05ede8fe66197d87e">byteorder_littleendian</a>( <span class="keywordtype">void</span>* <a class="code" href="platform_8h.html#aae3356b63849abbe8789dd41648ee90a">RESTRICT</a> buffer, <span class="keyword">const</span> <span class="keywordtype">int</span> size )</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;{</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="preprocessor">#if FOUNDATION_ARCH_ENDIAN_BIG</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <a class="code" href="bits_8h.html#a198e143b8c8a1369f63fe766b97f0401">byteorder_swap</a>( buffer, size );</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    FOUNDATION_UNUSED( buffer );</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    FOUNDATION_UNUSED( size );</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;}</div>
 <div class="ttc" id="types_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">Foundation data types. </div></div>
 <div class="ttc" id="bits_8h_html_a198e143b8c8a1369f63fe766b97f0401"><div class="ttname"><a href="bits_8h.html#a198e143b8c8a1369f63fe766b97f0401">byteorder_swap</a></div><div class="ttdeci">static FORCEINLINE PURECALL void byteorder_swap(void *RESTRICT buffer, const int size)</div><div class="ttdoc">Swap byte order, generic data. </div><div class="ttdef"><b>Definition:</b> <a href="bits_8h_source.html#l00099">bits.h:99</a></div></div>
 <div class="ttc" id="bits_8h_html_a49d4eba63bee40f89529992c1473d8a5"><div class="ttname"><a href="bits_8h.html#a49d4eba63bee40f89529992c1473d8a5">byteorder_swap16</a></div><div class="ttdeci">static FORCEINLINE CONSTCALL uint16_t byteorder_swap16(uint16_t arg)</div><div class="ttdoc">Swap byte order, 16 bit. </div><div class="ttdef"><b>Definition:</b> <a href="bits_8h_source.html#l00036">bits.h:36</a></div></div>
-<div class="ttc" id="bits_8h_html_a9c95d022ad00bea693958f82e2f11ec2"><div class="ttname"><a href="bits_8h.html#a9c95d022ad00bea693958f82e2f11ec2">byteorder_littleendian32</a></div><div class="ttdeci">static FORCEINLINE CONSTCALL uint32_t byteorder_littleendian32(uint32_t arg)</div><div class="ttdoc">Convert from 32-bit native to little endian. </div><div class="ttdef"><b>Definition:</b> <a href="bits_8h_source.html#l00161">bits.h:161</a></div></div>
+<div class="ttc" id="bits_8h_html_a9c95d022ad00bea693958f82e2f11ec2"><div class="ttname"><a href="bits_8h.html#a9c95d022ad00bea693958f82e2f11ec2">byteorder_littleendian32</a></div><div class="ttdeci">static FORCEINLINE CONSTCALL uint32_t byteorder_littleendian32(uint32_t arg)</div><div class="ttdoc">Convert from 32-bit native to little endian. </div><div class="ttdef"><b>Definition:</b> <a href="bits_8h_source.html#l00164">bits.h:164</a></div></div>
 <div class="ttc" id="platform_8h_html_aae3356b63849abbe8789dd41648ee90a"><div class="ttname"><a href="platform_8h.html#aae3356b63849abbe8789dd41648ee90a">RESTRICT</a></div><div class="ttdeci">#define RESTRICT</div><div class="ttdoc">Restrict attribute. </div></div>
 <div class="ttc" id="bits_8h_html_a0637f79bd3fc9e1943f6308e454751b1"><div class="ttname"><a href="bits_8h.html#a0637f79bd3fc9e1943f6308e454751b1">byteorder_bigendian</a></div><div class="ttdeci">static FORCEINLINE PURECALL void byteorder_bigendian(void *RESTRICT buffer, const int size)</div><div class="ttdoc">Convert generic data from native to big endian. </div><div class="ttdef"><b>Definition:</b> <a href="bits_8h_source.html#l00143">bits.h:143</a></div></div>
 <div class="ttc" id="platform_8h_html"><div class="ttname"><a href="platform_8h.html">platform.h</a></div><div class="ttdoc">Platform abstractions. </div></div>
@@ -250,11 +256,11 @@
 <div class="ttc" id="platform_8h_html_a0775036fb661c08907d8b650717f9e18"><div class="ttname"><a href="platform_8h.html#a0775036fb661c08907d8b650717f9e18">CONSTCALL</a></div><div class="ttdeci">#define CONSTCALL</div><div class="ttdoc">Const call attribute. </div></div>
 <div class="ttc" id="platform_8h_html_a724fb9f82013c782db5c3c12ea36aac8"><div class="ttname"><a href="platform_8h.html#a724fb9f82013c782db5c3c12ea36aac8">FORCEINLINE</a></div><div class="ttdeci">#define FORCEINLINE</div><div class="ttdoc">Force inline attribute. </div></div>
 <div class="ttc" id="bits_8h_html_a4a9363cf434b52ca9481acae4a100bda"><div class="ttname"><a href="bits_8h.html#a4a9363cf434b52ca9481acae4a100bda">byteorder_swap64</a></div><div class="ttdeci">static FORCEINLINE CONSTCALL uint64_t byteorder_swap64(uint64_t arg)</div><div class="ttdoc">Swap byte order, 64 bit. </div><div class="ttdef"><b>Definition:</b> <a href="bits_8h_source.html#l00076">bits.h:76</a></div></div>
-<div class="ttc" id="bits_8h_html_a479ec5903d088dd05ede8fe66197d87e"><div class="ttname"><a href="bits_8h.html#a479ec5903d088dd05ede8fe66197d87e">byteorder_littleendian</a></div><div class="ttdeci">static FORCEINLINE PURECALL void byteorder_littleendian(void *RESTRICT buffer, const int size)</div><div class="ttdoc">Convert generic data from native to little endian. </div><div class="ttdef"><b>Definition:</b> <a href="bits_8h_source.html#l00181">bits.h:181</a></div></div>
-<div class="ttc" id="bits_8h_html_a9c6f4e1973085f7631543bc042d5420f"><div class="ttname"><a href="bits_8h.html#a9c6f4e1973085f7631543bc042d5420f">byteorder_littleendian64</a></div><div class="ttdeci">static FORCEINLINE CONSTCALL uint64_t byteorder_littleendian64(uint64_t arg)</div><div class="ttdoc">Convert from 64-bit native to little endian. </div><div class="ttdef"><b>Definition:</b> <a href="bits_8h_source.html#l00171">bits.h:171</a></div></div>
+<div class="ttc" id="bits_8h_html_a479ec5903d088dd05ede8fe66197d87e"><div class="ttname"><a href="bits_8h.html#a479ec5903d088dd05ede8fe66197d87e">byteorder_littleendian</a></div><div class="ttdeci">static FORCEINLINE PURECALL void byteorder_littleendian(void *RESTRICT buffer, const int size)</div><div class="ttdoc">Convert generic data from native to little endian. </div><div class="ttdef"><b>Definition:</b> <a href="bits_8h_source.html#l00184">bits.h:184</a></div></div>
+<div class="ttc" id="bits_8h_html_a9c6f4e1973085f7631543bc042d5420f"><div class="ttname"><a href="bits_8h.html#a9c6f4e1973085f7631543bc042d5420f">byteorder_littleendian64</a></div><div class="ttdeci">static FORCEINLINE CONSTCALL uint64_t byteorder_littleendian64(uint64_t arg)</div><div class="ttdoc">Convert from 64-bit native to little endian. </div><div class="ttdef"><b>Definition:</b> <a href="bits_8h_source.html#l00174">bits.h:174</a></div></div>
 <div class="ttc" id="bits_8h_html_a2faf4e4f688c76798cb8d0542897fc46"><div class="ttname"><a href="bits_8h.html#a2faf4e4f688c76798cb8d0542897fc46">byteorder_swap32</a></div><div class="ttdeci">static FORCEINLINE CONSTCALL uint32_t byteorder_swap32(uint32_t arg)</div><div class="ttdoc">Swap byte order, 32 bit. </div><div class="ttdef"><b>Definition:</b> <a href="bits_8h_source.html#l00053">bits.h:53</a></div></div>
 <div class="ttc" id="bits_8h_html_afc51f3522ef7b23a1ed679a9ff7b7872"><div class="ttname"><a href="bits_8h.html#afc51f3522ef7b23a1ed679a9ff7b7872">byteorder_bigendian64</a></div><div class="ttdeci">static FORCEINLINE CONSTCALL uint64_t byteorder_bigendian64(uint64_t arg)</div><div class="ttdoc">Convert 64-bit native to big endian. </div><div class="ttdef"><b>Definition:</b> <a href="bits_8h_source.html#l00133">bits.h:133</a></div></div>
-<div class="ttc" id="bits_8h_html_aa2e29b265afcc27e8922ae2ad1b79be4"><div class="ttname"><a href="bits_8h.html#aa2e29b265afcc27e8922ae2ad1b79be4">byteorder_littleendian16</a></div><div class="ttdeci">static FORCEINLINE CONSTCALL uint16_t byteorder_littleendian16(uint16_t arg)</div><div class="ttdoc">Convert from 16-bit native to little endian. </div><div class="ttdef"><b>Definition:</b> <a href="bits_8h_source.html#l00151">bits.h:151</a></div></div>
+<div class="ttc" id="bits_8h_html_aa2e29b265afcc27e8922ae2ad1b79be4"><div class="ttname"><a href="bits_8h.html#aa2e29b265afcc27e8922ae2ad1b79be4">byteorder_littleendian16</a></div><div class="ttdeci">static FORCEINLINE CONSTCALL uint16_t byteorder_littleendian16(uint16_t arg)</div><div class="ttdoc">Convert from 16-bit native to little endian. </div><div class="ttdef"><b>Definition:</b> <a href="bits_8h_source.html#l00154">bits.h:154</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

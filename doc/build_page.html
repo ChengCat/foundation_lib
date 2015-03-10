@@ -66,6 +66,13 @@
 </li>
 <li class="level1"><a href="#visual_studio">Visual Studio</a></li>
 <li class="level1"><a href="#xcode">XCode</a></li>
+<li class="level1"><a href="#external">External</a><ul><li class="level2"><a href="#flags_generic">Generic flags</a></li>
+<li class="level2"><a href="#flags_clang">CLang flags</a></li>
+<li class="level2"><a href="#flags_gcc">GCC flags</a></li>
+<li class="level2"><a href="#flags_msc">MSC flags</a></li>
+<li class="level2"><a href="#flags_intel">Intel flags</a></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="textblock"><h1><a class="anchor" id="overview"></a>
@@ -99,7 +106,11 @@ ios </li>
 <li>
 android </li>
 <li>
+bsd </li>
+<li>
 raspberrypi </li>
+<li>
+pnacl </li>
 </ul>
 <p>Configuration names are </p><ul>
 <li>
@@ -127,7 +138,7 @@ mips </li>
 <li>
 mips64 </li>
 </ul>
-<p>For MacOSX and iOS builds the libraries and binaries/apps will be universal and placed directly in the corresponding configuration directory and not in separate directories per architecture. For Android apps will be universal (containing the native variants used) and placed directly in the corresponding configuration directory.</p>
+<p>For MacOSX, iOS and PNaCl builds the libraries and binaries/apps will be universal and placed directly in the corresponding configuration directory and not in separate directories per architecture. For Android apps will be universal (containing the native variants used) and placed directly in the corresponding configuration directory.</p>
 <p>Test cases are built as separate binaries with a launcher binary, placed in bin/[platform]/[configuration]/[architecture] (or directly in the configuration directory for MacOSX and iOS since the binaries are universal).</p>
 <h1><a class="anchor" id="ninja"></a>
 Ninja</h1>
@@ -187,6 +198,10 @@ android_toolchainversion_gcc - GCC toolchain version to use when building (defau
 <li>
 android_toolchainversion_clang - CLang toolchain version to use when building (default "3.5") </li>
 <li>
+android_tsa - Location of the Timestamping Authority </li>
+<li>
+android_tsacert - Public key certificate for Timestamping Authority </li>
+<li>
 ios_deploymenttarget - Minimum iOS target version (default "6.0") </li>
 <li>
 ios_organisation - Organisation identifier on format "TDSNAF78CU" (no default) </li>
@@ -201,7 +216,9 @@ macosx_deploymenttarget - Minimum MacOS X target version (default "10.7") </li>
 <li>
 macosx_organisation - Organisation identifier on format "TDSNAF78CU" (no default) </li>
 <li>
-<p class="startli">macosx_bundleidentifier - Bundle identifier on format "com.company.id" (no default)</p>
+macosx_bundleidentifier - Bundle identifier on format "com.company.id" (no default) </li>
+<li>
+<p class="startli">pnacl_sdkpath - Path to the PNaCl SDK (no default)</p>
 <p class="endli">The bundle identifier variables can contain expansion variables which will be substituted during build. These include </p><ul>
 <li>
 <p class="startli">- Binary name (for example, "test-all")</p>
@@ -226,6 +243,10 @@ android_keyalias </li>
 android_keystorepass </li>
 <li>
 android_keypass </li>
+<li>
+android_tsa </li>
+<li>
+android_tsacert </li>
 <li>
 ios_organisation </li>
 <li>
@@ -254,7 +275,63 @@ Visual Studio</h1>
 <p>On Windows we currently support building with Microsoft and Intel compilers with Visual Studio 2013 Both 32-bit and 64-bit Windows are supported. To build with Visual Studio, open the foundation.sln solution file Visual Studio 2013 in <code>build/vs13</code>. To build all targets and configurations use batch build, select all targets and build.</p>
 <h1><a class="anchor" id="xcode"></a>
 XCode</h1>
-<p>To build with XCode, open the XCode workspace in <code>build/xcode/foundation-osx.xcworkspace</code> for MacOS X and <code>build/xcode/foundation-ios.xcworkspace</code> for iOS and build the appropriate targets. The workspace contains projects for both foundation library and test cases. The only supported architecture is x86-64 targetting MacOS X 10.7 or later, or for iOS arm7/arm64 targeting iOS 6.0 or later. </p>
+<p>To build with XCode, open the XCode workspace in <code>build/xcode/foundation-osx.xcworkspace</code> for MacOS X and <code>build/xcode/foundation-ios.xcworkspace</code> for iOS and build the appropriate targets. The workspace contains projects for both foundation library and test cases. The only supported architecture is x86-64 targetting MacOS X 10.7 or later, or for iOS arm7/arm64 targeting iOS 6.0 or later.</p>
+<h1><a class="anchor" id="external"></a>
+External</h1>
+<p>For integration with other build systems, here is a list of the compiler/linker flags used during compilation and linking of the foundation library, test apps and tools.</p>
+<h2><a class="anchor" id="flags_generic"></a>
+Generic flags</h2>
+<p>During compilation of the library itself, <code>FOUNDATION_COMPILE</code> should be defined to non-zero. This must not be defined when compiling projects that use the library.</p>
+<p>Depending on the build configuration wanted, the appropriate build configuration symbol should be defined to non-zero. </p><ul>
+<li>
+<code>BUILD_DEBUG</code> </li>
+<li>
+<code>BUILD_RELEASE</code> </li>
+<li>
+<code>BUILD_PROFILE</code> </li>
+<li>
+<p class="startli"><code>BUILD_DEPLOY</code></p>
+<p>All other build control directives are defined in the <a class="el" href="build_8h.html" title="Build setup. ">build.h</a> header.</p>
+<p class="endli"></p>
+</li>
+</ul>
+<h2><a class="anchor" id="flags_clang"></a>
+CLang flags</h2>
+<ul>
+<li>Include/build: <code>-I. -Itest -DFOUNDATION_COMPILE=1 -DBUILD_&lt;DEBUG|RELEASE|PROFILE|DEPLOY&gt;=1</code></li>
+<li>Warning: <code>-W -Wall -Werror</code></li>
+<li>All builds: <code>-funit-at-a-time -fstrict-aliasing -fno-math-errno -ffinite-math-only -funsafe-math-optimizations -fno-trapping-math -ffast-math -g</code></li>
+<li>Debug: <code>-O0</code></li>
+<li>Release: <code>-funroll-loops -O3</code></li>
+<li>Profile/deploy: <code>-funroll-loops -O3</code></li>
+</ul>
+<p>All platforms use <code>-std=c11</code> to define using the C11 standard.</p>
+<h2><a class="anchor" id="flags_gcc"></a>
+GCC flags</h2>
+<ul>
+<li>Include/build: <code>-I. -Itest -DFOUNDATION_COMPILE=1 -DBUILD_&lt;DEBUG|RELEASE|PROFILE|DEPLOY&gt;=1</code></li>
+<li>Warning: <code>-W -Wall -Werror</code></li>
+<li>All builds: <code>-funit-at-a-time -fstrict-aliasing -fno-math-errno -ffinite-math-only -funsafe-math-optimizations -fno-trapping-math -ffast-math -g</code></li>
+<li>Debug: <code>-O0</code></li>
+<li>Release: <code>-funroll-loops -O3</code></li>
+<li>Profile/deploy: <code>-funroll-loops -O4</code></li>
+</ul>
+<p>Most platforms use <code>-std=c11</code> to define using the C11 standard. The exceptions for this is Android which uses <code>-std=gnu11</code> to work around issues in the NDK includes, and Raspberry Pi which uses <code>-std=c99</code> due to lack of compiler support at the time. Raspberry Pi builds also use <code>-fno-omit-frame-pointer</code> to make the stack walker work using frame pointers.</p>
+<p>Apart from this you should specify the appropriate machine flags for the architecture you are compiling for, like <code>-m64</code> for x86-64.</p>
+<h2><a class="anchor" id="flags_msc"></a>
+MSC flags</h2>
+<ul>
+<li>All builds: <code>/DFOUNDATION_COMPILE=1 /DBUILD_&lt;DEBUG|RELEASE|PROFILE|DEPLOY&gt;=1 /Zi /W3 /WX /Oi /Oy- /MT /GS- /Gy- /GF- /Gm- /Qpar- /fp:fast /fp:except- /Zc:forScope /Zc:wchar_t /GR- /openmp-</code></li>
+<li>Debug: <code>/Od</code></li>
+<li>Release: <code>/Od</code></li>
+<li>Profile: <code>/O2 /Ob2 /Ot /GT /GL</code></li>
+<li>Deploy: <code>/Ox /Ob2 /Ot /GT /GL</code></li>
+</ul>
+<p>For x86 targets <code>/arch:SSE2</code> is used in all builds.</p>
+<p>For x86-64 targets no additional flags are used.</p>
+<h2><a class="anchor" id="flags_intel"></a>
+Intel flags</h2>
+<p>To be written... </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

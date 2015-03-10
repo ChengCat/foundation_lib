@@ -244,6 +244,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a54737ac17fa500d756c70c006a351ad8"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a54737ac17fa500d756c70c006a351ad8">object_deallocate_fn</a> )(<a class="el" href="types_8h.html#a08176e098ef1768097449c2ffca40411">object_t</a> id, void *object)</td></tr>
 <tr class="memdesc:a54737ac17fa500d756c70c006a351ad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object deallocation.  <a href="#a54737ac17fa500d756c70c006a351ad8">More...</a><br /></td></tr>
 <tr class="separator:a54737ac17fa500d756c70c006a351ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47befd7db8b222645c0273876b707ddf"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structstream__t.html">stream_t</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a47befd7db8b222645c0273876b707ddf">stream_open_fn</a> )(const char *path, unsigned int mode)</td></tr>
+<tr class="memdesc:a47befd7db8b222645c0273876b707ddf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream open.  <a href="#a47befd7db8b222645c0273876b707ddf">More...</a><br /></td></tr>
+<tr class="separator:a47befd7db8b222645c0273876b707ddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cbb970ef348d13b529ff22c5c4c0b3f"><td class="memItemLeft" align="right" valign="top">typedef uint64_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a2cbb970ef348d13b529ff22c5c4c0b3f">stream_read_fn</a> )(<a class="el" href="structstream__t.html">stream_t</a> *stream, void *dst, uint64_t size)</td></tr>
 <tr class="memdesc:a2cbb970ef348d13b529ff22c5c4c0b3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream read.  <a href="#a2cbb970ef348d13b529ff22c5c4c0b3f">More...</a><br /></td></tr>
 <tr class="separator:a2cbb970ef348d13b529ff22c5c4c0b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1005,6 +1008,28 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a47befd7db8b222645c0273876b707ddf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structstream__t.html">stream_t</a> *(* stream_open_fn)(const char *path, unsigned int mode)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Generic function to open a stream with the given path and mode </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Path, optionally including protocol </td></tr>
+    <tr><td class="paramname">mode</td><td>Open mode </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Newly allocated stream, null if it could not be opened </dd></dl>
+
+<p>Definition at line <a class="el" href="types_8h_source.html#l00297">297</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a2cbb970ef348d13b529ff22c5c4c0b3f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1024,7 +1049,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of bytes actually read </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00297">297</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00298">298</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1047,7 +1072,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of bytes actually written </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00298">298</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00299">299</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1068,7 +1093,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if stream at end, false if not </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00299">299</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00300">300</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1088,7 +1113,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00300">300</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00301">301</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1109,7 +1134,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00301">301</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00302">302</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1130,7 +1155,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Stream size, 0 if invalid stream or unknown (like a network stream) </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00302">302</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00303">303</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1152,7 +1177,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00303">303</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00304">304</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1173,7 +1198,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Current stream position, 0 if invalid stream or unknown </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00304">304</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00305">305</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1194,7 +1219,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Last modification timestamp, 0 if invalid stream or unknown </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00305">305</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00306">306</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1215,7 +1240,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Digest of stream content, 0 if invalid stream or unknown </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00306">306</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00307">307</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1235,7 +1260,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00307">307</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00308">308</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1256,7 +1281,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of bytes that can be read without blocking </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00308">308</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00309">309</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1276,7 +1301,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00309">309</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00310">310</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1297,7 +1322,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Clone of stream, 0 if not supported or invalid source stream </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00310">310</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00311">311</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -2056,7 +2081,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Packed version data </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00695">695</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00696">696</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
