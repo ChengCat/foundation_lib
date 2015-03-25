@@ -18,6 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
+   &#160;<span id="projectnumber">1.2.6</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -204,7 +205,7 @@ android_tsacert - Public key certificate for Timestamping Authority </li>
 <li>
 ios_deploymenttarget - Minimum iOS target version (default "6.0") </li>
 <li>
-ios_organisation - Organisation identifier on format "TDSNAF78CU" (no default) </li>
+ios_organisation - Organisation identifier on format "TXYZAB01CD" (no default) </li>
 <li>
 ios_bundleidentifier - Bundle identifier on format "com.company.id" (no default) </li>
 <li>
@@ -214,15 +215,17 @@ ios_provisioning - Mobile provisioning profile path (no default) </li>
 <li>
 macosx_deploymenttarget - Minimum MacOS X target version (default "10.7") </li>
 <li>
-macosx_organisation - Organisation identifier on format "TDSNAF78CU" (no default) </li>
+macosx_organisation - Organisation identifier on format "TXYZAB01CD" (no default) </li>
 <li>
 macosx_bundleidentifier - Bundle identifier on format "com.company.id" (no default) </li>
 <li>
-<p class="startli">pnacl_sdkpath - Path to the PNaCl SDK (no default)</p>
-<p class="endli">The bundle identifier variables can contain expansion variables which will be substituted during build. These include </p><ul>
+pnacl_sdkpath - Path to the PNaCl SDK (no default) </li>
+</ul>
+<p>The bundle identifier variables can contain expansion variables which will be substituted during build. These include </p><ul>
 <li>
-<p class="startli">- Binary name (for example, "test-all")</p>
-<p class="endli">The variables can be set in four different ways, in increasing order of priority. </p><ul>
+$(binname) - Binary name (for example, "test-all") </li>
+</ul>
+<p>The variables can be set in four different ways, in increasing order of priority. </p><ul>
 <li>
 configure.py script variables passed to generator </li>
 <li>
@@ -230,11 +233,25 @@ build.json file in root project directory, read during configure.py execution </
 <li>
 environment variables, read during configure.py execution </li>
 <li>
-<p class="startli">codesign.json file in root project directory, read at build time</p>
+codesign.json file in root project directory, read at build time </li>
+</ul>
 <p>Passing variables to the generator in configure.py is a simple list of key-value pairs. For example <code>variables = [ ( 'bundleidentifier', 'com.rampantpixels.foundation.' ) ]</code>. Any variables that have a identical name with different platform prefix can be passed without any platform name as in the example. The value will be applied to all platform specific variables.</p>
-<p>The build.json is a simple host-local file which can hold any variable values listed. The value should be put in enclosing groups for each platforms (see example). The values will be set after parsing the configure.py variables. And example build.json file: <code>{ "android" : { "ndkpath" : "~/android-ndk", "sdkpath" : "~/android-sdk", "platformversion" : "21", "gccversion" : "4.9", "clangversion" : "3.5" }, "ios" : { "deploymenttarget" : "6.0" }, "macosx" : { "deploymenttarget" : "10.7" } }</code></p>
-<p>You can override configure.py and build.json values using environment variables. The environment variable names should be the variable name in upper case. For example, to set the Minimum iOS target version set <code>IOS_DEPLOYMENTVERSION="6.0"</code> in the environment prior to invoking configure.py</p>
-<p class="endli">Finally, the codesign.json is read by the codesigning phase at build time and can hold the secrets related to code signing. This allows you to have the secret locally on the build machine without requiring recreation of the build scripts or storing secrets in version control. The format is the same as for build.json and the variables used are: </p><ul>
+<p>The build.json is a simple host-local file which can hold any variable values listed. The value should be put in enclosing groups for each platforms (see example). The values will be set after parsing the configure.py variables. An example build.json file: </p><pre>{
+    "android" : {
+        "ndkpath" : "~/android-ndk",
+        "sdkpath" : "~/android-sdk",
+        "platformversion" : "21",
+        "gccversion" : "4.9",
+        "clangversion" : "3.5"
+    },
+    "ios" : {
+        "deploymenttarget" : "6.0"
+    },
+    "macosx" : {
+        "deploymenttarget" : "10.7"
+    }
+}</pre><p>You can override configure.py and build.json values using environment variables. The environment variable names should be the variable name in upper case. For example, to set the Minimum iOS target version set <code>IOS_DEPLOYMENTVERSION="6.0"</code> in the environment prior to invoking configure.py</p>
+<p>Finally, the codesign.json is read by the codesigning phase at build time and can hold the secrets related to code signing. This allows you to have the secret locally on the build machine without requiring recreation of the build scripts or storing secrets in version control. The format is the same as for build.json and the variables used are: </p><ul>
 <li>
 android_keystore </li>
 <li>
@@ -260,17 +277,27 @@ ios_organisation </li>
 <li>
 ios_bundleidentifier </li>
 <li>
-<p class="startli">ios_signature</p>
-<p class="endli"></p>
-</li>
+ios_signature </li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h1><a class="anchor" id="visual_studio"></a>
+<p>An example codesign.json file: </p><pre>{
+    "android" : {
+        "keystore" : "~/.android/debug.keystore",
+        "keyalias" : "androiddebugkey",
+        "keystorepass" : "android",
+        "keypass" : "android"
+    },
+    "ios" : {
+        "organisation" : "TXXXYZ12AB",
+        "bundleidentifier" : "com.mycompany.$(binname)",
+        "signature" : "ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+        "provisioning" : "01234567-89AB-CDEF-0123-456789ABCDEF.mobileprovision"
+    },
+    "macosx" : {
+        "organisation" : "TXXXYZ12AB",
+        "bundleidentifier" : "com.mycompany.$(binname)",
+        "signature" : "ABCDEF0123456789ABCDEF0123456789ABCDEF01"
+    }
+}</pre><h1><a class="anchor" id="visual_studio"></a>
 Visual Studio</h1>
 <p>On Windows we currently support building with Microsoft and Intel compilers with Visual Studio 2013 Both 32-bit and 64-bit Windows are supported. To build with Visual Studio, open the foundation.sln solution file Visual Studio 2013 in <code>build/vs13</code>. To build all targets and configurations use batch build, select all targets and build.</p>
 <h1><a class="anchor" id="xcode"></a>
@@ -290,11 +317,9 @@ Generic flags</h2>
 <li>
 <code>BUILD_PROFILE</code> </li>
 <li>
-<p class="startli"><code>BUILD_DEPLOY</code></p>
-<p>All other build control directives are defined in the <a class="el" href="build_8h.html" title="Build setup. ">build.h</a> header.</p>
-<p class="endli"></p>
-</li>
+<code>BUILD_DEPLOY</code> </li>
 </ul>
+<p>All other build control directives are defined in the <a class="el" href="build_8h.html" title="Build setup. ">build.h</a> header.</p>
 <h2><a class="anchor" id="flags_clang"></a>
 CLang flags</h2>
 <ul>

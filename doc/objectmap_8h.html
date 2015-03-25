@@ -18,6 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
+   &#160;<span id="projectnumber">1.2.6</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -90,13 +91,14 @@ Functions</h2></td></tr>
 <tr class="memitem:ac464bba082fbaed0cb95a105f758551a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="objectmap_8h.html#ac464bba082fbaed0cb95a105f758551a">objectmap_raw_lookup</a> (const <a class="el" href="structobjectmap__t.html">objectmap_t</a> *map, unsigned int index)</td></tr>
 <tr class="memdesc:ac464bba082fbaed0cb95a105f758551a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw lookup.  <a href="#ac464bba082fbaed0cb95a105f758551a">More...</a><br /></td></tr>
 <tr class="separator:ac464bba082fbaed0cb95a105f758551a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf470b190647bebcd4d7dceab5f26957"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="platform_8h.html#a724fb9f82013c782db5c3c12ea36aac8">FORCEINLINE</a> <a class="el" href="platform_8h.html#a5b0965f82bb7fca45cb8c3e932a9edfb">PURECALL</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="objectmap_8h.html#abf470b190647bebcd4d7dceab5f26957">objectmap_lookup</a> (const <a class="el" href="structobjectmap__t.html">objectmap_t</a> *map, <a class="el" href="types_8h.html#a08176e098ef1768097449c2ffca40411">object_t</a> id)</td></tr>
-<tr class="memdesc:abf470b190647bebcd4d7dceab5f26957"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map object to pointer.  <a href="#abf470b190647bebcd4d7dceab5f26957">More...</a><br /></td></tr>
-<tr class="separator:abf470b190647bebcd4d7dceab5f26957"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2faf56a6a48b3cbfedbccf70c5f66e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="objectmap_8h.html#ac2faf56a6a48b3cbfedbccf70c5f66e9">objectmap_lookup_ref</a> (const <a class="el" href="structobjectmap__t.html">objectmap_t</a> *map, <a class="el" href="types_8h.html#a08176e098ef1768097449c2ffca40411">object_t</a> id)</td></tr>
 <tr class="separator:ac2faf56a6a48b3cbfedbccf70c5f66e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae42575a6489d916558842fed30a671c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="objectmap_8h.html#ae42575a6489d916558842fed30a671c8">objectmap_lookup_unref</a> (const <a class="el" href="structobjectmap__t.html">objectmap_t</a> *map, <a class="el" href="types_8h.html#a08176e098ef1768097449c2ffca40411">object_t</a> id, <a class="el" href="types_8h.html#a54737ac17fa500d756c70c006a351ad8">object_deallocate_fn</a> deallocate)</td></tr>
 <tr class="separator:ae42575a6489d916558842fed30a671c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf470b190647bebcd4d7dceab5f26957"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="platform_8h.html#a6041d4ef4e29ee27117fcac64ba69820">FOUNDATION_FORCEINLINE</a> <br class="typebreak" />
+<a class="el" href="platform_8h.html#af463bb079d635ed9ab7980f5a0a26966">FOUNDATION_PURECALL</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="objectmap_8h.html#abf470b190647bebcd4d7dceab5f26957">objectmap_lookup</a> (const <a class="el" href="structobjectmap__t.html">objectmap_t</a> *map, <a class="el" href="types_8h.html#a08176e098ef1768097449c2ffca40411">object_t</a> id)</td></tr>
+<tr class="memdesc:abf470b190647bebcd4d7dceab5f26957"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map object to pointer.  <a href="#abf470b190647bebcd4d7dceab5f26957">More...</a><br /></td></tr>
+<tr class="separator:abf470b190647bebcd4d7dceab5f26957"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Mapping of object handles to object pointers, thread safe and lock free </p>
@@ -356,50 +358,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abf470b190647bebcd4d7dceab5f26957"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void * objectmap_lookup </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structobjectmap__t.html">objectmap_t</a> *&#160;</td>
-          <td class="paramname"><em>map</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a08176e098ef1768097449c2ffca40411">object_t</a>&#160;</td>
-          <td class="paramname"><em>id</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Map object handle to object pointer. This function is unsafe in the sense that it might return an object pointer which points to an invalid (deallocated) object if the object reference count was decreased in another thread while this function is executing. The object lifetime is also not guaranteed in any code using the returned object. For a safe function use objectmap_lookup_ref </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">map</td><td>Object map </td></tr>
-    <tr><td class="paramname">id</td><td>Object handle </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Object pointer, 0 if invalid/outdated handle </dd></dl>
-
-<p>Definition at line <a class="el" href="objectmap_8h_source.html#l00036">36</a> of file <a class="el" href="objectmap_8h_source.html">objectmap.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ac2faf56a6a48b3cbfedbccf70c5f66e9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -472,6 +430,50 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if object is still valid, false if it was deallocated </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abf470b190647bebcd4d7dceab5f26957"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * objectmap_lookup </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structobjectmap__t.html">objectmap_t</a> *&#160;</td>
+          <td class="paramname"><em>map</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a08176e098ef1768097449c2ffca40411">object_t</a>&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Map object handle to object pointer. This function is unsafe in the sense that it might return an object pointer which points to an invalid (deallocated) object if the object reference count was decreased in another thread while this function is executing. The object lifetime is also not guaranteed in any code using the returned object. For a safe function use objectmap_lookup_ref </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">map</td><td>Object map </td></tr>
+    <tr><td class="paramname">id</td><td>Object handle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Object pointer, 0 if invalid/outdated handle </dd></dl>
+
+<p>Definition at line <a class="el" href="objectmap_8h_source.html#l00034">34</a> of file <a class="el" href="objectmap_8h_source.html">objectmap.h</a>.</p>
 
 </div>
 </div>

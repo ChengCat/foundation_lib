@@ -18,6 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
+   &#160;<span id="projectnumber">1.2.6</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -73,10 +74,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ad57feb52619a54e0fc53f3b2e0dc83f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="types_8h.html#a6c96e560d2cbcc76ab30fc7328ba43bf">uuid_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uuid_8h.html#ad57feb52619a54e0fc53f3b2e0dc83f1">uuid_generate_random</a> (void)</td></tr>
 <tr class="memdesc:ad57feb52619a54e0fc53f3b2e0dc83f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate random UUID.  <a href="#ad57feb52619a54e0fc53f3b2e0dc83f1">More...</a><br /></td></tr>
 <tr class="separator:ad57feb52619a54e0fc53f3b2e0dc83f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5141567713656d716ef01dd44113c468"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="platform_8h.html#a724fb9f82013c782db5c3c12ea36aac8">FORCEINLINE</a> <a class="el" href="platform_8h.html#a0775036fb661c08907d8b650717f9e18">CONSTCALL</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uuid_8h.html#a5141567713656d716ef01dd44113c468">uuid_equal</a> (const <a class="el" href="types_8h.html#a6c96e560d2cbcc76ab30fc7328ba43bf">uuid_t</a> u0, const <a class="el" href="types_8h.html#a6c96e560d2cbcc76ab30fc7328ba43bf">uuid_t</a> u1)</td></tr>
+<tr class="memitem:a5141567713656d716ef01dd44113c468"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="platform_8h.html#a6041d4ef4e29ee27117fcac64ba69820">FOUNDATION_FORCEINLINE</a> <br class="typebreak" />
+<a class="el" href="platform_8h.html#ad74cf512d05f9455dce01d8bb3b95565">FOUNDATION_CONSTCALL</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uuid_8h.html#a5141567713656d716ef01dd44113c468">uuid_equal</a> (const <a class="el" href="types_8h.html#a6c96e560d2cbcc76ab30fc7328ba43bf">uuid_t</a> u0, const <a class="el" href="types_8h.html#a6c96e560d2cbcc76ab30fc7328ba43bf">uuid_t</a> u1)</td></tr>
 <tr class="memdesc:a5141567713656d716ef01dd44113c468"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if UUIDs are equal.  <a href="#a5141567713656d716ef01dd44113c468">More...</a><br /></td></tr>
 <tr class="separator:a5141567713656d716ef01dd44113c468"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b996120a8afd66effc5f6b0fc731c92"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="platform_8h.html#a724fb9f82013c782db5c3c12ea36aac8">FORCEINLINE</a> <a class="el" href="platform_8h.html#a0775036fb661c08907d8b650717f9e18">CONSTCALL</a> <a class="el" href="types_8h.html#a6c96e560d2cbcc76ab30fc7328ba43bf">uuid_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uuid_8h.html#a7b996120a8afd66effc5f6b0fc731c92">uuid_null</a> (void)</td></tr>
+<tr class="memitem:a7b996120a8afd66effc5f6b0fc731c92"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="platform_8h.html#a6041d4ef4e29ee27117fcac64ba69820">FOUNDATION_FORCEINLINE</a> <br class="typebreak" />
+<a class="el" href="platform_8h.html#ad74cf512d05f9455dce01d8bb3b95565">FOUNDATION_CONSTCALL</a> <a class="el" href="types_8h.html#a6c96e560d2cbcc76ab30fc7328ba43bf">uuid_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uuid_8h.html#a7b996120a8afd66effc5f6b0fc731c92">uuid_null</a> (void)</td></tr>
 <tr class="memdesc:a7b996120a8afd66effc5f6b0fc731c92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make null UUID.  <a href="#a7b996120a8afd66effc5f6b0fc731c92">More...</a><br /></td></tr>
 <tr class="separator:a7b996120a8afd66effc5f6b0fc731c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -199,7 +202,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if equal, false if not </dd></dl>
 
-<p>Definition at line <a class="el" href="uuid_8h_source.html#l00029">29</a> of file <a class="el" href="uuid_8h_source.html">uuid.h</a>.</p>
+<p>Definition at line <a class="el" href="uuid_8h_source.html#l00030">30</a> of file <a class="el" href="uuid_8h_source.html">uuid.h</a>.</p>
 
 </div>
 </div>
@@ -226,7 +229,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Make null UUID. </p><dl class="section return"><dt>Returns</dt><dd>Null UUID </dd></dl>
 
-<p>Definition at line <a class="el" href="uuid_8h_source.html#l00035">35</a> of file <a class="el" href="uuid_8h_source.html">uuid.h</a>.</p>
+<p>Definition at line <a class="el" href="uuid_8h_source.html#l00036">36</a> of file <a class="el" href="uuid_8h_source.html">uuid.h</a>.</p>
 
 </div>
 </div>

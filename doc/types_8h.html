@@ -18,6 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
+   &#160;<span id="projectnumber">1.2.6</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -473,8 +474,8 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749ac0d72dd7291a45b0b3b6125a35f9026e">FOUNDATIONEVENT_START</a>, 
 <a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749a2a1a077bc699f63eb69828582e31171c">FOUNDATIONEVENT_TERMINATE</a>, 
 <a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749a7904347949bb6cc1a4fffff92d347d20">FOUNDATIONEVENT_PAUSE</a>, 
-<a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749af35a9461468b550f0d64b6d92de7425b">FOUNDATIONEVENT_RESUME</a>, 
-<br />
+<a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749af35a9461468b550f0d64b6d92de7425b">FOUNDATIONEVENT_RESUME</a>
+, <br />
 &#160;&#160;<a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749a777308a0a96740c05567cde5d72de537">FOUNDATIONEVENT_FILE_CREATED</a>, 
 <a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749ac34762f7970ce0594c251a642986daa1">FOUNDATIONEVENT_FILE_DELETED</a>, 
 <a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749a6f3b6c3703896a65deee875edb4001a5">FOUNDATIONEVENT_FILE_MODIFIED</a>, 
@@ -524,8 +525,8 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aecffa487e0b99196839de1a7ec577dce"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="platform_8h.html#a724fb9f82013c782db5c3c12ea36aac8">FORCEINLINE</a> <a class="el" href="platform_8h.html#a0775036fb661c08907d8b650717f9e18">CONSTCALL</a> <br class="typebreak" />
-<a class="el" href="unionversion__t.html">version_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#aecffa487e0b99196839de1a7ec577dce">version_make</a> (unsigned int major, unsigned int minor, unsigned int revision, unsigned int build, unsigned int control)</td></tr>
+<tr class="memitem:aecffa487e0b99196839de1a7ec577dce"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="platform_8h.html#a6041d4ef4e29ee27117fcac64ba69820">FOUNDATION_FORCEINLINE</a> <br class="typebreak" />
+<a class="el" href="platform_8h.html#ad74cf512d05f9455dce01d8bb3b95565">FOUNDATION_CONSTCALL</a> <a class="el" href="unionversion__t.html">version_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#aecffa487e0b99196839de1a7ec577dce">version_make</a> (unsigned int major, unsigned int minor, unsigned int revision, unsigned int build, unsigned int control)</td></tr>
 <tr class="memdesc:aecffa487e0b99196839de1a7ec577dce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack version definition into a 128-bit integer.  <a href="#aecffa487e0b99196839de1a7ec577dce">More...</a><br /></td></tr>
 <tr class="separator:aecffa487e0b99196839de1a7ec577dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -560,7 +561,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Declares the base object data layout. Object structures should be 8-byte align for platform compatibility. Use the macro as first declaration in an object struct: </p><pre>typedef struct <a class="el" href="platform_8h.html#ae4ff5a07c6ff43ed11a3887ef7d524f2" title="Align attribute. ">ALIGN(8)</a>
+<p>Declares the base object data layout. Object structures should be 8-byte align for platform compatibility. Use the macro as first declaration in an object struct: </p><pre>typedef struct ALIGN(8)
 {
   FOUNDATION_DECLARE_OBJECT;
   int       some_other_data;
@@ -580,7 +581,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Hash value </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00229">229</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00231">231</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -595,7 +596,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Tick type used for absolute time measurements or timestamps </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00230">230</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00232">232</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -610,7 +611,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Deltatime type used for floating point time differences </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00231">231</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00233">233</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -625,7 +626,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Object handle used for identifying reference counted objects </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00232">232</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00234">234</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -640,7 +641,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Default is 16 bit, typedef to 32 bit if need to sort more than 2^16 items in one array </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00233">233</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00235">235</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -655,7 +656,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>UUID </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00234">234</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00236">236</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -670,7 +671,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Mutex for thread synchronization </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00254">254</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00256">256</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -692,7 +693,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Implementation specific code which is passed back as return from error_report </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00281">281</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00283">283</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -717,7 +718,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>1 if assert was not handled and execution should break, 0 if assert handled and execution can continue </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00282">282</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00284">284</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -739,7 +740,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00283">283</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00285">285</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -754,7 +755,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Subsystem initialization function prototype. Return value should be the success state of initialization </p><dl class="section return"><dt>Returns</dt><dd>0 on success, &lt;0 if failure (errors should be reported through log_error or error_report) </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00284">284</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00286">286</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -769,7 +770,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Subsystem shutdown function prototype. Will be called for each successfully initialized subsystem on shutdown </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00285">285</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00287">287</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -793,7 +794,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to allocated memory block if successful, 0 if error </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00286">286</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00288">288</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -817,7 +818,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to allocated memory block if successful, 0 if error </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00287">287</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00289">289</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -837,7 +838,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00288">288</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00290">290</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -858,7 +859,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00289">289</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00291">291</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -878,7 +879,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00290">290</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00292">292</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -899,7 +900,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00291">291</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00293">293</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -920,7 +921,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00292">292</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00294">294</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -942,7 +943,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Implementation specific data which can be obtained through thread_result </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00293">293</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00295">295</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -963,7 +964,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Implementation specific return value which is forwarded as return value from crash_guard (note that FOUNDATION_CRASH_DUMP_GENERATED is reserved) </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00294">294</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00296">296</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -983,7 +984,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00295">295</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00297">297</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1004,7 +1005,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00296">296</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00298">298</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1026,7 +1027,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Newly allocated stream, null if it could not be opened </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00297">297</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00299">299</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1049,7 +1050,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of bytes actually read </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00298">298</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00300">300</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1072,7 +1073,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of bytes actually written </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00299">299</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00301">301</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1093,7 +1094,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if stream at end, false if not </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00300">300</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00302">302</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1113,7 +1114,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00301">301</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00303">303</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1134,7 +1135,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00302">302</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00304">304</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1155,7 +1156,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Stream size, 0 if invalid stream or unknown (like a network stream) </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00303">303</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00305">305</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1177,7 +1178,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00304">304</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00306">306</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1198,7 +1199,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Current stream position, 0 if invalid stream or unknown </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00305">305</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00307">307</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1219,7 +1220,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Last modification timestamp, 0 if invalid stream or unknown </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00306">306</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00308">308</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1240,7 +1241,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Digest of stream content, 0 if invalid stream or unknown </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00307">307</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00309">309</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1260,7 +1261,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00308">308</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00310">310</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1281,7 +1282,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of bytes that can be read without blocking </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00309">309</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00311">311</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1301,7 +1302,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00310">310</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00312">312</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1322,7 +1323,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Clone of stream, 0 if not supported or invalid source stream </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00311">311</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00313">313</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1913,7 +1914,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00195">195</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00197">197</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1942,7 +1943,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00200">200</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00202">202</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1977,7 +1978,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00208">208</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00210">210</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -2015,7 +2016,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00218">218</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00220">220</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -2081,7 +2082,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Packed version data </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00696">696</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00698">698</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>

@@ -18,6 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
+   &#160;<span id="projectnumber">1.2.6</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -51,43 +52,42 @@ hashify</h1>
 <p>The hashify tool is used to generate headers with predefined hashed strings from definition text files. The library itself has one such header in <a class="el" href="hashstrings_8h.html" title="Static hash strings. ">hashstrings.h</a> which is generated from hashstrings.txt</p>
 <p>To use the tool simply run it with the path to each definition file as argument, for example "hashify foundation/hashstrings.txt". It will by default generate a file named like the definition file with the extension replaces with ".h". For more options refer to the help information output by running hashify without any arguments.</p>
 <p>The hashify tool will not touch the output file if it does not need updating, to avoid changing timestamps of the header file and trigger rebuilds. This makes it suitable for automatic execution in build farms and similar environments.</p>
-<pre>hashify [&ndash;help] [&ndash;validate] [&ndash;generate-string &lt;string&gt;] [&lt;filename&gt; &lt;filename&gt; ...] [&ndash;]
+<pre>hashify [--help] [--validate] [--generate-string &lt;string&gt;] [&lt;filename&gt; &lt;filename&gt; ...] [--]
     Generated files have the same file name as the input file, with the extension replaced by .h
     Optional arguments:
-      &ndash;validate                   Suppress output and only validate existing hashes
-      &ndash;generate-string &lt;string&gt;   Generate hash of the given string
+      --validate                   Suppress output and only validate existing hashes
+      --generate-string &lt;string&gt;   Generate hash of the given string
       &lt;filename&gt; &lt;filename&gt; ...    Any number of input files
-      &ndash;help                       Display the help message
-      &ndash;                           Stop processing command line arguments</pre><pre></pre><h1><a class="anchor" id="uuidgen"></a>
+      --help                       Display the help message
+      --                           Stop processing command line arguments</pre><h1><a class="anchor" id="uuidgen"></a>
 uuidgen</h1>
-<pre>The uuidgen tool generates UUIDs using the uuid submodule in the library. It can generate version 1 (MAC address), 3 (MD5 hash)
-and 4 (random) UUIDs. If you run the tool without any arguments it will generate a single version 4 (random) UUID to stdout.</pre><pre><pre>uuidgen [&ndash;time n] [&ndash;random n] [&ndash;md5 &lt;namespace&gt; &lt;name&gt;] [&ndash;output &lt;filename&gt;] [&ndash;help]
+<p>The uuidgen tool generates UUIDs using the uuid submodule in the library. It can generate version 1 (MAC address), 3 (MD5 hash) and 4 (random) UUIDs. If you run the tool without any arguments it will generate a single version 4 (random) UUID to stdout.</p>
+<pre>uuidgen [--time n] [--random n] [--md5 &lt;namespace&gt; &lt;name&gt;] [--output &lt;filename&gt;] [--help]
     If no arguments are given, one random-based UUID is output to stdout
     Optional arguments:
-      &ndash;time n                     Generate n time-based UUIDs
-      &ndash;random n                   Generate n random-based UUIDs
-      &ndash;md5 &lt;namespace&gt; &lt;name&gt;     Generate a name-based UUID using the namespace UUID specified
+      --time n                     Generate n time-based UUIDs
+      --random n                   Generate n random-based UUIDs
+      --md5 &lt;namespace&gt; &lt;name&gt;     Generate a name-based UUID using the namespace UUID specified
                                    in &lt;namespace&gt; and a name string specified in &lt;name&gt;
-      &ndash;output &lt;filename&gt;          Output to &lt;filename&gt; instead of stdout
-      &ndash;binary                     Output binary data instead of ASCII (stdout is always ASCII)
-      &ndash;lowercase                  Output UUID in lowercase hex
-      &ndash;uppercase                  Output UUID in uppercase hex (default)
-      &ndash;help                       Display the help message
-      &ndash;                           Stop processing command line arguments</pre></pre><pre><pre></pre></pre><h1><a class="anchor" id="bin2hex"></a>
+      --output &lt;filename&gt;          Output to &lt;filename&gt; instead of stdout
+      --binary                     Output binary data instead of ASCII (stdout is always ASCII)
+      --lowercase                  Output UUID in lowercase hex
+      --uppercase                  Output UUID in uppercase hex (default)
+      --help                       Display the help message
+      --                           Stop processing command line arguments</pre><h1><a class="anchor" id="bin2hex"></a>
 bin2hex</h1>
-<pre><pre>The bin2hex tool converts any given input file to a string based file with each input file byte output as a hex string value,
-suitable for including as a data block in a C source file (format "0x23, 0x20, 0x46, 0x6f, ...")</pre></pre><pre><pre><pre>bin2hex usage:
-  bin2hex [&ndash;columns n] [&ndash;help] &lt;file&gt; &lt;file&gt; &lt;file&gt; &lt;...&gt; [&ndash;]
+<p>The bin2hex tool converts any given input file to a string based file with each input file byte output as a hex string value, suitable for including as a data block in a C source file (format "0x23, 0x20, 0x46, 0x6f, ...")</p>
+<pre>bin2hex usage:
+  bin2hex [--columns n] [--help] &lt;file&gt; &lt;file&gt; &lt;file&gt; &lt;...&gt; [--]
     Required arguments:
       &lt;file&gt;                       Input filename (any number of input files allowed). Output will be named "\&lt;file&gt;.hex"
     Optional arguments:
-      &ndash;columns n                  Print n bytes in each column (default is 32)
-      &ndash;help                       Display the help message
-      &ndash;                           Stop processing command line arguments</pre></pre></pre><pre><pre><pre></pre></pre></pre><h1><a class="anchor" id="plans"></a>
+      --columns n                  Print n bytes in each column (default is 32)
+      --help                       Display the help message
+      --                           Stop processing command line arguments</pre><h1><a class="anchor" id="plans"></a>
 Future plans</h1>
-<pre><pre><pre>Currently there are no plans for extra tools, but if you have a suggestion or request feel free to leave us a comment on
-our repository pages at <a href="https://github.com/rampantpixels/foundation_lib">https://github.com/rampantpixels/foundation_lib</a>
-</pre></pre></pre></div></div><!-- contents -->
+<p>Currently there are no plans for extra tools, but if you have a suggestion or request feel free to leave us a comment on our repository pages at <a href="https://github.com/rampantpixels/foundation_lib">https://github.com/rampantpixels/foundation_lib</a> </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

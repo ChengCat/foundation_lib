@@ -18,6 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
+   &#160;<span id="projectnumber">1.2.6</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -78,7 +79,7 @@ Data Fields</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Stream interface for read/write to a memory buffer. This struct is also a <a class="el" href="structstream__t.html" title="Base stream type. ">stream_t</a> (stream struct type declared at start of struct) and can be used in all functions operating on a <a class="el" href="structstream__t.html" title="Base stream type. ">stream_t</a>. The memory buffer is allocated separately from the stream buffer. </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00637">637</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00639">639</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="ae8b515cceb310a575b6c2677ba93ea7e"></a>
 <div class="memitem">
@@ -91,7 +92,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Current read/write offset </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00640">640</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00642">642</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -106,7 +107,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Current size of buffer (always less or equal than capacity) </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00641">641</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00643">643</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -121,7 +122,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Current allocated capacity of buffer </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00642">642</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00644">644</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -136,7 +137,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Memory buffer </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00643">643</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00645">645</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -151,7 +152,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>If this flag is set the memory buffer is owned internally by the stream buffer and will be deallocated together with the stream buffer. If not set, the ownership of the memory buffer is handled externally. </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00644">644</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00646">646</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -166,7 +167,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>If this flag is set (and if the memory buffer is owned by the stream buffer), the memory buffer can grow by reallocating memory if write requests increase size beyond the capacity of the memory buffer. If not set, any write requests beyond the capacity will fail. </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00645">645</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00647">647</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
