@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Foundation Library: D:/foundation_lib/foundation/log.h Source File</title>
+<title>Foundation Library: E:/projects/foundation_lib/foundation/log.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -66,145 +66,150 @@
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="platform_8h.html">foundation/platform.h</a>&gt;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="types_8h.html">foundation/types.h</a>&gt;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="error_8h.html">foundation/error.h</a>&gt;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#if BUILD_ENABLE_LOG &amp;&amp; BUILD_ENABLE_DEBUG_LOG</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<a class="code" href="log_8h.html#aaed333bc8ad10bc4754f51a170b454b3">log_debug</a>(<a class="code" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <span class="keyword">const</span> <span class="keywordtype">char</span>* msg, <span class="keywordtype">size_t</span> msg_length);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<a class="code" href="log_8h.html#a35af3c68cb49f213b37cb83963956792">log_debugf</a>(<a class="code" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <span class="keyword">const</span> <span class="keywordtype">char</span>* format, <span class="keywordtype">size_t</span> format_length, ...)</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="log_8h.html#a8d457a0a27becf07d2c39a65cf6d7122">   51</a></span>&#160;FOUNDATION_PRINTFCALL(2, 4);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#if BUILD_ENABLE_LOG</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<a class="code" href="log_8h.html#a8d457a0a27becf07d2c39a65cf6d7122">log_info</a>(<a class="code" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <span class="keyword">const</span> <span class="keywordtype">char</span>* msg, <span class="keywordtype">size_t</span> msg_length);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<a class="code" href="log_8h.html#a82a9af35a112ae2dd41715f19d672df1">log_infof</a>(<a class="code" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <span class="keyword">const</span> <span class="keywordtype">char</span>* format, <span class="keywordtype">size_t</span> format_length, ...)</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="log_8h.html#ad7a4ddca97294e3dcecf903e42573e76">   71</a></span>&#160;FOUNDATION_PRINTFCALL(2, 4);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<a class="code" href="log_8h.html#ad7a4ddca97294e3dcecf903e42573e76">log_warn</a>(<a class="code" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <a class="code" href="types_8h.html#a7320d1db6dc06a8dc2f84a7bf31dc3f9">warning_t</a> warn, const <span class="keywordtype">char</span>* msg, <span class="keywordtype">size_t</span> msg_length);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<a class="code" href="log_8h.html#aa6122992ea1c047ee406464f878eac8a">log_warnf</a>(<a class="code" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <a class="code" href="types_8h.html#a7320d1db6dc06a8dc2f84a7bf31dc3f9">warning_t</a> warn, const <span class="keywordtype">char</span>* format, <span class="keywordtype">size_t</span> format_length, ...)</div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="log_8h.html#aed9efac7ea0a9e024ade25485377c5de">   89</a></span>&#160;FOUNDATION_PRINTFCALL(3, 5);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<a class="code" href="log_8h.html#aed9efac7ea0a9e024ade25485377c5de">log_error</a>(<a class="code" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <a class="code" href="types_8h.html#ac7659d73a8cdedc08e9f566bb406689c">error_t</a> err, const <span class="keywordtype">char</span>* msg, <span class="keywordtype">size_t</span> msg_length);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<a class="code" href="log_8h.html#aa6124c546daf6a7dc6b61f31d30104e3">log_errorf</a>(<a class="code" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <a class="code" href="types_8h.html#ac7659d73a8cdedc08e9f566bb406689c">error_t</a> err, const <span class="keywordtype">char</span>* format, <span class="keywordtype">size_t</span> format_length, ...)</div>
-<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="log_8h.html#a4a698a18c9005ac5cd67b8ed2db3a254">  109</a></span>&#160;FOUNDATION_PRINTFCALL(3, 5);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<a class="code" href="log_8h.html#a4a698a18c9005ac5cd67b8ed2db3a254">log_panic</a>(<a class="code" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <a class="code" href="types_8h.html#ac7659d73a8cdedc08e9f566bb406689c">error_t</a> err, const <span class="keywordtype">char</span>* msg, <span class="keywordtype">size_t</span> msg_length);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<a class="code" href="log_8h.html#aab4c61aad74bef349d39361881c3aed1">log_panicf</a>(<a class="code" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <a class="code" href="types_8h.html#ac7659d73a8cdedc08e9f566bb406689c">error_t</a> err, const <span class="keywordtype">char</span>* format, <span class="keywordtype">size_t</span> format_length, ...)</div>
-<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="log_8h.html#a33568b64bdc89b29939e51c0bbab3ed0">  128</a></span>&#160;FOUNDATION_PRINTFCALL(3, 5);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<a class="code" href="log_8h.html#a33568b64bdc89b29939e51c0bbab3ed0">log_error_context</a>(<a class="code" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <a class="code" href="types_8h.html#aedc3ffc6b8ac675156f7e759316a2bac">error_level_t</a> error_level);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="types_8h.html#a3fdd24f89156fecea03f4851dab04335">log_callback_fn</a></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<a class="code" href="log_8h.html#aca54496b1009ba213fce35503a9db26e">log_callback</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<a class="code" href="log_8h.html#ab25911c4486e6bcf9b2c87284771f457">log_set_callback</a>(<a class="code" href="types_8h.html#a3fdd24f89156fecea03f4851dab04335">log_callback_fn</a> callback);</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<a class="code" href="log_8h.html#ada726ef64538948a05724b45be331fb0">log_enable_stdout</a>(<span class="keywordtype">bool</span> enable);</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<a class="code" href="log_8h.html#a632a676473c934a8a951ca921ddee201">log_enable_prefix</a>(<span class="keywordtype">bool</span> enable);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<a class="code" href="log_8h.html#ab37bf21b856c63663e824a267f403972">log_set_suppress</a>(<a class="code" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <a class="code" href="types_8h.html#aedc3ffc6b8ac675156f7e759316a2bac">error_level_t</a> level);</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="types_8h.html#aedc3ffc6b8ac675156f7e759316a2bac">error_level_t</a></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<a class="code" href="log_8h.html#a8ef23c96ff059aa812b32d999f9f545e">log_suppress</a>(<a class="code" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context);</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<a class="code" href="log_8h.html#af42450c9b3a17235d60bbb694ac64a38">log_suppress_clear</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="platform_8h.html">foundation/platform.h</a>&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="types_8h.html">foundation/types.h</a>&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="error_8h.html">foundation/error.h</a>&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#if BUILD_ENABLE_LOG &amp;&amp; BUILD_ENABLE_DEBUG_LOG</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<a class="code" href="log_8h.html#aaed333bc8ad10bc4754f51a170b454b3">log_debug</a>(<a class="code" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <span class="keyword">const</span> <span class="keywordtype">char</span>* msg, <span class="keywordtype">size_t</span> msg_length);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<a class="code" href="log_8h.html#a35af3c68cb49f213b37cb83963956792">log_debugf</a>(<a class="code" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <span class="keyword">const</span> <span class="keywordtype">char</span>* format, <span class="keywordtype">size_t</span> format_length, ...)</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="log_8h.html#a8d457a0a27becf07d2c39a65cf6d7122">   50</a></span>&#160;FOUNDATION_PRINTFCALL(2, 4);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#if BUILD_ENABLE_LOG</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<a class="code" href="log_8h.html#a8d457a0a27becf07d2c39a65cf6d7122">log_info</a>(<a class="code" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <span class="keyword">const</span> <span class="keywordtype">char</span>* msg, <span class="keywordtype">size_t</span> msg_length);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<a class="code" href="log_8h.html#a82a9af35a112ae2dd41715f19d672df1">log_infof</a>(<a class="code" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <span class="keyword">const</span> <span class="keywordtype">char</span>* format, <span class="keywordtype">size_t</span> format_length, ...)</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="log_8h.html#ad7a4ddca97294e3dcecf903e42573e76">   70</a></span>&#160;FOUNDATION_PRINTFCALL(2, 4);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<a class="code" href="log_8h.html#ad7a4ddca97294e3dcecf903e42573e76">log_warn</a>(<a class="code" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <a class="code" href="types_8h.html#a7320d1db6dc06a8dc2f84a7bf31dc3f9">warning_t</a> warn, const <span class="keywordtype">char</span>* msg, <span class="keywordtype">size_t</span> msg_length);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<a class="code" href="log_8h.html#aa6122992ea1c047ee406464f878eac8a">log_warnf</a>(<a class="code" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <a class="code" href="types_8h.html#a7320d1db6dc06a8dc2f84a7bf31dc3f9">warning_t</a> warn, const <span class="keywordtype">char</span>* format, <span class="keywordtype">size_t</span> format_length, ...)</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="log_8h.html#aed9efac7ea0a9e024ade25485377c5de">   88</a></span>&#160;FOUNDATION_PRINTFCALL(3, 5);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<a class="code" href="log_8h.html#aed9efac7ea0a9e024ade25485377c5de">log_error</a>(<a class="code" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <a class="code" href="types_8h.html#ac7659d73a8cdedc08e9f566bb406689c">error_t</a> err, const <span class="keywordtype">char</span>* msg, <span class="keywordtype">size_t</span> msg_length);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<a class="code" href="log_8h.html#aa6124c546daf6a7dc6b61f31d30104e3">log_errorf</a>(<a class="code" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <a class="code" href="types_8h.html#ac7659d73a8cdedc08e9f566bb406689c">error_t</a> err, const <span class="keywordtype">char</span>* format, <span class="keywordtype">size_t</span> format_length, ...)</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="log_8h.html#a4a698a18c9005ac5cd67b8ed2db3a254">  108</a></span>&#160;FOUNDATION_PRINTFCALL(3, 5);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<a class="code" href="log_8h.html#a4a698a18c9005ac5cd67b8ed2db3a254">log_panic</a>(<a class="code" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <a class="code" href="types_8h.html#ac7659d73a8cdedc08e9f566bb406689c">error_t</a> err, const <span class="keywordtype">char</span>* msg, <span class="keywordtype">size_t</span> msg_length);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<a class="code" href="log_8h.html#aab4c61aad74bef349d39361881c3aed1">log_panicf</a>(<a class="code" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <a class="code" href="types_8h.html#ac7659d73a8cdedc08e9f566bb406689c">error_t</a> err, const <span class="keywordtype">char</span>* format, <span class="keywordtype">size_t</span> format_length, ...)</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="log_8h.html#a33568b64bdc89b29939e51c0bbab3ed0">  127</a></span>&#160;FOUNDATION_PRINTFCALL(3, 5);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<a class="code" href="log_8h.html#a33568b64bdc89b29939e51c0bbab3ed0">log_error_context</a>(<a class="code" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <a class="code" href="types_8h.html#aedc3ffc6b8ac675156f7e759316a2bac">error_level_t</a> error_level);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="types_8h.html#aac0ba2e2202efb06a4901f982864dc0f">log_handler_fn</a></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<a class="code" href="log_8h.html#ad32495a84fc8c09774c87fe5ad583c87">log_handler</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<a class="code" href="log_8h.html#a8c59ca56b111b649626dd8db2235c9e4">log_set_handler</a>(<a class="code" href="types_8h.html#aac0ba2e2202efb06a4901f982864dc0f">log_handler_fn</a> handler);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<a class="code" href="log_8h.html#ada726ef64538948a05724b45be331fb0">log_enable_stdout</a>(<span class="keywordtype">bool</span> enable);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<a class="code" href="log_8h.html#a7b1a04315ba0da9d89a1e6b2cc9600fb">log_stdout</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<a class="code" href="log_8h.html#a632a676473c934a8a951ca921ddee201">log_enable_prefix</a>(<span class="keywordtype">bool</span> enable);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<a class="code" href="log_8h.html#ab37bf21b856c63663e824a267f403972">log_set_suppress</a>(<a class="code" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <a class="code" href="types_8h.html#aedc3ffc6b8ac675156f7e759316a2bac">error_level_t</a> level);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="types_8h.html#aedc3ffc6b8ac675156f7e759316a2bac">error_level_t</a></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<a class="code" href="log_8h.html#a8ef23c96ff059aa812b32d999f9f545e">log_suppress</a>(<a class="code" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context);</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="preprocessor">#if !BUILD_ENABLE_LOG || !BUILD_ENABLE_DEBUG_LOG</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<a class="code" href="log_8h.html#af42450c9b3a17235d60bbb694ac64a38">log_suppress_clear</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor">#define log_debug_( ... ) do { FOUNDATION_UNUSED_VARARGS( __VA_ARGS__ ); } while(0)</span></div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor">#define log_debug( ... ) log_debug_( __VA_ARGS__ )</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="preprocessor">#define log_debugf_( ... ) do { FOUNDATION_UNUSED_VARARGS(__VA_ARGS__); } while(0)</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="preprocessor">#define log_debugf( ... ) log_debugf_( __VA_ARGS__ )</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="preprocessor">#if !BUILD_ENABLE_LOG</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="preprocessor">#if !BUILD_ENABLE_LOG || !BUILD_ENABLE_DEBUG_LOG</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="preprocessor">#define log_debug_( ... ) do { FOUNDATION_UNUSED_VARARGS(__VA_ARGS__); } while(0)</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor">#define log_debug( ... ) log_debug_(__VA_ARGS__)</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="preprocessor">#define log_debugf_( ... ) do { FOUNDATION_UNUSED_VARARGS(__VA_ARGS__); } while(0)</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="preprocessor">#define log_debugf( ... ) log_debugf_(__VA_ARGS__)</span></div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor">#define log_info_( ... ) do { FOUNDATION_UNUSED_VARARGS( __VA_ARGS__ ); } while(0)</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor">#define log_info( ... ) log_info_( __VA_ARGS__ )</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor">#define log_infof_( ... ) do { FOUNDATION_UNUSED_VARARGS( __VA_ARGS__ ); } while(0)</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="preprocessor">#define log_infof( ... ) log_infof_( __VA_ARGS__ )</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="preprocessor">#define log_warn_( ... ) do { FOUNDATION_UNUSED_VARARGS( __VA_ARGS__ ); } while(0)</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="preprocessor">#define log_warn( ... ) log_warn_( __VA_ARGS__ )</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor">#define log_warnf_( ... ) do { FOUNDATION_UNUSED_VARARGS( __VA_ARGS__ ); } while(0)</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor">#define log_warnf( ... ) log_warnf_( __VA_ARGS__ )</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor">#define log_error_( ... ) do { error_report(ERRORLEVEL_ERROR, FOUNDATION_PREPROCESSOR_ELEM(1, __VA_ARGS__)); FOUNDATION_UNUSED_VARARGS( __VA_ARGS__ ); } while(0)</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor">#define log_error( ... ) log_error_( __VA_ARGS__ )</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor">#define log_errorf_( ... ) do { error_report(ERRORLEVEL_ERROR, FOUNDATION_PREPROCESSOR_ELEM(1, __VA_ARGS__)); FOUNDATION_UNUSED_VARARGS( __VA_ARGS__ ); } while(0)</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor">#define log_errorf( ... ) log_errorf_( __VA_ARGS__ )</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="preprocessor">#define log_panic_( ... ) do { error_report(ERRORLEVEL_PANIC, FOUNDATION_PREPROCESSOR_ELEM(1, __VA_ARGS__)); FOUNDATION_UNUSED_VARARGS( __VA_ARGS__ ); } while(0)</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="preprocessor">#define log_panic( ... ) log_panic_( __VA_ARGS__ )</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="preprocessor">#define log_panicf_( ... ) do { error_report(ERRORLEVEL_PANIC, FOUNDATION_PREPROCESSOR_ELEM(1, __VA_ARGS__)); FOUNDATION_UNUSED_VARARGS( __VA_ARGS__ ); } while(0)</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="preprocessor">#define log_panicf( ... ) log_panicf_( __VA_ARGS__ )</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="preprocessor">#define log_error_context( ... ) do { FOUNDATION_UNUSED_VARARGS( __VA_ARGS__ ); } while(0)</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="preprocessor">#define log_callback() do {} while(0)</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="preprocessor">#define log_set_callback( ... ) do { FOUNDATION_UNUSED_VARARGS( __VA_ARGS__ ); } while(0)</span></div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="preprocessor">#define log_enable_stdout( ... ) do { FOUNDATION_UNUSED_VARARGS( __VA_ARGS__ ); } while(0)</span></div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="preprocessor">#define log_enable_prefix( ... ) do { FOUNDATION_UNUSED_VARARGS( __VA_ARGS__ ); } while(0)</span></div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="preprocessor">#define log_set_suppress( ... ) do { FOUNDATION_UNUSED_VARARGS( __VA_ARGS__ ); } while(0)</span></div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="preprocessor">#define log_suppress( ... ) do { FOUNDATION_UNUSED_VARARGS( __VA_ARGS__ ); } while(0)</span></div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="preprocessor">#define log_suppress_clear() do {} while(0)</span></div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor">#if !BUILD_ENABLE_LOG</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="preprocessor">#define log_info_( ... ) do { FOUNDATION_UNUSED_VARARGS(__VA_ARGS__); } while(0)</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="preprocessor">#define log_info( ... ) log_info_(__VA_ARGS__)</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="preprocessor">#define log_infof_( ... ) do { FOUNDATION_UNUSED_VARARGS(__VA_ARGS__); } while(0)</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor">#define log_infof( ... ) log_infof_(__VA_ARGS__)</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="preprocessor">#define log_warn_( ... ) do { FOUNDATION_UNUSED_VARARGS(__VA_ARGS__); } while(0)</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor">#define log_warn( ... ) log_warn_(__VA_ARGS__)</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor">#define log_warnf_( ... ) do { FOUNDATION_UNUSED_VARARGS(__VA_ARGS__); } while(0)</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor">#define log_warnf( ... ) log_warnf_(__VA_ARGS__)</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor">#define log_error_( ... ) do { error_report(ERRORLEVEL_ERROR, FOUNDATION_PREPROCESSOR_ELEM(1, __VA_ARGS__)); FOUNDATION_UNUSED_VARARGS(__VA_ARGS__); } while(0)</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="preprocessor">#define log_error( ... ) log_error_(__VA_ARGS__)</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="preprocessor">#define log_errorf_( ... ) do { error_report(ERRORLEVEL_ERROR, FOUNDATION_PREPROCESSOR_ELEM(1, __VA_ARGS__)); FOUNDATION_UNUSED_VARARGS(__VA_ARGS__); } while(0)</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="preprocessor">#define log_errorf( ... ) log_errorf_(__VA_ARGS__)</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="preprocessor">#define log_panic_( ... ) do { error_report(ERRORLEVEL_PANIC, FOUNDATION_PREPROCESSOR_ELEM(1, __VA_ARGS__)); FOUNDATION_UNUSED_VARARGS(__VA_ARGS__); } while(0)</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="preprocessor">#define log_panic( ... ) log_panic_(__VA_ARGS__)</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="preprocessor">#define log_panicf_( ... ) do { error_report(ERRORLEVEL_PANIC, FOUNDATION_PREPROCESSOR_ELEM(1, __VA_ARGS__)); FOUNDATION_UNUSED_VARARGS(__VA_ARGS__); } while(0)</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="preprocessor">#define log_panicf( ... ) log_panicf_(__VA_ARGS__)</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="preprocessor">#define log_error_context(context, level) do { FOUNDATION_UNUSED(context); FOUNDATION_UNUSED(level); } while(0)</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="preprocessor">#define log_handler() 0</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="preprocessor">#define log_set_handler(...) do { FOUNDATION_UNUSED_VARARGS(__VA_ARGS__); } while(0)</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="preprocessor">#define log_enable_stdout(enable) do { FOUNDATION_UNUSED(enable); } while(0)</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="preprocessor">#define log_stdout() false</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="preprocessor">#define log_enable_prefix(enable) do { FOUNDATION_UNUSED(enable); } while(0)</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor">#define log_set_suppress(context, level) do { FOUNDATION_UNUSED(context); FOUNDATION_UNUSED(level); } while(0)</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="preprocessor">#define log_suppress(context) ERRORLEVEL_NONE</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="preprocessor">#define log_suppress_clear() do {} while(0)</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="types_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">Foundation data types. </div></div>
+<div class="ttc" id="log_8h_html_a7b1a04315ba0da9d89a1e6b2cc9600fb"><div class="ttname"><a href="log_8h.html#a7b1a04315ba0da9d89a1e6b2cc9600fb">log_stdout</a></div><div class="ttdeci">FOUNDATION_API bool log_stdout(void)</div></div>
 <div class="ttc" id="log_8h_html_aaed333bc8ad10bc4754f51a170b454b3"><div class="ttname"><a href="log_8h.html#aaed333bc8ad10bc4754f51a170b454b3">log_debug</a></div><div class="ttdeci">FOUNDATION_API void log_debug(hash_t context, const char *msg, size_t msg_length)</div></div>
 <div class="ttc" id="log_8h_html_a82a9af35a112ae2dd41715f19d672df1"><div class="ttname"><a href="log_8h.html#a82a9af35a112ae2dd41715f19d672df1">log_infof</a></div><div class="ttdeci">FOUNDATION_API void log_infof(hash_t context, const char *format, size_t format_length,...) FOUNDATION_PRINTFCALL(2</div></div>
-<div class="ttc" id="types_8h_html_afc91d3cceff94258bb6566969046caa5"><div class="ttname"><a href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a></div><div class="ttdeci">uint64_t hash_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00393">types.h:393</a></div></div>
+<div class="ttc" id="types_8h_html_afc91d3cceff94258bb6566969046caa5"><div class="ttname"><a href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a></div><div class="ttdeci">uint64_t hash_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00413">types.h:413</a></div></div>
 <div class="ttc" id="types_8h_html_ac7659d73a8cdedc08e9f566bb406689c"><div class="ttname"><a href="types_8h.html#ac7659d73a8cdedc08e9f566bb406689c">error_t</a></div><div class="ttdeci">error_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00061">types.h:61</a></div></div>
 <div class="ttc" id="types_8h_html_aedc3ffc6b8ac675156f7e759316a2bac"><div class="ttname"><a href="types_8h.html#aedc3ffc6b8ac675156f7e759316a2bac">error_level_t</a></div><div class="ttdeci">error_level_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00039">types.h:39</a></div></div>
 <div class="ttc" id="platform_8h_html"><div class="ttname"><a href="platform_8h.html">platform.h</a></div><div class="ttdoc">Platform abstractions. </div></div>
-<div class="ttc" id="log_8h_html_aed9efac7ea0a9e024ade25485377c5de"><div class="ttname"><a href="log_8h.html#aed9efac7ea0a9e024ade25485377c5de">log_error</a></div><div class="ttdeci">FOUNDATION_API void log_error(hash_t context, error_t err, const char *msg, size_t msg_length)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00089">log.h:89</a></div></div>
-<div class="ttc" id="log_8h_html_a8d457a0a27becf07d2c39a65cf6d7122"><div class="ttname"><a href="log_8h.html#a8d457a0a27becf07d2c39a65cf6d7122">log_info</a></div><div class="ttdeci">FOUNDATION_API void log_info(hash_t context, const char *msg, size_t msg_length)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00051">log.h:51</a></div></div>
+<div class="ttc" id="log_8h_html_aed9efac7ea0a9e024ade25485377c5de"><div class="ttname"><a href="log_8h.html#aed9efac7ea0a9e024ade25485377c5de">log_error</a></div><div class="ttdeci">FOUNDATION_API void log_error(hash_t context, error_t err, const char *msg, size_t msg_length)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00088">log.h:88</a></div></div>
+<div class="ttc" id="log_8h_html_a8d457a0a27becf07d2c39a65cf6d7122"><div class="ttname"><a href="log_8h.html#a8d457a0a27becf07d2c39a65cf6d7122">log_info</a></div><div class="ttdeci">FOUNDATION_API void log_info(hash_t context, const char *msg, size_t msg_length)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00050">log.h:50</a></div></div>
 <div class="ttc" id="log_8h_html_ada726ef64538948a05724b45be331fb0"><div class="ttname"><a href="log_8h.html#ada726ef64538948a05724b45be331fb0">log_enable_stdout</a></div><div class="ttdeci">FOUNDATION_API void log_enable_stdout(bool enable)</div></div>
 <div class="ttc" id="log_8h_html_aab4c61aad74bef349d39361881c3aed1"><div class="ttname"><a href="log_8h.html#aab4c61aad74bef349d39361881c3aed1">log_panicf</a></div><div class="ttdeci">FOUNDATION_API void log_panicf(hash_t context, error_t err, const char *format, size_t format_length,...) FOUNDATION_PRINTFCALL(3</div></div>
 <div class="ttc" id="error_8h_html"><div class="ttname"><a href="error_8h.html">error.h</a></div><div class="ttdoc">Error context and reporting. </div></div>
+<div class="ttc" id="log_8h_html_a8c59ca56b111b649626dd8db2235c9e4"><div class="ttname"><a href="log_8h.html#a8c59ca56b111b649626dd8db2235c9e4">log_set_handler</a></div><div class="ttdeci">FOUNDATION_API void log_set_handler(log_handler_fn handler)</div></div>
 <div class="ttc" id="log_8h_html_aa6124c546daf6a7dc6b61f31d30104e3"><div class="ttname"><a href="log_8h.html#aa6124c546daf6a7dc6b61f31d30104e3">log_errorf</a></div><div class="ttdeci">FOUNDATION_API void log_errorf(hash_t context, error_t err, const char *format, size_t format_length,...) FOUNDATION_PRINTFCALL(3</div></div>
 <div class="ttc" id="log_8h_html_a35af3c68cb49f213b37cb83963956792"><div class="ttname"><a href="log_8h.html#a35af3c68cb49f213b37cb83963956792">log_debugf</a></div><div class="ttdeci">FOUNDATION_API void log_debugf(hash_t context, const char *format, size_t format_length,...) FOUNDATION_PRINTFCALL(2</div></div>
 <div class="ttc" id="log_8h_html_aa6122992ea1c047ee406464f878eac8a"><div class="ttname"><a href="log_8h.html#aa6122992ea1c047ee406464f878eac8a">log_warnf</a></div><div class="ttdeci">FOUNDATION_API void log_warnf(hash_t context, warning_t warn, const char *format, size_t format_length,...) FOUNDATION_PRINTFCALL(3</div></div>
 <div class="ttc" id="log_8h_html_af42450c9b3a17235d60bbb694ac64a38"><div class="ttname"><a href="log_8h.html#af42450c9b3a17235d60bbb694ac64a38">log_suppress_clear</a></div><div class="ttdeci">FOUNDATION_API void log_suppress_clear(void)</div></div>
 <div class="ttc" id="log_8h_html_a632a676473c934a8a951ca921ddee201"><div class="ttname"><a href="log_8h.html#a632a676473c934a8a951ca921ddee201">log_enable_prefix</a></div><div class="ttdeci">FOUNDATION_API void log_enable_prefix(bool enable)</div></div>
-<div class="ttc" id="log_8h_html_a4a698a18c9005ac5cd67b8ed2db3a254"><div class="ttname"><a href="log_8h.html#a4a698a18c9005ac5cd67b8ed2db3a254">log_panic</a></div><div class="ttdeci">FOUNDATION_API void log_panic(hash_t context, error_t err, const char *msg, size_t msg_length)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00109">log.h:109</a></div></div>
+<div class="ttc" id="log_8h_html_a4a698a18c9005ac5cd67b8ed2db3a254"><div class="ttname"><a href="log_8h.html#a4a698a18c9005ac5cd67b8ed2db3a254">log_panic</a></div><div class="ttdeci">FOUNDATION_API void log_panic(hash_t context, error_t err, const char *msg, size_t msg_length)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00108">log.h:108</a></div></div>
 <div class="ttc" id="types_8h_html_a7320d1db6dc06a8dc2f84a7bf31dc3f9"><div class="ttname"><a href="types_8h.html#a7320d1db6dc06a8dc2f84a7bf31dc3f9">warning_t</a></div><div class="ttdeci">warning_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00101">types.h:101</a></div></div>
-<div class="ttc" id="log_8h_html_ab25911c4486e6bcf9b2c87284771f457"><div class="ttname"><a href="log_8h.html#ab25911c4486e6bcf9b2c87284771f457">log_set_callback</a></div><div class="ttdeci">FOUNDATION_API void log_set_callback(log_callback_fn callback)</div></div>
-<div class="ttc" id="log_8h_html_ad7a4ddca97294e3dcecf903e42573e76"><div class="ttname"><a href="log_8h.html#ad7a4ddca97294e3dcecf903e42573e76">log_warn</a></div><div class="ttdeci">FOUNDATION_API void log_warn(hash_t context, warning_t warn, const char *msg, size_t msg_length)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00071">log.h:71</a></div></div>
+<div class="ttc" id="log_8h_html_ad7a4ddca97294e3dcecf903e42573e76"><div class="ttname"><a href="log_8h.html#ad7a4ddca97294e3dcecf903e42573e76">log_warn</a></div><div class="ttdeci">FOUNDATION_API void log_warn(hash_t context, warning_t warn, const char *msg, size_t msg_length)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00070">log.h:70</a></div></div>
 <div class="ttc" id="log_8h_html_a8ef23c96ff059aa812b32d999f9f545e"><div class="ttname"><a href="log_8h.html#a8ef23c96ff059aa812b32d999f9f545e">log_suppress</a></div><div class="ttdeci">FOUNDATION_API error_level_t log_suppress(hash_t context)</div></div>
-<div class="ttc" id="types_8h_html_a3fdd24f89156fecea03f4851dab04335"><div class="ttname"><a href="types_8h.html#a3fdd24f89156fecea03f4851dab04335">log_callback_fn</a></div><div class="ttdeci">void(* log_callback_fn)(hash_t context, error_level_t severity, const char *msg, size_t length)</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00572">types.h:572</a></div></div>
 <div class="ttc" id="platform_8h_html_ab5d798081ff1e38fc8d86a56b852da8e"><div class="ttname"><a href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a></div><div class="ttdeci">#define FOUNDATION_API</div></div>
 <div class="ttc" id="log_8h_html_ab37bf21b856c63663e824a267f403972"><div class="ttname"><a href="log_8h.html#ab37bf21b856c63663e824a267f403972">log_set_suppress</a></div><div class="ttdeci">FOUNDATION_API void log_set_suppress(hash_t context, error_level_t level)</div></div>
-<div class="ttc" id="log_8h_html_aca54496b1009ba213fce35503a9db26e"><div class="ttname"><a href="log_8h.html#aca54496b1009ba213fce35503a9db26e">log_callback</a></div><div class="ttdeci">FOUNDATION_API log_callback_fn log_callback(void)</div></div>
-<div class="ttc" id="log_8h_html_a33568b64bdc89b29939e51c0bbab3ed0"><div class="ttname"><a href="log_8h.html#a33568b64bdc89b29939e51c0bbab3ed0">log_error_context</a></div><div class="ttdeci">FOUNDATION_API void log_error_context(hash_t context, error_level_t error_level)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00128">log.h:128</a></div></div>
+<div class="ttc" id="log_8h_html_ad32495a84fc8c09774c87fe5ad583c87"><div class="ttname"><a href="log_8h.html#ad32495a84fc8c09774c87fe5ad583c87">log_handler</a></div><div class="ttdeci">FOUNDATION_API log_handler_fn log_handler(void)</div></div>
+<div class="ttc" id="types_8h_html_aac0ba2e2202efb06a4901f982864dc0f"><div class="ttname"><a href="types_8h.html#aac0ba2e2202efb06a4901f982864dc0f">log_handler_fn</a></div><div class="ttdeci">void(* log_handler_fn)(hash_t context, error_level_t severity, const char *msg, size_t length)</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00604">types.h:604</a></div></div>
+<div class="ttc" id="log_8h_html_a33568b64bdc89b29939e51c0bbab3ed0"><div class="ttname"><a href="log_8h.html#a33568b64bdc89b29939e51c0bbab3ed0">log_error_context</a></div><div class="ttdeci">FOUNDATION_API void log_error_context(hash_t context, error_level_t error_level)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00127">log.h:127</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

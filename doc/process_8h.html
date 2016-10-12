@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Foundation Library: D:/foundation_lib/foundation/process.h File Reference</title>
+<title>Foundation Library: E:/projects/foundation_lib/foundation/process.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -85,6 +85,8 @@ Functions</h2></td></tr>
 <tr class="separator:ab9e15fb11f0e85b484ea1431ad943eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcb3f0bc56feff4799526db29381177c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="structstream__t.html">stream_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8h.html#adcb3f0bc56feff4799526db29381177c">process_stdout</a> (<a class="el" href="structprocess__t.html">process_t</a> *proc)</td></tr>
 <tr class="separator:adcb3f0bc56feff4799526db29381177c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20380e9fdf4a10792bf87c2d32459533"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="structstream__t.html">stream_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8h.html#a20380e9fdf4a10792bf87c2d32459533">process_stderr</a> (<a class="el" href="structprocess__t.html">process_t</a> *proc)</td></tr>
+<tr class="separator:a20380e9fdf4a10792bf87c2d32459533"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fcdb065724f7eb0a5f4f6d325d23e99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="structstream__t.html">stream_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8h.html#a6fcdb065724f7eb0a5f4f6d325d23e99">process_stdin</a> (<a class="el" href="structprocess__t.html">process_t</a> *proc)</td></tr>
 <tr class="separator:a6fcdb065724f7eb0a5f4f6d325d23e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf020511570600d34c85d75ba0ebb63d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="process_8h.html#acf020511570600d34c85d75ba0ebb63d">process_wait</a> (<a class="el" href="structprocess__t.html">process_t</a> *proc)</td></tr>
@@ -436,6 +438,29 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Get pipe to read stdout from process (read-only stream). Only available if the <a class="el" href="types_8h.html#a37e7f0143c7c3d32947631567cc8d61f">PROCESS_STDSTREAMS</a> flag was set prior to spawning the process. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">proc</td><td>Process object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Stdout pipe </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a20380e9fdf4a10792bf87c2d32459533"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="structstream__t.html">stream_t</a>* process_stderr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structprocess__t.html">process_t</a> *&#160;</td>
+          <td class="paramname"><em>proc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get pipe to read stderr from process (read-only stream). Only available if the <a class="el" href="types_8h.html#a37e7f0143c7c3d32947631567cc8d61f">PROCESS_STDSTREAMS</a> flag was set prior to spawning the process. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">proc</td><td>Process object </td></tr>
   </table>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Foundation Library: D:/foundation_lib/foundation/stream.h File Reference</title>
+<title>Foundation Library: E:/projects/foundation_lib/foundation/stream.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -65,6 +65,8 @@ Functions</h2></td></tr>
 <tr class="separator:a1ad77f79f3d954f24ec765bcc5b3f922"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ce844fecc12507227e8aba856a7dc71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="structstream__t.html">stream_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a1ce844fecc12507227e8aba856a7dc71">stream_clone</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream)</td></tr>
 <tr class="separator:a1ce844fecc12507227e8aba856a7dc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb48eec6cfc41b8884a96beb859e7545"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#adb48eec6cfc41b8884a96beb859e7545">stream_copy</a> (<a class="el" href="structstream__t.html">stream_t</a> *source, <a class="el" href="structstream__t.html">stream_t</a> *destination)</td></tr>
+<tr class="separator:adb48eec6cfc41b8884a96beb859e7545"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bafb2ac3548a0989de4880485802a04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a1bafb2ac3548a0989de4880485802a04">stream_deallocate</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream)</td></tr>
 <tr class="separator:a1bafb2ac3548a0989de4880485802a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2799b1b63ab0cccf79d82fd4b1f32cf1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a2799b1b63ab0cccf79d82fd4b1f32cf1">stream_initialize</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream, <a class="el" href="types_8h.html#ac86c1d61ecdc0e94d0729a997f6faed7">byteorder_t</a> order)</td></tr>
@@ -125,6 +127,14 @@ Functions</h2></td></tr>
 <tr class="separator:a5f939326f68ba944dd6f363c40c829a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a166ae466a1d2673d75dfeff04feb91ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a166ae466a1d2673d75dfeff04feb91ca">stream_read_uint64</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream)</td></tr>
 <tr class="separator:a166ae466a1d2673d75dfeff04feb91ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ecb1b245b56d5d383ce7d039870d24c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="structuint128__t.html">uint128_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a4ecb1b245b56d5d383ce7d039870d24c">stream_read_uint128</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream)</td></tr>
+<tr class="separator:a4ecb1b245b56d5d383ce7d039870d24c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa638358ce489a28c4b34fb0d5c2de238"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="structuint256__t.html">uint256_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#aa638358ce489a28c4b34fb0d5c2de238">stream_read_uint256</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream)</td></tr>
+<tr class="separator:aa638358ce489a28c4b34fb0d5c2de238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a349c7d6151aaff605fc3b0fd0679f436"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> uint512_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a349c7d6151aaff605fc3b0fd0679f436">stream_read_uint512</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream)</td></tr>
+<tr class="separator:a349c7d6151aaff605fc3b0fd0679f436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a623743e2e2ed15206de2fd99ba5c635a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="types_8h.html#a884f5fdd09e6a7e8fa14cc2864b1ec42">uuid_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a623743e2e2ed15206de2fd99ba5c635a">stream_read_uuid</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream)</td></tr>
+<tr class="separator:a623743e2e2ed15206de2fd99ba5c635a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f1261fab9db7cc280bcb721734422f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="platform_8h.html#a80dc9595c3622306ecabb5a1cbededaa">float32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a8f1261fab9db7cc280bcb721734422f5">stream_read_float32</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream)</td></tr>
 <tr class="separator:a8f1261fab9db7cc280bcb721734422f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa9a01aee7ceeeb60f138a89f5195602"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="platform_8h.html#ad5fa85b5864be8871e67f864cdb7e8d7">float64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#afa9a01aee7ceeeb60f138a89f5195602">stream_read_float64</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream)</td></tr>
@@ -133,6 +143,8 @@ Functions</h2></td></tr>
 <tr class="separator:a95c4e3ffbb74f0d74eb2fc12e16f6fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57cdf625615518ce426e2709d28171f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="structstring__t.html">string_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a57cdf625615518ce426e2709d28171f4">stream_read_string_buffer</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream, char *buffer, size_t capacity)</td></tr>
 <tr class="separator:a57cdf625615518ce426e2709d28171f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5acd138d4140fa763060d99bae6c6b89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a5acd138d4140fa763060d99bae6c6b89">stream_skip_whitespace</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream)</td></tr>
+<tr class="separator:a5acd138d4140fa763060d99bae6c6b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6b055cf27706ed54bb16bfc9271ede9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#ac6b055cf27706ed54bb16bfc9271ede9">stream_write</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream, const void *buffer, size_t num_bytes)</td></tr>
 <tr class="separator:ac6b055cf27706ed54bb16bfc9271ede9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a8ca3f69c0b1c9912289175fb21c612"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a5a8ca3f69c0b1c9912289175fb21c612">stream_write_bool</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream, bool data)</td></tr>
@@ -153,12 +165,22 @@ Functions</h2></td></tr>
 <tr class="separator:ae4d6b9afcee108913ef080179b04a75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac94acf1c5be42c56bced1cf71b7ec0a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#ac94acf1c5be42c56bced1cf71b7ec0a0">stream_write_uint64</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream, uint64_t data)</td></tr>
 <tr class="separator:ac94acf1c5be42c56bced1cf71b7ec0a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58257e46ae48e068e5c91cf454536220"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a58257e46ae48e068e5c91cf454536220">stream_write_uint128</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream, <a class="el" href="structuint128__t.html">uint128_t</a> data)</td></tr>
+<tr class="separator:a58257e46ae48e068e5c91cf454536220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca329f7488fb3676bac66447d2fc496d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#aca329f7488fb3676bac66447d2fc496d">stream_write_uint256</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream, <a class="el" href="structuint256__t.html">uint256_t</a> data)</td></tr>
+<tr class="separator:aca329f7488fb3676bac66447d2fc496d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0852e707b6c3d154fb8bde105006a9e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a0852e707b6c3d154fb8bde105006a9e5">stream_write_uint512</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream, uint512_t data)</td></tr>
+<tr class="separator:a0852e707b6c3d154fb8bde105006a9e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3d68a9ed01e9b404cae8d0ea04ebd10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#ab3d68a9ed01e9b404cae8d0ea04ebd10">stream_write_uuid</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream, <a class="el" href="types_8h.html#a884f5fdd09e6a7e8fa14cc2864b1ec42">uuid_t</a> data)</td></tr>
+<tr class="separator:ab3d68a9ed01e9b404cae8d0ea04ebd10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c4323d0a452ab598f8c74ff9d568025"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a0c4323d0a452ab598f8c74ff9d568025">stream_write_float32</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream, <a class="el" href="platform_8h.html#a80dc9595c3622306ecabb5a1cbededaa">float32_t</a> data)</td></tr>
 <tr class="separator:a0c4323d0a452ab598f8c74ff9d568025"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a177b2f242a6814af2c0844b92879f864"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a177b2f242a6814af2c0844b92879f864">stream_write_float64</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream, <a class="el" href="platform_8h.html#ad5fa85b5864be8871e67f864cdb7e8d7">float64_t</a> data)</td></tr>
 <tr class="separator:a177b2f242a6814af2c0844b92879f864"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a827f50ab41647dabd869d4c52a813bcf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a827f50ab41647dabd869d4c52a813bcf">stream_write_string</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream, const char *data, size_t length)</td></tr>
 <tr class="separator:a827f50ab41647dabd869d4c52a813bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cf7df7a136f9d1a2039281820ef1a1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a8cf7df7a136f9d1a2039281820ef1a1e">stream_write_separator</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream)</td></tr>
+<tr class="separator:a8cf7df7a136f9d1a2039281820ef1a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cf445a345db9acedfbf8792e8e64408"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a9cf445a345db9acedfbf8792e8e64408">stream_write_endl</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream)</td></tr>
 <tr class="separator:a9cf445a345db9acedfbf8792e8e64408"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae723a2c9fb8f53b578410702ee4c608d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#ae723a2c9fb8f53b578410702ee4c608d">stream_write_format</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream, const char *format, size_t format_length,...) FOUNDATION_PRINTFCALL(2</td></tr>
@@ -169,6 +191,10 @@ Functions</h2></td></tr>
 <tr class="separator:a48bcdc986e6149a073fdf33055c9e438"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af868bdc2b095a07aef8eeb140adbe6d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="structuint128__t.html">uint128_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#af868bdc2b095a07aef8eeb140adbe6d1">stream_md5</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream)</td></tr>
 <tr class="separator:af868bdc2b095a07aef8eeb140adbe6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae998d3f4a49ecbe3b689855630ee2869"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="structuint256__t.html">uint256_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#ae998d3f4a49ecbe3b689855630ee2869">stream_sha256</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream)</td></tr>
+<tr class="separator:ae998d3f4a49ecbe3b689855630ee2869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ef44db052dce7bf557eab59da399d7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> uint512_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#a7ef44db052dce7bf557eab59da399d7f">stream_sha512</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream)</td></tr>
+<tr class="separator:a7ef44db052dce7bf557eab59da399d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1cb1c4f2d366f7cbb995674a79abb65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#af1cb1c4f2d366f7cbb995674a79abb65">stream_truncate</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream, size_t length)</td></tr>
 <tr class="separator:af1cb1c4f2d366f7cbb995674a79abb65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4526400b020e72bb0770f1ac545bc6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8h.html#af4526400b020e72bb0770f1ac545bc6c">stream_flush</a> (<a class="el" href="structstream__t.html">stream_t</a> *stream)</td></tr>
@@ -250,6 +276,40 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Cloned stream, null if not clonable </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adb48eec6cfc41b8884a96beb859e7545"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> bool stream_copy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstream__t.html">stream_t</a> *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structstream__t.html">stream_t</a> *&#160;</td>
+          <td class="paramname"><em>destination</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Copy a stream, if supported by stream type. Copy is binary (no conversion of data is done). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>Source stream </td></tr>
+    <tr><td class="paramname">destination</td><td>Destination stream </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if success, false if error or unsupported </dd></dl>
 
 </div>
 </div>
@@ -1053,6 +1113,98 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a4ecb1b245b56d5d383ce7d039870d24c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="structuint128__t.html">uint128_t</a> stream_read_uint128 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstream__t.html">stream_t</a> *&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Read 128-bit unsigned integer from stream. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>Stream </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Value read, 0 if error </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa638358ce489a28c4b34fb0d5c2de238"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="structuint256__t.html">uint256_t</a> stream_read_uint256 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstream__t.html">stream_t</a> *&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Read 256-bit unsigned integer from stream. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>Stream </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Value read, 0 if error </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a349c7d6151aaff605fc3b0fd0679f436"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> uint512_t stream_read_uint512 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstream__t.html">stream_t</a> *&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Read 512-bit unsigned integer from stream. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>Stream </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Value read, 0 if error </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a623743e2e2ed15206de2fd99ba5c635a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="types_8h.html#a884f5fdd09e6a7e8fa14cc2864b1ec42">uuid_t</a> stream_read_uuid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstream__t.html">stream_t</a> *&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Read UUID from stream. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>Stream </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Value read, 0 if error </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a8f1261fab9db7cc280bcb721734422f5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1163,6 +1315,29 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a5acd138d4140fa763060d99bae6c6b89"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> size_t stream_skip_whitespace </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstream__t.html">stream_t</a> *&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>If stream is in text mode, skip whitespace characters. If stream is in binary mode, ignore. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>Stream </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of bytes skipped </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ac6b055cf27706ed54bb16bfc9271ede9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1260,7 +1435,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Write char to stream. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Write byte to stream. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">stream</td><td>Stream </td></tr>
     <tr><td class="paramname">data</td><td>Char to write </td></tr>
@@ -1293,7 +1468,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Write byte to stream. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Write unsigned byte to stream. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">stream</td><td>Stream </td></tr>
     <tr><td class="paramname">data</td><td>Byte to write </td></tr>
@@ -1501,6 +1676,138 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a58257e46ae48e068e5c91cf454536220"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void stream_write_uint128 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstream__t.html">stream_t</a> *&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structuint128__t.html">uint128_t</a>&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Write 128-bit unsigned integer to stream. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>Stream </td></tr>
+    <tr><td class="paramname">data</td><td>Unsigned integer to write </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aca329f7488fb3676bac66447d2fc496d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void stream_write_uint256 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstream__t.html">stream_t</a> *&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structuint256__t.html">uint256_t</a>&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Write 256-bit unsigned integer to stream. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>Stream </td></tr>
+    <tr><td class="paramname">data</td><td>Unsigned integer to write </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a0852e707b6c3d154fb8bde105006a9e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void stream_write_uint512 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstream__t.html">stream_t</a> *&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint512_t&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Write 512-bit unsigned integer to stream. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>Stream </td></tr>
+    <tr><td class="paramname">data</td><td>Unsigned integer to write </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab3d68a9ed01e9b404cae8d0ea04ebd10"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void stream_write_uuid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstream__t.html">stream_t</a> *&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a884f5fdd09e6a7e8fa14cc2864b1ec42">uuid_t</a>&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Write UUID to stream. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>Stream </td></tr>
+    <tr><td class="paramname">data</td><td>UUID to write </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a0c4323d0a452ab598f8c74ff9d568025"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1607,6 +1914,28 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a8cf7df7a136f9d1a2039281820ef1a1e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void stream_write_separator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstream__t.html">stream_t</a> *&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>If the stream is in text mode, write a separator character (whitespace) to stream If the stream is in binary mode, ignore. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>Stream </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a9cf445a345db9acedfbf8792e8e64408"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1695,7 +2024,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="stream_8h_source.html#l00354">354</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
+<p>Definition at line <a class="el" href="stream_8h_source.html#l00423">423</a> of file <a class="el" href="stream_8h_source.html">stream.h</a>.</p>
 
 </div>
 </div>
@@ -1735,13 +2064,59 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Read stream md5 digest </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Read stream md5 digest. Line ending will be unified and digested as a UNIX style LF if the stream is in ascii mode. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">stream</td><td>Stream </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>md5 digest, 0 if not available for stream type or invalid stream </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae998d3f4a49ecbe3b689855630ee2869"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="structuint256__t.html">uint256_t</a> stream_sha256 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstream__t.html">stream_t</a> *&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Read stream SHA-256 digest. Line ending will be unified and digested as a UNIX style LF if the stream is in ascii mode. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>Stream </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SHA-256 digest, 0 if not available for stream type or invalid stream </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7ef44db052dce7bf557eab59da399d7f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> uint512_t stream_sha512 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstream__t.html">stream_t</a> *&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Read stream SHA-512 digest. Line ending will be unified and digested as a UNIX style LF if the stream is in ascii mode. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>Stream </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SHA-512 digest, 0 if not available for stream type or invalid stream </dd></dl>
 
 </div>
 </div>

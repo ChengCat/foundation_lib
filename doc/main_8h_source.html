@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Foundation Library: D:/foundation_lib/foundation/main.h Source File</title>
+<title>Foundation Library: E:/projects/foundation_lib/foundation/main.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -69,19 +69,24 @@
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="platform_8h.html">foundation/platform.h</a>&gt;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="types_8h.html">foundation/types.h</a>&gt;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<a class="code" href="main_8h.html#aef0a8d14df275eb75c571f2c471626ce">main_initialize</a>( <span class="keywordtype">void</span> );</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<a class="code" href="main_8h.html#a2e89d615733e85df005b3f2b35fe1437">main_run</a>( <span class="keywordtype">void</span>* arg );</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<a class="code" href="main_8h.html#adefca1c25689fe0202448434e71f98b6">main_finalize</a>( <span class="keywordtype">void</span> );</div>
-<div class="ttc" id="main_8h_html_a2e89d615733e85df005b3f2b35fe1437"><div class="ttname"><a href="main_8h.html#a2e89d615733e85df005b3f2b35fe1437">main_run</a></div><div class="ttdeci">int main_run(void *arg)</div></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#if !BUILD_DYNAMIC_LINK</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<a class="code" href="platform_8h.html#a68d4dcc8dedad4782a8994950dcfb1f4">FOUNDATION_EXTERN</a> <span class="keywordtype">int</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<a class="code" href="main_8h.html#aa60687c834a72be55551382be1fde19c">main_initialize</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="code" href="platform_8h.html#a68d4dcc8dedad4782a8994950dcfb1f4">FOUNDATION_EXTERN</a> <span class="keywordtype">int</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<a class="code" href="main_8h.html#ab9aa7bd6ac0302e438ca9b8f32ef6799">main_run</a>(<span class="keywordtype">void</span>* arg);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<a class="code" href="platform_8h.html#a68d4dcc8dedad4782a8994950dcfb1f4">FOUNDATION_EXTERN</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<a class="code" href="main_8h.html#a5f940f9de3430ef1674dcf848127d936">main_finalize</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="types_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">Foundation data types. </div></div>
 <div class="ttc" id="platform_8h_html"><div class="ttname"><a href="platform_8h.html">platform.h</a></div><div class="ttdoc">Platform abstractions. </div></div>
-<div class="ttc" id="main_8h_html_adefca1c25689fe0202448434e71f98b6"><div class="ttname"><a href="main_8h.html#adefca1c25689fe0202448434e71f98b6">main_finalize</a></div><div class="ttdeci">void main_finalize(void)</div></div>
-<div class="ttc" id="main_8h_html_aef0a8d14df275eb75c571f2c471626ce"><div class="ttname"><a href="main_8h.html#aef0a8d14df275eb75c571f2c471626ce">main_initialize</a></div><div class="ttdeci">int main_initialize(void)</div></div>
+<div class="ttc" id="main_8h_html_aa60687c834a72be55551382be1fde19c"><div class="ttname"><a href="main_8h.html#aa60687c834a72be55551382be1fde19c">main_initialize</a></div><div class="ttdeci">FOUNDATION_EXTERN int main_initialize(void)</div></div>
+<div class="ttc" id="platform_8h_html_a68d4dcc8dedad4782a8994950dcfb1f4"><div class="ttname"><a href="platform_8h.html#a68d4dcc8dedad4782a8994950dcfb1f4">FOUNDATION_EXTERN</a></div><div class="ttdeci">#define FOUNDATION_EXTERN</div></div>
+<div class="ttc" id="main_8h_html_a5f940f9de3430ef1674dcf848127d936"><div class="ttname"><a href="main_8h.html#a5f940f9de3430ef1674dcf848127d936">main_finalize</a></div><div class="ttdeci">FOUNDATION_EXTERN void main_finalize(void)</div></div>
+<div class="ttc" id="main_8h_html_ab9aa7bd6ac0302e438ca9b8f32ef6799"><div class="ttname"><a href="main_8h.html#ab9aa7bd6ac0302e438ca9b8f32ef6799">main_run</a></div><div class="ttdeci">FOUNDATION_EXTERN int main_run(void *arg)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

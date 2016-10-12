@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Foundation Library: D:/foundation_lib/foundation/fs.h File Reference</title>
+<title>Foundation Library: E:/projects/foundation_lib/foundation/fs.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -97,8 +97,10 @@ Functions</h2></td></tr>
 <tr class="separator:a84fe116cbc0b9ce386458d4272230388"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a53b1b8c5846351a3b951fa0419a524"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="structstream__t.html">stream_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a5a53b1b8c5846351a3b951fa0419a524">fs_temporary_file</a> (void)</td></tr>
 <tr class="separator:a5a53b1b8c5846351a3b951fa0419a524"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a185c004e8a089ac4f1344a9c00883df3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a185c004e8a089ac4f1344a9c00883df3">fs_post_event</a> (<a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749">foundation_event_id</a> id, const char *path, size_t length)</td></tr>
-<tr class="separator:a185c004e8a089ac4f1344a9c00883df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18d0b941a19e36852dfc757dfed2cd9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a18d0b941a19e36852dfc757dfed2cd9a">fs_event_post</a> (<a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749">foundation_event_id</a> id, const char *path, size_t length)</td></tr>
+<tr class="separator:a18d0b941a19e36852dfc757dfed2cd9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96a8e88ab5c7245f502c798bd8d60e6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="structstring__const__t.html">string_const_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#a96a8e88ab5c7245f502c798bd8d60e6a">fs_event_path</a> (const <a class="el" href="structevent__t.html">event_t</a> *event)</td></tr>
+<tr class="separator:a96a8e88ab5c7245f502c798bd8d60e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0fdde5114a95a06a62dd94d4e7bc209"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="structevent__stream__t.html">event_stream_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fs_8h.html#ab0fdde5114a95a06a62dd94d4e7bc209">fs_event_stream</a> (void)</td></tr>
 <tr class="separator:ab0fdde5114a95a06a62dd94d4e7bc209"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -758,12 +760,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a185c004e8a089ac4f1344a9c00883df3"></a>
+<a class="anchor" id="a18d0b941a19e36852dfc757dfed2cd9a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void fs_post_event </td>
+          <td class="memname"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void fs_event_post </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749">foundation_event_id</a>&#160;</td>
           <td class="paramname"><em>id</em>, </td>
@@ -795,6 +797,29 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="a96a8e88ab5c7245f502c798bd8d60e6a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="structstring__const__t.html">string_const_t</a> fs_event_path </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structevent__t.html">event_t</a> *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get path from a file event </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Event </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Path </dd></dl>
 
 </div>
 </div>

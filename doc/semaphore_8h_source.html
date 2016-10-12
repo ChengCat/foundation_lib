@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Foundation Library: D:/foundation_lib/foundation/semaphore.h Source File</title>
+<title>Foundation Library: E:/projects/foundation_lib/foundation/semaphore.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -88,7 +88,14 @@
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<a class="code" href="semaphore_8h.html#ae0aa6a13ea113bdade59308fc58362f8">semaphore_post</a>(<a class="code" href="structsemaphore__t.html">semaphore_t</a>* semaphore);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#if FOUNDATION_PLATFORM_WINDOWS</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span>*</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<a class="code" href="semaphore_8h.html#a0cc449ca3e5c67f7cb319e58728db29e">semaphore_event_handle</a>(<a class="code" href="structsemaphore__t.html">semaphore_t</a>* semaphore);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="semaphore_8h_html_a757c1a8b902e11a6151a0a76d3d71131"><div class="ttname"><a href="semaphore_8h.html#a757c1a8b902e11a6151a0a76d3d71131">semaphore_finalize</a></div><div class="ttdeci">FOUNDATION_API void semaphore_finalize(semaphore_t *semaphore)</div></div>
+<div class="ttc" id="semaphore_8h_html_a0cc449ca3e5c67f7cb319e58728db29e"><div class="ttname"><a href="semaphore_8h.html#a0cc449ca3e5c67f7cb319e58728db29e">semaphore_event_handle</a></div><div class="ttdeci">FOUNDATION_API void * semaphore_event_handle(semaphore_t *semaphore)</div></div>
 <div class="ttc" id="types_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">Foundation data types. </div></div>
 <div class="ttc" id="semaphore_8h_html_aebc1238e7737655b22e61c7511550fa1"><div class="ttname"><a href="semaphore_8h.html#aebc1238e7737655b22e61c7511550fa1">semaphore_initialize</a></div><div class="ttdeci">FOUNDATION_API void semaphore_initialize(semaphore_t *semaphore, unsigned int value)</div></div>
 <div class="ttc" id="platform_8h_html"><div class="ttname"><a href="platform_8h.html">platform.h</a></div><div class="ttdoc">Platform abstractions. </div></div>
@@ -97,7 +104,7 @@
 <div class="ttc" id="semaphore_8h_html_a7de6b3077af61852014643d003291339"><div class="ttname"><a href="semaphore_8h.html#a7de6b3077af61852014643d003291339">semaphore_try_wait</a></div><div class="ttdeci">FOUNDATION_API bool semaphore_try_wait(semaphore_t *semaphore, unsigned int milliseconds)</div></div>
 <div class="ttc" id="semaphore_8h_html_aef374799b569a976afeffa4121eb4c57"><div class="ttname"><a href="semaphore_8h.html#aef374799b569a976afeffa4121eb4c57">semaphore_wait</a></div><div class="ttdeci">FOUNDATION_API bool semaphore_wait(semaphore_t *semaphore)</div></div>
 <div class="ttc" id="platform_8h_html_ab5d798081ff1e38fc8d86a56b852da8e"><div class="ttname"><a href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a></div><div class="ttdeci">#define FOUNDATION_API</div></div>
-<div class="ttc" id="structsemaphore__t_html"><div class="ttname"><a href="structsemaphore__t.html">semaphore_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l01234">types.h:1234</a></div></div>
+<div class="ttc" id="structsemaphore__t_html"><div class="ttname"><a href="structsemaphore__t.html">semaphore_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l01383">types.h:1383</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

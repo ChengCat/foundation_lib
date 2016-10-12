@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Foundation Library: D:/foundation_lib/foundation/uuid.h Source File</title>
+<title>Foundation Library: E:/projects/foundation_lib/foundation/uuid.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -98,27 +98,29 @@
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">static</span> <a class="code" href="platform_8h.html#a6041d4ef4e29ee27117fcac64ba69820">FOUNDATION_FORCEINLINE</a> <a class="code" href="platform_8h.html#ad74cf512d05f9455dce01d8bb3b95565">FOUNDATION_CONSTCALL</a> <a class="code" href="structuint128__t.html">uuid_t</a></div>
 <div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="uuid_8h.html#a99e05cd0a292b4533051b1a582ea5ee5">   70</a></span>&#160;<a class="code" href="uuid_8h.html#a99e05cd0a292b4533051b1a582ea5ee5">uuid_null</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="platform_8h.html#a83efbb4da193bad17627a5f5b883dc1c">uint128_make</a>(0, 0);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="platform_8h.html#a80de28cd2d3b4fc0980368500d2fd16f">uint128_make</a>(0, 0);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">static</span> <a class="code" href="platform_8h.html#a6041d4ef4e29ee27117fcac64ba69820">FOUNDATION_FORCEINLINE</a> <a class="code" href="platform_8h.html#ad74cf512d05f9455dce01d8bb3b95565">FOUNDATION_CONSTCALL</a> <span class="keywordtype">bool</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="uuid_8h.html#a441bcc941392c642fd80eec3dd4b24b5">   75</a></span>&#160;<a class="code" href="uuid_8h.html#a441bcc941392c642fd80eec3dd4b24b5">uuid_is_null</a>(<span class="keyword">const</span> <a class="code" href="structuint128__t.html">uuid_t</a> uuid) {</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="platform_8h.html#af52ba948a542e2ad15464ac532fecf87">uint128_is_null</a>(uuid);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#define uuid_make uint128_make</span></div>
 <div class="ttc" id="types_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">Foundation data types. </div></div>
 <div class="ttc" id="uuid_8h_html_a4cb52280d75ca19a5dc0848690407427"><div class="ttname"><a href="uuid_8h.html#a4cb52280d75ca19a5dc0848690407427">UUID_DNS</a></div><div class="ttdeci">FOUNDATION_API const uuid_t UUID_DNS</div><div class="ttdef"><b>Definition:</b> <a href="uuid_8h_source.html#l00024">uuid.h:24</a></div></div>
-<div class="ttc" id="platform_8h_html_a4ede95cbe617714b019930d06c8e784a"><div class="ttname"><a href="platform_8h.html#a4ede95cbe617714b019930d06c8e784a">uint128_equal</a></div><div class="ttdeci">static bool uint128_equal(const uint128_t u0, const uint128_t u1)</div><div class="ttdef"><b>Definition:</b> <a href="platform_8h_source.html#l01077">platform.h:1077</a></div></div>
-<div class="ttc" id="platform_8h_html_a83efbb4da193bad17627a5f5b883dc1c"><div class="ttname"><a href="platform_8h.html#a83efbb4da193bad17627a5f5b883dc1c">uint128_make</a></div><div class="ttdeci">static uint128_t uint128_make(const uint64_t low, const uint64_t high)</div><div class="ttdef"><b>Definition:</b> <a href="platform_8h_source.html#l01066">platform.h:1066</a></div></div>
+<div class="ttc" id="platform_8h_html_a4ede95cbe617714b019930d06c8e784a"><div class="ttname"><a href="platform_8h.html#a4ede95cbe617714b019930d06c8e784a">uint128_equal</a></div><div class="ttdeci">static bool uint128_equal(const uint128_t u0, const uint128_t u1)</div><div class="ttdef"><b>Definition:</b> <a href="platform_8h_source.html#l01114">platform.h:1114</a></div></div>
 <div class="ttc" id="platform_8h_html"><div class="ttname"><a href="platform_8h.html">platform.h</a></div><div class="ttdoc">Platform abstractions. </div></div>
 <div class="ttc" id="uuid_8h_html_a441bcc941392c642fd80eec3dd4b24b5"><div class="ttname"><a href="uuid_8h.html#a441bcc941392c642fd80eec3dd4b24b5">uuid_is_null</a></div><div class="ttdeci">static FOUNDATION_FORCEINLINE FOUNDATION_CONSTCALL bool uuid_is_null(const uuid_t uuid)</div><div class="ttdef"><b>Definition:</b> <a href="uuid_8h_source.html#l00075">uuid.h:75</a></div></div>
 <div class="ttc" id="uuid_8h_html_a7ed89fae14b25452daa7f68bacb96448"><div class="ttname"><a href="uuid_8h.html#a7ed89fae14b25452daa7f68bacb96448">uuid_generate_time</a></div><div class="ttdeci">FOUNDATION_API uuid_t uuid_generate_time(void)</div></div>
-<div class="ttc" id="platform_8h_html_af52ba948a542e2ad15464ac532fecf87"><div class="ttname"><a href="platform_8h.html#af52ba948a542e2ad15464ac532fecf87">uint128_is_null</a></div><div class="ttdeci">static bool uint128_is_null(const uint128_t u0)</div><div class="ttdef"><b>Definition:</b> <a href="platform_8h_source.html#l01082">platform.h:1082</a></div></div>
+<div class="ttc" id="platform_8h_html_af52ba948a542e2ad15464ac532fecf87"><div class="ttname"><a href="platform_8h.html#af52ba948a542e2ad15464ac532fecf87">uint128_is_null</a></div><div class="ttdeci">static bool uint128_is_null(const uint128_t u0)</div><div class="ttdef"><b>Definition:</b> <a href="platform_8h_source.html#l01119">platform.h:1119</a></div></div>
+<div class="ttc" id="platform_8h_html_a80de28cd2d3b4fc0980368500d2fd16f"><div class="ttname"><a href="platform_8h.html#a80de28cd2d3b4fc0980368500d2fd16f">uint128_make</a></div><div class="ttdeci">static uint128_t uint128_make(const uint64_t w0, const uint64_t w1)</div><div class="ttdef"><b>Definition:</b> <a href="platform_8h_source.html#l01103">platform.h:1103</a></div></div>
 <div class="ttc" id="platform_8h_html_a6041d4ef4e29ee27117fcac64ba69820"><div class="ttname"><a href="platform_8h.html#a6041d4ef4e29ee27117fcac64ba69820">FOUNDATION_FORCEINLINE</a></div><div class="ttdeci">#define FOUNDATION_FORCEINLINE</div></div>
 <div class="ttc" id="platform_8h_html_ad74cf512d05f9455dce01d8bb3b95565"><div class="ttname"><a href="platform_8h.html#ad74cf512d05f9455dce01d8bb3b95565">FOUNDATION_CONSTCALL</a></div><div class="ttdeci">#define FOUNDATION_CONSTCALL</div></div>
 <div class="ttc" id="uuid_8h_html_a99e05cd0a292b4533051b1a582ea5ee5"><div class="ttname"><a href="uuid_8h.html#a99e05cd0a292b4533051b1a582ea5ee5">uuid_null</a></div><div class="ttdeci">static FOUNDATION_FORCEINLINE FOUNDATION_CONSTCALL uuid_t uuid_null(void)</div><div class="ttdef"><b>Definition:</b> <a href="uuid_8h_source.html#l00070">uuid.h:70</a></div></div>
 <div class="ttc" id="uuid_8h_html_a80f73d898e1e130f9a877911264b3362"><div class="ttname"><a href="uuid_8h.html#a80f73d898e1e130f9a877911264b3362">uuid_generate_random</a></div><div class="ttdeci">FOUNDATION_API uuid_t uuid_generate_random(void)</div></div>
 <div class="ttc" id="platform_8h_html_ab5d798081ff1e38fc8d86a56b852da8e"><div class="ttname"><a href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a></div><div class="ttdeci">#define FOUNDATION_API</div></div>
-<div class="ttc" id="structuint128__t_html"><div class="ttname"><a href="structuint128__t.html">uint128_t</a></div><div class="ttdef"><b>Definition:</b> <a href="platform_8h_source.html#l00882">platform.h:882</a></div></div>
+<div class="ttc" id="structuint128__t_html"><div class="ttname"><a href="structuint128__t.html">uint128_t</a></div><div class="ttdef"><b>Definition:</b> <a href="platform_8h_source.html#l00918">platform.h:918</a></div></div>
 <div class="ttc" id="uuid_8h_html_a955ef2af3b7722ae0c62c475282282e7"><div class="ttname"><a href="uuid_8h.html#a955ef2af3b7722ae0c62c475282282e7">uuid_equal</a></div><div class="ttdeci">static FOUNDATION_FORCEINLINE FOUNDATION_CONSTCALL bool uuid_equal(const uuid_t u0, const uuid_t u1)</div><div class="ttdef"><b>Definition:</b> <a href="uuid_8h_source.html#l00065">uuid.h:65</a></div></div>
 <div class="ttc" id="uuid_8h_html_ab24b6c73d29e45d9a5e4b9854442b900"><div class="ttname"><a href="uuid_8h.html#ab24b6c73d29e45d9a5e4b9854442b900">uuid_generate_name</a></div><div class="ttdeci">FOUNDATION_API uuid_t uuid_generate_name(const uuid_t ns, const char *name, size_t length)</div></div>
 </div><!-- fragment --></div><!-- contents -->

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Foundation Library: D:/foundation_lib/foundation/android.h File Reference</title>
+<title>Foundation Library: E:/projects/foundation_lib/foundation/android.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -80,7 +80,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Safe inclusion of Android specific headers. Application glue entry and exit functions.</p>
-<p>The Android implementation of foundation library is built on the Android NDK and requires the android_native_app_glue and cpufeatures NDK libraries, which will be automatically compiled and linked by the provided ninja build system. If you use another build system these libraries must be included in the build. </p>
+<p>The Android implementation of foundation library is built on the Android NDK and requires the android_native_app_glue and cpu-features NDK libraries, which will be automatically included into the foundation library sources. If you use another build system these libraries must NOT be included in the build. </p>
 
 <p>Definition in file <a class="el" href="android_8h_source.html">android.h</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
@@ -119,7 +119,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initialize android integration, such as initial event processing and sensor setup. Called internally after <a class="el" href="main_8h.html#aef0a8d14df275eb75c571f2c471626ce">main_initialize()</a>, unless you write your own main wrapper you do not need to call this function. </p><dl class="section return"><dt>Returns</dt><dd>0 on success, &lt;0 if error </dd></dl>
+<p>Initialize android integration, such as initial event processing and sensor setup. Called internally after <a class="el" href="main_8h.html#aa60687c834a72be55551382be1fde19c">main_initialize()</a>, unless you write your own main wrapper you do not need to call this function. </p><dl class="section return"><dt>Returns</dt><dd>0 on success, &lt;0 if error </dd></dl>
 
 </div>
 </div>
@@ -136,7 +136,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Shutdown and cleanup android integration. Called internally after <a class="el" href="main_8h.html#adefca1c25689fe0202448434e71f98b6">main_finalize</a>, unless you write your own main wrapper you do not need to call this function. </p>
+<p>Shutdown and cleanup android integration. Called internally after <a class="el" href="main_8h.html#a5f940f9de3430ef1674dcf848127d936">main_finalize</a>, unless you write your own main wrapper you do not need to call this function. </p>
 
 </div>
 </div>

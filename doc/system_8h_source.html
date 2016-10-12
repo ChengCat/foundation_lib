@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Foundation Library: D:/foundation_lib/foundation/system.h Source File</title>
+<title>Foundation Library: E:/projects/foundation_lib/foundation/system.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -114,35 +114,41 @@
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> uint32_t</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<a class="code" href="system_8h.html#af487d160a34da419fb8fe0b795f6d324">system_locale</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="structstring__t.html">string_t</a></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<a class="code" href="system_8h.html#a2c32ffb9a6eaf9554ecc6fc6ee8318b3">system_locale_string</a>(<span class="keywordtype">char</span>* buffer, <span class="keywordtype">size_t</span> capacity);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<a class="code" href="system_8h.html#ab561f31eb1850f8518fe4eba78343265">system_set_device_orientation</a>(<a class="code" href="types_8h.html#a8679947ece7c775e61f1b598d271eb63">device_orientation_t</a> orientation);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> uint32_t</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<a class="code" href="system_8h.html#af487d160a34da419fb8fe0b795f6d324">system_locale</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="structstring__t.html">string_t</a></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<a class="code" href="system_8h.html#a2c32ffb9a6eaf9554ecc6fc6ee8318b3">system_locale_string</a>(<span class="keywordtype">char</span>* buffer, <span class="keywordtype">size_t</span> capacity);</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="types_8h.html#a8679947ece7c775e61f1b598d271eb63">device_orientation_t</a></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<a class="code" href="system_8h.html#ae27350b58897ab5f349d97489d2b8aef">system_device_orientation</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<a class="code" href="system_8h.html#ab5f4e8a39864d2e22a64325f025e14f6">system_set_locale</a>(uint32_t locale);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<a class="code" href="system_8h.html#a92aef77ef7f624fb601877df5be3ec0b">system_process_events</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<a class="code" href="system_8h.html#a70521b23913f7c376d7c708ee08264d2">system_message_box</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* title, <span class="keywordtype">size_t</span> title_length, <span class="keyword">const</span> <span class="keywordtype">char</span>* message,</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                   <span class="keywordtype">size_t</span> message_length, <span class="keywordtype">bool</span> cancel_button);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="structevent__stream__t.html">event_stream_t</a>*</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<a class="code" href="system_8h.html#ab09c62fa09b0b6ca134430bc84756dcf">system_event_stream</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<a class="code" href="system_8h.html#ad98c56114bc8513e726cdbe7b879e8ec">system_post_event</a>(<a class="code" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749">foundation_event_id</a> event);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<a class="code" href="system_8h.html#ab561f31eb1850f8518fe4eba78343265">system_set_device_orientation</a>(<a class="code" href="types_8h.html#a8679947ece7c775e61f1b598d271eb63">device_orientation_t</a> orientation);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="types_8h.html#a8679947ece7c775e61f1b598d271eb63">device_orientation_t</a></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<a class="code" href="system_8h.html#ae27350b58897ab5f349d97489d2b8aef">system_device_orientation</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<a class="code" href="system_8h.html#a92aef77ef7f624fb601877df5be3ec0b">system_process_events</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<a class="code" href="system_8h.html#a70521b23913f7c376d7c708ee08264d2">system_message_box</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* title, <span class="keywordtype">size_t</span> title_length, <span class="keyword">const</span> <span class="keywordtype">char</span>* message,</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                   <span class="keywordtype">size_t</span> message_length, <span class="keywordtype">bool</span> cancel_button);</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<a class="code" href="system_8h.html#a0000ca007940c2f50a0d0a353ec53886">system_thread_finalize</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="structevent__stream__t.html">event_stream_t</a>*</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<a class="code" href="system_8h.html#ab09c62fa09b0b6ca134430bc84756dcf">system_event_stream</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<a class="code" href="system_8h.html#ad98c56114bc8513e726cdbe7b879e8ec">system_post_event</a>(<a class="code" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749">foundation_event_id</a> event);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<a class="code" href="system_8h.html#a0000ca007940c2f50a0d0a353ec53886">system_thread_finalize</a>(<span class="keywordtype">void</span>);</div>
 <div class="ttc" id="system_8h_html_a50dc58e580869ad1b375ff113e000ba9"><div class="ttname"><a href="system_8h.html#a50dc58e580869ad1b375ff113e000ba9">system_language</a></div><div class="ttdeci">FOUNDATION_API uint16_t system_language(void)</div></div>
 <div class="ttc" id="system_8h_html_ae27350b58897ab5f349d97489d2b8aef"><div class="ttname"><a href="system_8h.html#ae27350b58897ab5f349d97489d2b8aef">system_device_orientation</a></div><div class="ttdeci">FOUNDATION_API device_orientation_t system_device_orientation(void)</div></div>
 <div class="ttc" id="system_8h_html_a844f1b464ffcecaac9ecc61edc140cb3"><div class="ttname"><a href="system_8h.html#a844f1b464ffcecaac9ecc61edc140cb3">system_platform</a></div><div class="ttdeci">FOUNDATION_API platform_t system_platform(void)</div></div>
 <div class="ttc" id="types_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">Foundation data types. </div></div>
-<div class="ttc" id="structstring__t_html"><div class="ttname"><a href="structstring__t.html">string_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00776">types.h:776</a></div></div>
+<div class="ttc" id="structstring__t_html"><div class="ttname"><a href="structstring__t.html">string_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00832">types.h:832</a></div></div>
 <div class="ttc" id="system_8h_html_af487d160a34da419fb8fe0b795f6d324"><div class="ttname"><a href="system_8h.html#af487d160a34da419fb8fe0b795f6d324">system_locale</a></div><div class="ttdeci">FOUNDATION_API uint32_t system_locale(void)</div></div>
 <div class="ttc" id="system_8h_html_a70521b23913f7c376d7c708ee08264d2"><div class="ttname"><a href="system_8h.html#a70521b23913f7c376d7c708ee08264d2">system_message_box</a></div><div class="ttdeci">FOUNDATION_API bool system_message_box(const char *title, size_t title_length, const char *message, size_t message_length, bool cancel_button)</div></div>
 <div class="ttc" id="system_8h_html_a3dc12c1676805b3897b8b3d01ff84b19"><div class="ttname"><a href="system_8h.html#a3dc12c1676805b3897b8b3d01ff84b19">system_error</a></div><div class="ttdeci">FOUNDATION_API int system_error(void)</div></div>
@@ -151,22 +157,23 @@
 <div class="ttc" id="system_8h_html_a09dfca38bb3308efe77b3d2490a48468"><div class="ttname"><a href="system_8h.html#a09dfca38bb3308efe77b3d2490a48468">system_hardware_threads</a></div><div class="ttdeci">FOUNDATION_API size_t system_hardware_threads(void)</div></div>
 <div class="ttc" id="system_8h_html_a503318e8fe930db58e625875e724367b"><div class="ttname"><a href="system_8h.html#a503318e8fe930db58e625875e724367b">system_country</a></div><div class="ttdeci">FOUNDATION_API uint16_t system_country(void)</div></div>
 <div class="ttc" id="system_8h_html_aa99095836ce027e0c906d4bdd79f7b2c"><div class="ttname"><a href="system_8h.html#aa99095836ce027e0c906d4bdd79f7b2c">system_hostname</a></div><div class="ttdeci">FOUNDATION_API string_t system_hostname(char *buffer, size_t capacity)</div></div>
-<div class="ttc" id="structevent__stream__t_html"><div class="ttname"><a href="structevent__stream__t.html">event_stream_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00981">types.h:981</a></div></div>
+<div class="ttc" id="structevent__stream__t_html"><div class="ttname"><a href="structevent__stream__t.html">event_stream_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l01083">types.h:1083</a></div></div>
 <div class="ttc" id="types_8h_html_a6f988232b352cadfd4f02302cf1e39f0"><div class="ttname"><a href="types_8h.html#a6f988232b352cadfd4f02302cf1e39f0">architecture_t</a></div><div class="ttdeci">architecture_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00155">types.h:155</a></div></div>
 <div class="ttc" id="system_8h_html_a2c32ffb9a6eaf9554ecc6fc6ee8318b3"><div class="ttname"><a href="system_8h.html#a2c32ffb9a6eaf9554ecc6fc6ee8318b3">system_locale_string</a></div><div class="ttdeci">FOUNDATION_API string_t system_locale_string(char *buffer, size_t capacity)</div></div>
 <div class="ttc" id="types_8h_html_ac86c1d61ecdc0e94d0729a997f6faed7"><div class="ttname"><a href="types_8h.html#ac86c1d61ecdc0e94d0729a997f6faed7">byteorder_t</a></div><div class="ttdeci">byteorder_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00183">types.h:183</a></div></div>
-<div class="ttc" id="types_8h_html_a8679947ece7c775e61f1b598d271eb63"><div class="ttname"><a href="types_8h.html#a8679947ece7c775e61f1b598d271eb63">device_orientation_t</a></div><div class="ttdeci">device_orientation_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00299">types.h:299</a></div></div>
+<div class="ttc" id="types_8h_html_a8679947ece7c775e61f1b598d271eb63"><div class="ttname"><a href="types_8h.html#a8679947ece7c775e61f1b598d271eb63">device_orientation_t</a></div><div class="ttdeci">device_orientation_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00305">types.h:305</a></div></div>
 <div class="ttc" id="system_8h_html_a2af444f982495bae6bf88a5955bad29e"><div class="ttname"><a href="system_8h.html#a2af444f982495bae6bf88a5955bad29e">system_pause</a></div><div class="ttdeci">FOUNDATION_API void system_pause(void)</div></div>
 <div class="ttc" id="system_8h_html_a0000ca007940c2f50a0d0a353ec53886"><div class="ttname"><a href="system_8h.html#a0000ca007940c2f50a0d0a353ec53886">system_thread_finalize</a></div><div class="ttdeci">FOUNDATION_API void system_thread_finalize(void)</div></div>
 <div class="ttc" id="system_8h_html_a89e8385222063cddca5ff7421a07d277"><div class="ttname"><a href="system_8h.html#a89e8385222063cddca5ff7421a07d277">system_error_reset</a></div><div class="ttdeci">FOUNDATION_API void system_error_reset(void)</div></div>
 <div class="ttc" id="system_8h_html_a9d20b3b8e1a12a6e6e9ffc445ed2e3aa"><div class="ttname"><a href="system_8h.html#a9d20b3b8e1a12a6e6e9ffc445ed2e3aa">system_debugger_attached</a></div><div class="ttdeci">FOUNDATION_API bool system_debugger_attached(void)</div></div>
 <div class="ttc" id="system_8h_html_a96f71a7a3e730d11898a36d46f965f47"><div class="ttname"><a href="system_8h.html#a96f71a7a3e730d11898a36d46f965f47">system_username</a></div><div class="ttdeci">FOUNDATION_API string_t system_username(char *buffer, size_t capacity)</div></div>
 <div class="ttc" id="system_8h_html_ab09c62fa09b0b6ca134430bc84756dcf"><div class="ttname"><a href="system_8h.html#ab09c62fa09b0b6ca134430bc84756dcf">system_event_stream</a></div><div class="ttdeci">FOUNDATION_API event_stream_t * system_event_stream(void)</div></div>
+<div class="ttc" id="system_8h_html_ab5f4e8a39864d2e22a64325f025e14f6"><div class="ttname"><a href="system_8h.html#ab5f4e8a39864d2e22a64325f025e14f6">system_set_locale</a></div><div class="ttdeci">FOUNDATION_API void system_set_locale(uint32_t locale)</div></div>
 <div class="ttc" id="system_8h_html_ad1992aaeb6d4b1da0473b1c30c3b945b"><div class="ttname"><a href="system_8h.html#ad1992aaeb6d4b1da0473b1c30c3b945b">system_architecture</a></div><div class="ttdeci">FOUNDATION_API architecture_t system_architecture(void)</div></div>
 <div class="ttc" id="system_8h_html_aa5393f38f9f72dc55947339bfb7db4d4"><div class="ttname"><a href="system_8h.html#aa5393f38f9f72dc55947339bfb7db4d4">system_error_message</a></div><div class="ttdeci">FOUNDATION_API string_const_t system_error_message(int code)</div></div>
-<div class="ttc" id="types_8h_html_aceacf2b0489a69b78b27bfb371ac8749"><div class="ttname"><a href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749">foundation_event_id</a></div><div class="ttdeci">foundation_event_id</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00244">types.h:244</a></div></div>
+<div class="ttc" id="types_8h_html_aceacf2b0489a69b78b27bfb371ac8749"><div class="ttname"><a href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749">foundation_event_id</a></div><div class="ttdeci">foundation_event_id</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00246">types.h:246</a></div></div>
 <div class="ttc" id="platform_8h_html_ab5d798081ff1e38fc8d86a56b852da8e"><div class="ttname"><a href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a></div><div class="ttdeci">#define FOUNDATION_API</div></div>
-<div class="ttc" id="structstring__const__t_html"><div class="ttname"><a href="structstring__const__t.html">string_const_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00785">types.h:785</a></div></div>
+<div class="ttc" id="structstring__const__t_html"><div class="ttname"><a href="structstring__const__t.html">string_const_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00841">types.h:841</a></div></div>
 <div class="ttc" id="types_8h_html_a43cba27086d9c797df1c883e3298c464"><div class="ttname"><a href="types_8h.html#a43cba27086d9c797df1c883e3298c464">platform_t</a></div><div class="ttdeci">platform_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00129">types.h:129</a></div></div>
 <div class="ttc" id="system_8h_html_ab561f31eb1850f8518fe4eba78343265"><div class="ttname"><a href="system_8h.html#ab561f31eb1850f8518fe4eba78343265">system_set_device_orientation</a></div><div class="ttdeci">FOUNDATION_API void system_set_device_orientation(device_orientation_t orientation)</div></div>
 <div class="ttc" id="system_8h_html_a0e703da135c7418e6821576caaf7674a"><div class="ttname"><a href="system_8h.html#a0e703da135c7418e6821576caaf7674a">system_byteorder</a></div><div class="ttdeci">FOUNDATION_API byteorder_t system_byteorder(void)</div></div>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Foundation Library: D:/foundation_lib/foundation/fs.h Source File</title>
+<title>Foundation Library: E:/projects/foundation_lib/foundation/fs.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -125,40 +125,46 @@
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<a class="code" href="fs_8h.html#a5a53b1b8c5846351a3b951fa0419a524">fs_temporary_file</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<a class="code" href="fs_8h.html#a185c004e8a089ac4f1344a9c00883df3">fs_post_event</a>(<a class="code" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749">foundation_event_id</a> <span class="keywordtype">id</span>, <span class="keyword">const</span> <span class="keywordtype">char</span>* path, <span class="keywordtype">size_t</span> length);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<a class="code" href="fs_8h.html#a18d0b941a19e36852dfc757dfed2cd9a">fs_event_post</a>(<a class="code" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749">foundation_event_id</a> <span class="keywordtype">id</span>, <span class="keyword">const</span> <span class="keywordtype">char</span>* path, <span class="keywordtype">size_t</span> length);</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="structevent__stream__t.html">event_stream_t</a>*</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<a class="code" href="fs_8h.html#ab0fdde5114a95a06a62dd94d4e7bc209">fs_event_stream</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="structstring__const__t.html">string_const_t</a></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<a class="code" href="fs_8h.html#a96a8e88ab5c7245f502c798bd8d60e6a">fs_event_path</a>(<span class="keyword">const</span> <a class="code" href="structevent__t.html">event_t</a>* event);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="structevent__stream__t.html">event_stream_t</a>*</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<a class="code" href="fs_8h.html#ab0fdde5114a95a06a62dd94d4e7bc209">fs_event_stream</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
 <div class="ttc" id="fs_8h_html_ac21aed5b00bbb0f8304d82b651ba17e2"><div class="ttname"><a href="fs_8h.html#ac21aed5b00bbb0f8304d82b651ba17e2">fs_make_directory</a></div><div class="ttdeci">FOUNDATION_API bool fs_make_directory(const char *path, size_t length)</div></div>
 <div class="ttc" id="types_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">Foundation data types. </div></div>
-<div class="ttc" id="structstring__t_html"><div class="ttname"><a href="structstring__t.html">string_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00776">types.h:776</a></div></div>
+<div class="ttc" id="structstring__t_html"><div class="ttname"><a href="structstring__t.html">string_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00832">types.h:832</a></div></div>
 <div class="ttc" id="fs_8h_html_a067a123bfd4476acae6008a5d22fe97a"><div class="ttname"><a href="fs_8h.html#a067a123bfd4476acae6008a5d22fe97a">fs_is_file</a></div><div class="ttdeci">FOUNDATION_API bool fs_is_file(const char *path, size_t length)</div></div>
 <div class="ttc" id="fs_8h_html_a5a53b1b8c5846351a3b951fa0419a524"><div class="ttname"><a href="fs_8h.html#a5a53b1b8c5846351a3b951fa0419a524">fs_temporary_file</a></div><div class="ttdeci">FOUNDATION_API stream_t * fs_temporary_file(void)</div></div>
 <div class="ttc" id="fs_8h_html_aabb4f3e36e41aed308d36ca8d6c67d12"><div class="ttname"><a href="fs_8h.html#aabb4f3e36e41aed308d36ca8d6c67d12">fs_touch</a></div><div class="ttdeci">FOUNDATION_API void fs_touch(const char *path, size_t length)</div></div>
+<div class="ttc" id="fs_8h_html_a96a8e88ab5c7245f502c798bd8d60e6a"><div class="ttname"><a href="fs_8h.html#a96a8e88ab5c7245f502c798bd8d60e6a">fs_event_path</a></div><div class="ttdeci">FOUNDATION_API string_const_t fs_event_path(const event_t *event)</div></div>
 <div class="ttc" id="fs_8h_html_afd18b7e3321260239b10e7dff2235686"><div class="ttname"><a href="fs_8h.html#afd18b7e3321260239b10e7dff2235686">fs_remove_directory</a></div><div class="ttdeci">FOUNDATION_API bool fs_remove_directory(const char *path, size_t length)</div></div>
 <div class="ttc" id="platform_8h_html"><div class="ttname"><a href="platform_8h.html">platform.h</a></div><div class="ttdoc">Platform abstractions. </div></div>
 <div class="ttc" id="fs_8h_html_a121ad13a120acbfa407768a06c4529bf"><div class="ttname"><a href="fs_8h.html#a121ad13a120acbfa407768a06c4529bf">fs_remove_file</a></div><div class="ttdeci">FOUNDATION_API bool fs_remove_file(const char *path, size_t length)</div></div>
 <div class="ttc" id="fs_8h_html_aec5ed0cae00546e808121a18917c0452"><div class="ttname"><a href="fs_8h.html#aec5ed0cae00546e808121a18917c0452">fs_copy_file</a></div><div class="ttdeci">FOUNDATION_API bool fs_copy_file(const char *source, size_t srclen, const char *dest, size_t destlen)</div></div>
 <div class="ttc" id="fs_8h_html_a9974886fb8b50b7d33fd69e7743a5fd0"><div class="ttname"><a href="fs_8h.html#a9974886fb8b50b7d33fd69e7743a5fd0">fs_md5</a></div><div class="ttdeci">FOUNDATION_API uint128_t fs_md5(const char *path, size_t length)</div></div>
-<div class="ttc" id="structevent__stream__t_html"><div class="ttname"><a href="structevent__stream__t.html">event_stream_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00981">types.h:981</a></div></div>
+<div class="ttc" id="structevent__stream__t_html"><div class="ttname"><a href="structevent__stream__t.html">event_stream_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l01083">types.h:1083</a></div></div>
 <div class="ttc" id="fs_8h_html_a0e35bf7a0a4dbefac497b27305f4e09c"><div class="ttname"><a href="fs_8h.html#a0e35bf7a0a4dbefac497b27305f4e09c">fs_subdirs</a></div><div class="ttdeci">FOUNDATION_API string_t * fs_subdirs(const char *path, size_t length)</div></div>
 <div class="ttc" id="fs_8h_html_af9030d5fac4f65090c4573fe67c62680"><div class="ttname"><a href="fs_8h.html#af9030d5fac4f65090c4573fe67c62680">fs_is_directory</a></div><div class="ttdeci">FOUNDATION_API bool fs_is_directory(const char *path, size_t length)</div></div>
 <div class="ttc" id="fs_8h_html_af95af0cfd74a13db1afc49d52b328dec"><div class="ttname"><a href="fs_8h.html#af95af0cfd74a13db1afc49d52b328dec">fs_size</a></div><div class="ttdeci">FOUNDATION_API size_t fs_size(const char *path, size_t length)</div></div>
 <div class="ttc" id="fs_8h_html_a84fe116cbc0b9ce386458d4272230388"><div class="ttname"><a href="fs_8h.html#a84fe116cbc0b9ce386458d4272230388">fs_unmonitor</a></div><div class="ttdeci">FOUNDATION_API void fs_unmonitor(const char *path, size_t length)</div></div>
+<div class="ttc" id="fs_8h_html_a18d0b941a19e36852dfc757dfed2cd9a"><div class="ttname"><a href="fs_8h.html#a18d0b941a19e36852dfc757dfed2cd9a">fs_event_post</a></div><div class="ttdeci">FOUNDATION_API void fs_event_post(foundation_event_id id, const char *path, size_t length)</div></div>
 <div class="ttc" id="fs_8h_html_ab0fdde5114a95a06a62dd94d4e7bc209"><div class="ttname"><a href="fs_8h.html#ab0fdde5114a95a06a62dd94d4e7bc209">fs_event_stream</a></div><div class="ttdeci">FOUNDATION_API event_stream_t * fs_event_stream(void)</div></div>
 <div class="ttc" id="fs_8h_html_acac1a7b4d1fbc06dbf7a56de2f29570a"><div class="ttname"><a href="fs_8h.html#acac1a7b4d1fbc06dbf7a56de2f29570a">fs_matching_files_regex</a></div><div class="ttdeci">FOUNDATION_API string_t * fs_matching_files_regex(const char *path, size_t length, regex_t *regex, bool recurse)</div></div>
 <div class="ttc" id="fs_8h_html_a53809fa4d432de899d47993fd8f39ea6"><div class="ttname"><a href="fs_8h.html#a53809fa4d432de899d47993fd8f39ea6">fs_files</a></div><div class="ttdeci">FOUNDATION_API string_t * fs_files(const char *path, size_t length)</div></div>
-<div class="ttc" id="fs_8h_html_a185c004e8a089ac4f1344a9c00883df3"><div class="ttname"><a href="fs_8h.html#a185c004e8a089ac4f1344a9c00883df3">fs_post_event</a></div><div class="ttdeci">FOUNDATION_API void fs_post_event(foundation_event_id id, const char *path, size_t length)</div></div>
-<div class="ttc" id="structstream__t_html"><div class="ttname"><a href="structstream__t.html">stream_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l01300">types.h:1300</a></div></div>
+<div class="ttc" id="structstream__t_html"><div class="ttname"><a href="structstream__t.html">stream_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l01517">types.h:1517</a></div></div>
 <div class="ttc" id="fs_8h_html_ae9b3af2d771ec74d5b967ef23cdf3dee"><div class="ttname"><a href="fs_8h.html#ae9b3af2d771ec74d5b967ef23cdf3dee">fs_monitor</a></div><div class="ttdeci">FOUNDATION_API bool fs_monitor(const char *path, size_t length)</div></div>
 <div class="ttc" id="fs_8h_html_af2eafae1c5a3ba61416b0524d3397d60"><div class="ttname"><a href="fs_8h.html#af2eafae1c5a3ba61416b0524d3397d60">fs_matching_files</a></div><div class="ttdeci">FOUNDATION_API string_t * fs_matching_files(const char *path, size_t length, const char *pattern, size_t patternlen, bool recurse)</div></div>
-<div class="ttc" id="types_8h_html_aceacf2b0489a69b78b27bfb371ac8749"><div class="ttname"><a href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749">foundation_event_id</a></div><div class="ttdeci">foundation_event_id</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00244">types.h:244</a></div></div>
+<div class="ttc" id="types_8h_html_aceacf2b0489a69b78b27bfb371ac8749"><div class="ttname"><a href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749">foundation_event_id</a></div><div class="ttdeci">foundation_event_id</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00246">types.h:246</a></div></div>
 <div class="ttc" id="platform_8h_html_ab5d798081ff1e38fc8d86a56b852da8e"><div class="ttname"><a href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a></div><div class="ttdeci">#define FOUNDATION_API</div></div>
-<div class="ttc" id="types_8h_html_a6073f7f0a2c2f88c7ac7bd8dd93de227"><div class="ttname"><a href="types_8h.html#a6073f7f0a2c2f88c7ac7bd8dd93de227">tick_t</a></div><div class="ttdeci">int64_t tick_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00395">types.h:395</a></div></div>
-<div class="ttc" id="structuint128__t_html"><div class="ttname"><a href="structuint128__t.html">uint128_t</a></div><div class="ttdef"><b>Definition:</b> <a href="platform_8h_source.html#l00882">platform.h:882</a></div></div>
+<div class="ttc" id="structstring__const__t_html"><div class="ttname"><a href="structstring__const__t.html">string_const_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00841">types.h:841</a></div></div>
+<div class="ttc" id="types_8h_html_a6073f7f0a2c2f88c7ac7bd8dd93de227"><div class="ttname"><a href="types_8h.html#a6073f7f0a2c2f88c7ac7bd8dd93de227">tick_t</a></div><div class="ttdeci">int64_t tick_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00415">types.h:415</a></div></div>
+<div class="ttc" id="structevent__t_html"><div class="ttname"><a href="structevent__t.html">event_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l01045">types.h:1045</a></div></div>
+<div class="ttc" id="structuint128__t_html"><div class="ttname"><a href="structuint128__t.html">uint128_t</a></div><div class="ttdef"><b>Definition:</b> <a href="platform_8h_source.html#l00918">platform.h:918</a></div></div>
 <div class="ttc" id="fs_8h_html_a652cd573338c5eb2999406c70fc35482"><div class="ttname"><a href="fs_8h.html#a652cd573338c5eb2999406c70fc35482">fs_last_modified</a></div><div class="ttdeci">FOUNDATION_API tick_t fs_last_modified(const char *path, size_t length)</div></div>
-<div class="ttc" id="structregex__t_html"><div class="ttname"><a href="structregex__t.html">regex_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l01178">types.h:1178</a></div></div>
+<div class="ttc" id="structregex__t_html"><div class="ttname"><a href="structregex__t.html">regex_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l01327">types.h:1327</a></div></div>
 <div class="ttc" id="fs_8h_html_a0b8c413743590dbc549a4919b3d7e472"><div class="ttname"><a href="fs_8h.html#a0b8c413743590dbc549a4919b3d7e472">fs_open_file</a></div><div class="ttdeci">FOUNDATION_API stream_t * fs_open_file(const char *path, size_t length, unsigned int mode)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

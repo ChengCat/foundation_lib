@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -62,6 +62,7 @@
       <li><a href="globals_e.html#index_e"><span>e</span></a></li>
       <li class="current"><a href="globals_f.html#index_f"><span>f</span></a></li>
       <li><a href="globals_h.html#index_h"><span>h</span></a></li>
+      <li><a href="globals_j.html#index_j"><span>j</span></a></li>
       <li><a href="globals_l.html#index_l"><span>l</span></a></li>
       <li><a href="globals_m.html#index_m"><span>m</span></a></li>
       <li><a href="globals_o.html#index_o"><span>o</span></a></li>
@@ -226,20 +227,23 @@
 <li>FOUNDATION_CONSTCALL
 : <a class="el" href="platform_8h.html#ad74cf512d05f9455dce01d8bb3b95565">platform.h</a>
 </li>
-<li>FOUNDATION_CRASH_DUMP_GENERATED
-: <a class="el" href="types_8h.html#a92a314579b3f97af917b738b3cad9152">types.h</a>
-</li>
 <li>FOUNDATION_DECLARE_EVENT
 : <a class="el" href="types_8h.html#a3f19384dff8834a3c77778a7e92985d0">types.h</a>
 </li>
 <li>FOUNDATION_DECLARE_HASHMAP
 : <a class="el" href="types_8h.html#a46bc8f4b1a18771347b825c00120e689">types.h</a>
 </li>
+<li>FOUNDATION_DECLARE_HASHTABLE32
+: <a class="el" href="types_8h.html#a1da65123bf4d771f39109bcb622f31ff">types.h</a>
+</li>
+<li>FOUNDATION_DECLARE_HASHTABLE64
+: <a class="el" href="types_8h.html#ae3750e755e73f5bee59aad3789783a8d">types.h</a>
+</li>
 <li>FOUNDATION_DECLARE_OBJECT
 : <a class="el" href="types_8h.html#a48f7c24700eb66beee4fd2fbfdb05656">types.h</a>
 </li>
 <li>FOUNDATION_DECLARE_RINGBUFFER
-: <a class="el" href="types_8h.html#ac93d961efaec4e58f4842c4e5a6c7109">types.h</a>
+: <a class="el" href="types_8h.html#a521c9d62e399180f098e1a859254167f">types.h</a>
 </li>
 <li>FOUNDATION_DECLARE_STREAM
 : <a class="el" href="types_8h.html#add4e202cf15626311877247265efea97">types.h</a>
@@ -255,6 +259,9 @@
 </li>
 <li>foundation_event_id
 : <a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749">types.h</a>
+</li>
+<li>FOUNDATION_EXCEPTION_CAUGHT
+: <a class="el" href="types_8h.html#adf8edbfc90b9ff048097a8237949aa20">types.h</a>
 </li>
 <li>FOUNDATION_EXTERN
 : <a class="el" href="platform_8h.html#a68d4dcc8dedad4782a8994950dcfb1f4">platform.h</a>
@@ -370,8 +377,14 @@
 <li>FOUNDATIONEVENT_FOCUS_LOST
 : <a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749a2a1dec6176c8b1a86608f4a2a59b51c6">types.h</a>
 </li>
+<li>FOUNDATIONEVENT_LAST_RESERVED
+: <a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749ae7e80d2d12c88d8e0a91e457475eaa0c">types.h</a>
+</li>
 <li>FOUNDATIONEVENT_LOW_MEMORY_WARNING
 : <a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749a0442f41a5f6fa15ba66c02798fc60f89">types.h</a>
+</li>
+<li>FOUNDATIONEVENT_NOEVENT
+: <a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749ab1f4ceb069bfe60f7788f723eb8f3bb3">types.h</a>
 </li>
 <li>FOUNDATIONEVENT_PAUSE
 : <a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749a7f917cd050efcc5b69ddd3564bd43f5e">types.h</a>
@@ -387,6 +400,12 @@
 </li>
 <li>fs_copy_file()
 : <a class="el" href="fs_8h.html#aec5ed0cae00546e808121a18917c0452">fs.h</a>
+</li>
+<li>fs_event_path()
+: <a class="el" href="fs_8h.html#a96a8e88ab5c7245f502c798bd8d60e6a">fs.h</a>
+</li>
+<li>fs_event_post()
+: <a class="el" href="fs_8h.html#a18d0b941a19e36852dfc757dfed2cd9a">fs.h</a>
 </li>
 <li>fs_event_stream()
 : <a class="el" href="fs_8h.html#ab0fdde5114a95a06a62dd94d4e7bc209">fs.h</a>
@@ -420,9 +439,6 @@
 </li>
 <li>fs_open_file()
 : <a class="el" href="fs_8h.html#a0b8c413743590dbc549a4919b3d7e472">fs.h</a>
-</li>
-<li>fs_post_event()
-: <a class="el" href="fs_8h.html#a185c004e8a089ac4f1344a9c00883df3">fs.h</a>
 </li>
 <li>fs_remove_directory()
 : <a class="el" href="fs_8h.html#afd18b7e3321260239b10e7dff2235686">fs.h</a>

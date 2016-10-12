@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -76,6 +76,10 @@ Data Fields</h2></td></tr>
 <tr class="separator:a9800c5c3bda9d1880d2c5dfe5003e273"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71dd20579cec29aa288ef2669242dab8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a30a6b4bb200a478f3b406356fca6d310">stream_md5_fn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstream__vtable__t.html#a71dd20579cec29aa288ef2669242dab8">md5</a></td></tr>
 <tr class="separator:a71dd20579cec29aa288ef2669242dab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79e681257e746233dd174521cbd8d1d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#afd7d45298b8b60c1c04420bb3e5937ac">stream_sha256_fn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstream__vtable__t.html#a79e681257e746233dd174521cbd8d1d9">sha256</a></td></tr>
+<tr class="separator:a79e681257e746233dd174521cbd8d1d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fb66eabee350d8d106745909238820a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a241b4606fba1404b890362fc9bada9e2">stream_sha512_fn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstream__vtable__t.html#a8fb66eabee350d8d106745909238820a">sha512</a></td></tr>
+<tr class="separator:a8fb66eabee350d8d106745909238820a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab228a6c205e2ba27e68eeae455a62094"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2aaf1e261e2cb52736dbf352d0d126b9">stream_buffer_read_fn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstream__vtable__t.html#ab228a6c205e2ba27e68eeae455a62094">buffer_read</a></td></tr>
 <tr class="separator:ab228a6c205e2ba27e68eeae455a62094"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d41b85d316aff3bd258314bf6d15f32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#afe8f713c9575cc8894dfd988f69e4ab7">stream_available_read_fn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstream__vtable__t.html#a3d41b85d316aff3bd258314bf6d15f32">available_read</a></td></tr>
@@ -89,7 +93,7 @@ Data Fields</h2></td></tr>
 <div class="textblock"><p>Virtual function table for stream implementations. Each stream type must provide implementation for the basic stream operations in this struct or set the entry to null to indicate that the functionality is not supported by the stream type.</p>
 <p>Vtable for streams providing stream type specific implementations of stream operations </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l01407">1407</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l01617">1617</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="a2b23d3e2598aed4b510ec34e28d04c34"></a>
 <div class="memitem">
@@ -102,7 +106,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to read data from stream. </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l01409">1409</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l01619">1619</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -117,7 +121,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to write data to stream. </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l01411">1411</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l01621">1621</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -132,7 +136,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to query if current position is at end of stream. </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l01413">1413</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l01623">1623</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -147,7 +151,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to flush any pending data to stream. </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l01415">1415</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l01625">1625</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -162,7 +166,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to truncate stream to current position. </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l01417">1417</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l01627">1627</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -177,7 +181,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to query size of stream </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l01419">1419</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l01629">1629</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -192,7 +196,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to seek in stream. </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l01421">1421</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l01631">1631</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -207,7 +211,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to query the current position in the stream. </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l01423">1423</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l01633">1633</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -222,7 +226,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to query the last modification timestamp of the stream. </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l01425">1425</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l01635">1635</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -237,7 +241,37 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to query the MD5 of the stream content </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l01427">1427</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l01637">1637</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a79e681257e746233dd174521cbd8d1d9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#afd7d45298b8b60c1c04420bb3e5937ac">stream_sha256_fn</a> sha256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Function to query the SHA-256 of the stream content </p>
+
+<p>Definition at line <a class="el" href="types_8h_source.html#l01639">1639</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8fb66eabee350d8d106745909238820a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a241b4606fba1404b890362fc9bada9e2">stream_sha512_fn</a> sha512</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Function to query the SHA-512 of the stream content </p>
+
+<p>Definition at line <a class="el" href="types_8h_source.html#l01641">1641</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -252,7 +286,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to buffer any incoming data for the stream. </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l01429">1429</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l01643">1643</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -267,7 +301,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to query the amount of data that can be read without blocking. </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l01431">1431</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l01645">1645</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -282,7 +316,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to finalize the stream, free memory and release any resources associated with the stream. </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l01434">1434</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l01648">1648</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -297,12 +331,12 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Function to clone the stream. </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l01436">1436</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l01650">1650</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>D:/foundation_lib/foundation/<a class="el" href="types_8h_source.html">types.h</a></li>
+<li>E:/projects/foundation_lib/foundation/<a class="el" href="types_8h_source.html">types.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Foundation Library: D:/foundation_lib/foundation/profile.h File Reference</title>
+<title>Foundation Library: E:/projects/foundation_lib/foundation/profile.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -91,6 +91,8 @@ Functions</h2></td></tr>
 <tr class="separator:ae10d6f7068bfbcac9480d0de2fb0e6fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b9eada15cd90b84cf5f898d5a803a97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="profile_8h.html#a7b9eada15cd90b84cf5f898d5a803a97">profile_signal</a> (const char *name, size_t length)</td></tr>
 <tr class="separator:a7b9eada15cd90b84cf5f898d5a803a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a898497f2bd176303a88ce320d801fb9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="structstring__const__t.html">string_const_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="profile_8h.html#a898497f2bd176303a88ce320d801fb9e">profile_identifier</a> (void)</td></tr>
+<tr class="separator:a898497f2bd176303a88ce320d801fb9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Profiling, collecting function level profiling data. Available if <a class="el" href="build_8h.html#a14600f55ebbc1336abf5313bc228e107">BUILD_ENABLE_PROFILE</a> is set, otherwise all profiling function calls will evaluate to void and not generate any code. </p>
@@ -513,6 +515,23 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="a898497f2bd176303a88ce320d801fb9e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="structstring__const__t.html">string_const_t</a> profile_identifier </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get profile identifier </p><dl class="section return"><dt>Returns</dt><dd>Identifier given to profile_initialize </dd></dl>
 
 </div>
 </div>

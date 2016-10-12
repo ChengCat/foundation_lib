@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Foundation Library: D:/foundation_lib/foundation/environment.h Source File</title>
+<title>Foundation Library: E:/projects/foundation_lib/foundation/environment.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -87,43 +87,47 @@
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="structstring__const__t.html">string_const_t</a></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<a class="code" href="environment_8h.html#af41f7c20a07889f55438b98698700d17">environment_current_working_directory</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<a class="code" href="environment_8h.html#a9c46ac0c3215746b3f1fd3134485a8e2">environment_set_current_working_directory</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path, <span class="keywordtype">size_t</span> length);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="structstring__const__t.html">string_const_t</a></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<a class="code" href="environment_8h.html#a2900b43ec55c190826dafaf5bd47a143">environment_home_directory</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="structstring__const__t.html">string_const_t</a></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<a class="code" href="environment_8h.html#a5590e0d4963f672fca3455459ad863fe">environment_temporary_directory</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="structstring__const__t.html">string_const_t</a></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<a class="code" href="environment_8h.html#aa18da46021012648ed739b2e124ed270">environment_variable</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* var, <span class="keywordtype">size_t</span> length);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keyword">const</span> <a class="code" href="structapplication__t.html">application_t</a>*</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<a class="code" href="environment_8h.html#aa269ed5c42883db55bc5e2132dd3c023">environment_application</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#if FOUNDATION_PLATFORM_APPLE</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="structstring__t.html">string_t</a></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<a class="code" href="environment_8h.html#ac3022edcd862df679a2154aabbce4870">environment_bundle_identifier</a>(<span class="keywordtype">char</span>* buffer, <span class="keywordtype">size_t</span> length);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<a class="code" href="environment_8h.html#a5c1ba1f4a71e56605430549df6457906">environment_set_current_working_directory</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path, <span class="keywordtype">size_t</span> length);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="structstring__const__t.html">string_const_t</a></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<a class="code" href="environment_8h.html#a90417bb3dc5c4eb8f48ffd1f15d79082">environment_application_directory</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="structstring__const__t.html">string_const_t</a></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<a class="code" href="environment_8h.html#a5590e0d4963f672fca3455459ad863fe">environment_temporary_directory</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="structstring__const__t.html">string_const_t</a></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<a class="code" href="environment_8h.html#aa18da46021012648ed739b2e124ed270">environment_variable</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* var, <span class="keywordtype">size_t</span> length);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keyword">const</span> <a class="code" href="structapplication__t.html">application_t</a>*</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<a class="code" href="environment_8h.html#aa269ed5c42883db55bc5e2132dd3c023">environment_application</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#if FOUNDATION_PLATFORM_APPLE</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="structstring__t.html">string_t</a></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<a class="code" href="environment_8h.html#ac3022edcd862df679a2154aabbce4870">environment_bundle_identifier</a>(<span class="keywordtype">char</span>* buffer, <span class="keywordtype">size_t</span> length);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="structstring__t.html">string_t</a></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<a class="code" href="environment_8h.html#a51270b2f8e27cc397b533c984dacb035">environment_bundle_path</a>(<span class="keywordtype">char</span>* buffer, <span class="keywordtype">size_t</span> length);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="environment_8h_html_a5590e0d4963f672fca3455459ad863fe"><div class="ttname"><a href="environment_8h.html#a5590e0d4963f672fca3455459ad863fe">environment_temporary_directory</a></div><div class="ttdeci">FOUNDATION_API string_const_t environment_temporary_directory(void)</div></div>
+<div class="ttc" id="environment_8h_html_a5c1ba1f4a71e56605430549df6457906"><div class="ttname"><a href="environment_8h.html#a5c1ba1f4a71e56605430549df6457906">environment_set_current_working_directory</a></div><div class="ttdeci">FOUNDATION_API bool environment_set_current_working_directory(const char *path, size_t length)</div></div>
+<div class="ttc" id="environment_8h_html_a51270b2f8e27cc397b533c984dacb035"><div class="ttname"><a href="environment_8h.html#a51270b2f8e27cc397b533c984dacb035">environment_bundle_path</a></div><div class="ttdeci">FOUNDATION_API string_t environment_bundle_path(char *buffer, size_t length)</div></div>
 <div class="ttc" id="types_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">Foundation data types. </div></div>
-<div class="ttc" id="structapplication__t_html"><div class="ttname"><a href="structapplication__t.html">application_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00857">types.h:857</a></div></div>
-<div class="ttc" id="structstring__t_html"><div class="ttname"><a href="structstring__t.html">string_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00776">types.h:776</a></div></div>
-<div class="ttc" id="environment_8h_html_a2900b43ec55c190826dafaf5bd47a143"><div class="ttname"><a href="environment_8h.html#a2900b43ec55c190826dafaf5bd47a143">environment_home_directory</a></div><div class="ttdeci">FOUNDATION_API string_const_t environment_home_directory(void)</div></div>
+<div class="ttc" id="structapplication__t_html"><div class="ttname"><a href="structapplication__t.html">application_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00957">types.h:957</a></div></div>
+<div class="ttc" id="structstring__t_html"><div class="ttname"><a href="structstring__t.html">string_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00832">types.h:832</a></div></div>
 <div class="ttc" id="environment_8h_html_a7183724cab3656224bee850bb3239b3d"><div class="ttname"><a href="environment_8h.html#a7183724cab3656224bee850bb3239b3d">environment_executable_name</a></div><div class="ttdeci">FOUNDATION_API string_const_t environment_executable_name(void)</div></div>
+<div class="ttc" id="environment_8h_html_a90417bb3dc5c4eb8f48ffd1f15d79082"><div class="ttname"><a href="environment_8h.html#a90417bb3dc5c4eb8f48ffd1f15d79082">environment_application_directory</a></div><div class="ttdeci">FOUNDATION_API string_const_t environment_application_directory(void)</div></div>
 <div class="ttc" id="environment_8h_html_af41f7c20a07889f55438b98698700d17"><div class="ttname"><a href="environment_8h.html#af41f7c20a07889f55438b98698700d17">environment_current_working_directory</a></div><div class="ttdeci">FOUNDATION_API string_const_t environment_current_working_directory(void)</div></div>
 <div class="ttc" id="environment_8h_html_a123a2f808f144abbacced94e8a1ddbaa"><div class="ttname"><a href="environment_8h.html#a123a2f808f144abbacced94e8a1ddbaa">environment_executable_directory</a></div><div class="ttdeci">FOUNDATION_API string_const_t environment_executable_directory(void)</div></div>
-<div class="ttc" id="environment_8h_html_a9c46ac0c3215746b3f1fd3134485a8e2"><div class="ttname"><a href="environment_8h.html#a9c46ac0c3215746b3f1fd3134485a8e2">environment_set_current_working_directory</a></div><div class="ttdeci">FOUNDATION_API void environment_set_current_working_directory(const char *path, size_t length)</div></div>
 <div class="ttc" id="environment_8h_html_a256954576c709b57dc96db255ac313ff"><div class="ttname"><a href="environment_8h.html#a256954576c709b57dc96db255ac313ff">environment_initial_working_directory</a></div><div class="ttdeci">FOUNDATION_API string_const_t environment_initial_working_directory(void)</div></div>
 <div class="ttc" id="platform_8h_html"><div class="ttname"><a href="platform_8h.html">platform.h</a></div><div class="ttdoc">Platform abstractions. </div></div>
 <div class="ttc" id="environment_8h_html_a0bd1a8eea67e72b4e5d810f944793a8e"><div class="ttname"><a href="environment_8h.html#a0bd1a8eea67e72b4e5d810f944793a8e">environment_command_line</a></div><div class="ttdeci">FOUNDATION_API const string_const_t * environment_command_line(void)</div></div>
 <div class="ttc" id="environment_8h_html_aa18da46021012648ed739b2e124ed270"><div class="ttname"><a href="environment_8h.html#aa18da46021012648ed739b2e124ed270">environment_variable</a></div><div class="ttdeci">FOUNDATION_API string_const_t environment_variable(const char *var, size_t length)</div></div>
 <div class="ttc" id="environment_8h_html_ac9688dd1e08dc603baaf4000c1e4cf3a"><div class="ttname"><a href="environment_8h.html#ac9688dd1e08dc603baaf4000c1e4cf3a">environment_executable_path</a></div><div class="ttdeci">FOUNDATION_API string_const_t environment_executable_path(void)</div></div>
 <div class="ttc" id="platform_8h_html_ab5d798081ff1e38fc8d86a56b852da8e"><div class="ttname"><a href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a></div><div class="ttdeci">#define FOUNDATION_API</div></div>
-<div class="ttc" id="structstring__const__t_html"><div class="ttname"><a href="structstring__const__t.html">string_const_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00785">types.h:785</a></div></div>
+<div class="ttc" id="structstring__const__t_html"><div class="ttname"><a href="structstring__const__t.html">string_const_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00841">types.h:841</a></div></div>
 <div class="ttc" id="environment_8h_html_aa269ed5c42883db55bc5e2132dd3c023"><div class="ttname"><a href="environment_8h.html#aa269ed5c42883db55bc5e2132dd3c023">environment_application</a></div><div class="ttdeci">FOUNDATION_API const application_t * environment_application(void)</div></div>
 <div class="ttc" id="environment_8h_html_ac3022edcd862df679a2154aabbce4870"><div class="ttname"><a href="environment_8h.html#ac3022edcd862df679a2154aabbce4870">environment_bundle_identifier</a></div><div class="ttdeci">FOUNDATION_API string_t environment_bundle_identifier(char *buffer, size_t length)</div></div>
 </div><!-- fragment --></div><!-- contents -->

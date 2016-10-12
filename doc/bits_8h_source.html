@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Foundation Library: D:/foundation_lib/foundation/bits.h Source File</title>
+<title>Foundation Library: E:/projects/foundation_lib/foundation/bits.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -109,7 +109,7 @@
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">static</span> <a class="code" href="platform_8h.html#a6041d4ef4e29ee27117fcac64ba69820">FOUNDATION_FORCEINLINE</a> <a class="code" href="platform_8h.html#ad74cf512d05f9455dce01d8bb3b95565">FOUNDATION_CONSTCALL</a> uint16_t</div>
 <div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="bits_8h.html#a7eb03f1d7026392348e08d228a090379">  106</a></span>&#160;<a class="code" href="bits_8h.html#a7eb03f1d7026392348e08d228a090379">byteorder_swap16</a>(uint16_t arg) {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#if (FOUNDATION_COMPILER_GCC &amp;&amp; (FOUNDATIN_GCC_VERSION &gt;= 40800)) || FOUNDATION_COMPILER_CLANG</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#if (FOUNDATION_COMPILER_GCC &amp;&amp; (FOUNDATION_GCC_VERSION &gt;= 40800)) || FOUNDATION_COMPILER_CLANG</span></div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> __builtin_bswap16(arg);</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#elif FOUNDATION_COMPILER_MSVC</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#if _MSC_VER &gt;= 1310</span></div>

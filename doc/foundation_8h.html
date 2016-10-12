@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Foundation Library: D:/foundation_lib/foundation/foundation.h File Reference</title>
+<title>Foundation Library: E:/projects/foundation_lib/foundation/foundation.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -65,6 +65,7 @@
 <code>#include &lt;<a class="el" href="thread_8h_source.html">foundation/thread.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="mutex_8h_source.html">foundation/mutex.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="semaphore_8h_source.html">foundation/semaphore.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="beacon_8h_source.html">foundation/beacon.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="library_8h_source.html">foundation/library.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="system_8h_source.html">foundation/system.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="process_8h_source.html">foundation/process.h</a>&gt;</code><br />
@@ -91,16 +92,17 @@
 <code>#include &lt;<a class="el" href="time_8h_source.html">foundation/time.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="profile_8h_source.html">foundation/profile.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="environment_8h_source.html">foundation/environment.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="config_8h_source.html">foundation/config.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="stream_8h_source.html">foundation/stream.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="fs_8h_source.html">foundation/fs.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="bufferstream_8h_source.html">foundation/bufferstream.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="assetstream_8h_source.html">foundation/assetstream.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="pipe_8h_source.html">foundation/pipe.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="crash_8h_source.html">foundation/crash.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="json_8h_source.html">foundation/json.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="exception_8h_source.html">foundation/exception.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="stacktrace_8h_source.html">foundation/stacktrace.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="blowfish_8h_source.html">foundation/blowfish.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="regex_8h_source.html">foundation/regex.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="sha_8h_source.html">foundation/sha.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="main_8h_source.html">foundation/main.h</a>&gt;</code><br />
 </div>
 <p><a href="foundation_8h_source.html">Go to the source code of this file.</a></p>
@@ -152,7 +154,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Main entry point. Call this in your <a class="el" href="main_8h.html#aef0a8d14df275eb75c571f2c471626ce">main_initialize</a> function to bootstrap the foundation library and initialize all functionality. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Main entry point. Call this in your <a class="el" href="main_8h.html#aa60687c834a72be55551382be1fde19c">main_initialize</a> function to bootstrap the foundation library and initialize all functionality. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">memory</td><td>Memory system declaration (use memory_system_malloc for default system allocator) </td></tr>
     <tr><td class="paramname">application</td><td>Application declaration </td></tr>
@@ -177,7 +179,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Main exit point. Call this in your <a class="el" href="main_8h.html#adefca1c25689fe0202448434e71f98b6">main_finalize</a> function to cleanup the foundation library and terminate all functionality. </p>
+<p>Main exit point. Call this in your <a class="el" href="main_8h.html#a5f940f9de3430ef1674dcf848127d936">main_finalize</a> function to cleanup the foundation library and terminate all functionality. </p>
 
 </div>
 </div>

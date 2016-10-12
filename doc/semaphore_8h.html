@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Foundation Library: D:/foundation_lib/foundation/semaphore.h File Reference</title>
+<title>Foundation Library: E:/projects/foundation_lib/foundation/semaphore.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -73,6 +73,8 @@ Functions</h2></td></tr>
 <tr class="separator:a7de6b3077af61852014643d003291339"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0aa6a13ea113bdade59308fc58362f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="semaphore_8h.html#ae0aa6a13ea113bdade59308fc58362f8">semaphore_post</a> (<a class="el" href="structsemaphore__t.html">semaphore_t</a> *semaphore)</td></tr>
 <tr class="separator:ae0aa6a13ea113bdade59308fc58362f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cc449ca3e5c67f7cb319e58728db29e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="semaphore_8h.html#a0cc449ca3e5c67f7cb319e58728db29e">semaphore_event_handle</a> (<a class="el" href="structsemaphore__t.html">semaphore_t</a> *semaphore)</td></tr>
+<tr class="separator:a0cc449ca3e5c67f7cb319e58728db29e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Semaphore for thread synchronization and notification. For more information, see <a href="https://en.wikipedia.org/wiki/Semaphore_(programming)">https://en.wikipedia.org/wiki/Semaphore_(programming)</a> </p>
@@ -194,7 +196,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Wait on semaphore. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Wait on semaphore indefinitely </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">semaphore</td><td>Semaphore </td></tr>
   </table>
@@ -227,10 +229,10 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Try waiting on semaphore. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Try waiting on semaphore for a given amount of time. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">semaphore</td><td>Semaphore </td></tr>
-    <tr><td class="paramname">milliseconds</td><td>Timeout in milliseconds </td></tr>
+    <tr><td class="paramname">milliseconds</td><td>Timeout in milliseconds, 0 means no wait </td></tr>
   </table>
   </dd>
 </dl>
@@ -257,6 +259,29 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="a0cc449ca3e5c67f7cb319e58728db29e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void* semaphore_event_handle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsemaphore__t.html">semaphore_t</a> *&#160;</td>
+          <td class="paramname"><em>semaphore</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Windows only, get OS handle for semaphore </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">semaphore</td><td>Semaphore </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Object handle </dd></dl>
 
 </div>
 </div>

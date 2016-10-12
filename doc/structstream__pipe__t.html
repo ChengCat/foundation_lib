@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -58,10 +58,6 @@
 Data Fields</h2></td></tr>
 <tr class="memitem:a3c2c9b7ecda95cd465e12dc1977511a5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstream__pipe__t.html#a3c2c9b7ecda95cd465e12dc1977511a5">eos</a></td></tr>
 <tr class="separator:a3c2c9b7ecda95cd465e12dc1977511a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae848b2fb68d2e7de14f52029536d8c81"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstream__pipe__t.html#ae848b2fb68d2e7de14f52029536d8c81">handle_read</a></td></tr>
-<tr class="separator:ae848b2fb68d2e7de14f52029536d8c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85b3ace452fdbb442c8a7d3219e281c2"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstream__pipe__t.html#a85b3ace452fdbb442c8a7d3219e281c2">handle_write</a></td></tr>
-<tr class="separator:a85b3ace452fdbb442c8a7d3219e281c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae845ef96343580b319619e97c37b92e0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstream__pipe__t.html#ae845ef96343580b319619e97c37b92e0">fd_read</a></td></tr>
 <tr class="separator:ae845ef96343580b319619e97c37b92e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a342bc5978a498de1eaa49db82e38d888"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstream__pipe__t.html#a342bc5978a498de1eaa49db82e38d888">fd_write</a></td></tr>
@@ -71,7 +67,7 @@ Data Fields</h2></td></tr>
 <div class="textblock"><p>Stream interface for read/write to a pipe. This struct is also a <a class="el" href="structstream__t.html">stream_t</a> (stream struct type declared at start of struct) and can be used in all functions operating on a <a class="el" href="structstream__t.html">stream_t</a>. Pipe streams are sequential.</p>
 <p>Pipe stream </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l01365">1365</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l01582">1582</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="a3c2c9b7ecda95cd465e12dc1977511a5"></a>
 <div class="memitem">
@@ -84,37 +80,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>End of stream flag indicating the pipe has reached end of stream and is considered closed. </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l01369">1369</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae848b2fb68d2e7de14f52029536d8c81"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* handle_read</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Windows only, file handle for read end of the pipe. </p>
-
-<p>Definition at line <a class="el" href="types_8h_source.html#l01372">1372</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a85b3ace452fdbb442c8a7d3219e281c2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* handle_write</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Windows only, file handle for write end of the pipe. </p>
-
-<p>Definition at line <a class="el" href="types_8h_source.html#l01374">1374</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l01586">1586</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -127,9 +93,9 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Posix/PNaCl only, file descriptor for read end of the pipe. </p>
+<p>File descriptor for read end of the pipe. </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l01378">1378</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l01588">1588</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -142,14 +108,14 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Posix/PNaCl only, file descriptor for write end of the pipe. </p>
+<p>File descriptor for write end of the pipe. </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l01380">1380</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l01590">1590</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>D:/foundation_lib/foundation/<a class="el" href="types_8h_source.html">types.h</a></li>
+<li>E:/projects/foundation_lib/foundation/<a class="el" href="types_8h_source.html">types.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

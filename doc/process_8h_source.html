@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Foundation Library: D:/foundation_lib/foundation/process.h Source File</title>
+<title>Foundation Library: E:/projects/foundation_lib/foundation/process.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -106,21 +106,25 @@
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<a class="code" href="process_8h.html#adcb3f0bc56feff4799526db29381177c">process_stdout</a>(<a class="code" href="structprocess__t.html">process_t</a>* proc);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="structstream__t.html">stream_t</a>*</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<a class="code" href="process_8h.html#a6fcdb065724f7eb0a5f4f6d325d23e99">process_stdin</a>(<a class="code" href="structprocess__t.html">process_t</a>* proc);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<a class="code" href="process_8h.html#a20380e9fdf4a10792bf87c2d32459533">process_stderr</a>(<a class="code" href="structprocess__t.html">process_t</a>* proc);</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">int</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<a class="code" href="process_8h.html#acf020511570600d34c85d75ba0ebb63d">process_wait</a>(<a class="code" href="structprocess__t.html">process_t</a>* proc);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<a class="code" href="process_8h.html#aabad6f37d482db8024ad0de7f7d44013">process_kill</a>(<a class="code" href="structprocess__t.html">process_t</a>* proc);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">int</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<a class="code" href="process_8h.html#ad23462fcc42583c5c5fe8aa3c1b5ea4a">process_exit_code</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<a class="code" href="process_8h.html#a1f8d4dce8e47a4f53b410ad9fbd64061">process_exit</a>(<span class="keywordtype">int</span> code)</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;FOUNDATION_ATTRIBUTE(noreturn);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="structstream__t.html">stream_t</a>*</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<a class="code" href="process_8h.html#a6fcdb065724f7eb0a5f4f6d325d23e99">process_stdin</a>(<a class="code" href="structprocess__t.html">process_t</a>* proc);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">int</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<a class="code" href="process_8h.html#acf020511570600d34c85d75ba0ebb63d">process_wait</a>(<a class="code" href="structprocess__t.html">process_t</a>* proc);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<a class="code" href="process_8h.html#aabad6f37d482db8024ad0de7f7d44013">process_kill</a>(<a class="code" href="structprocess__t.html">process_t</a>* proc);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">int</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<a class="code" href="process_8h.html#ad23462fcc42583c5c5fe8aa3c1b5ea4a">process_exit_code</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<a class="code" href="process_8h.html#a1f8d4dce8e47a4f53b410ad9fbd64061">process_exit</a>(<span class="keywordtype">int</span> code)</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;FOUNDATION_ATTRIBUTE(noreturn);</div>
 <div class="ttc" id="process_8h_html_acf020511570600d34c85d75ba0ebb63d"><div class="ttname"><a href="process_8h.html#acf020511570600d34c85d75ba0ebb63d">process_wait</a></div><div class="ttdeci">FOUNDATION_API int process_wait(process_t *proc)</div></div>
+<div class="ttc" id="process_8h_html_a20380e9fdf4a10792bf87c2d32459533"><div class="ttname"><a href="process_8h.html#a20380e9fdf4a10792bf87c2d32459533">process_stderr</a></div><div class="ttdeci">FOUNDATION_API stream_t * process_stderr(process_t *proc)</div></div>
 <div class="ttc" id="types_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">Foundation data types. </div></div>
 <div class="ttc" id="process_8h_html_a8d1b040816e44baf7515cd660ec5ad95"><div class="ttname"><a href="process_8h.html#a8d1b040816e44baf7515cd660ec5ad95">process_set_arguments</a></div><div class="ttdeci">FOUNDATION_API void process_set_arguments(process_t *proc, const string_const_t *args, size_t num)</div></div>
 <div class="ttc" id="process_8h_html_ac79bf74794d11ccb42aacbacc3faea52"><div class="ttname"><a href="process_8h.html#ac79bf74794d11ccb42aacbacc3faea52">process_set_exit_code</a></div><div class="ttdeci">FOUNDATION_API void process_set_exit_code(int code)</div></div>
@@ -131,15 +135,15 @@
 <div class="ttc" id="process_8h_html_a653f69be0f2776fee7d7554b40063000"><div class="ttname"><a href="process_8h.html#a653f69be0f2776fee7d7554b40063000">process_set_working_directory</a></div><div class="ttdeci">FOUNDATION_API void process_set_working_directory(process_t *proc, const char *path, size_t length)</div></div>
 <div class="ttc" id="process_8h_html_ad23462fcc42583c5c5fe8aa3c1b5ea4a"><div class="ttname"><a href="process_8h.html#ad23462fcc42583c5c5fe8aa3c1b5ea4a">process_exit_code</a></div><div class="ttdeci">FOUNDATION_API int process_exit_code(void)</div></div>
 <div class="ttc" id="process_8h_html_ab9e15fb11f0e85b484ea1431ad943eb4"><div class="ttname"><a href="process_8h.html#ab9e15fb11f0e85b484ea1431ad943eb4">process_spawn</a></div><div class="ttdeci">FOUNDATION_API int process_spawn(process_t *proc)</div></div>
-<div class="ttc" id="structprocess__t_html"><div class="ttname"><a href="structprocess__t.html">process_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l01127">types.h:1127</a></div></div>
+<div class="ttc" id="structprocess__t_html"><div class="ttname"><a href="structprocess__t.html">process_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l01274">types.h:1274</a></div></div>
 <div class="ttc" id="process_8h_html_adcb3f0bc56feff4799526db29381177c"><div class="ttname"><a href="process_8h.html#adcb3f0bc56feff4799526db29381177c">process_stdout</a></div><div class="ttdeci">FOUNDATION_API stream_t * process_stdout(process_t *proc)</div></div>
-<div class="ttc" id="structstream__t_html"><div class="ttname"><a href="structstream__t.html">stream_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l01300">types.h:1300</a></div></div>
+<div class="ttc" id="structstream__t_html"><div class="ttname"><a href="structstream__t.html">stream_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l01517">types.h:1517</a></div></div>
 <div class="ttc" id="process_8h_html_aa2e2cd368dae3c7170a2400a4f012e9d"><div class="ttname"><a href="process_8h.html#aa2e2cd368dae3c7170a2400a4f012e9d">process_initialize</a></div><div class="ttdeci">FOUNDATION_API void process_initialize(process_t *proc)</div></div>
 <div class="ttc" id="process_8h_html_a6fcdb065724f7eb0a5f4f6d325d23e99"><div class="ttname"><a href="process_8h.html#a6fcdb065724f7eb0a5f4f6d325d23e99">process_stdin</a></div><div class="ttdeci">FOUNDATION_API stream_t * process_stdin(process_t *proc)</div></div>
 <div class="ttc" id="process_8h_html_a9b3b03e9b9612cd0d777d6dc05383814"><div class="ttname"><a href="process_8h.html#a9b3b03e9b9612cd0d777d6dc05383814">process_allocate</a></div><div class="ttdeci">FOUNDATION_API process_t * process_allocate(void)</div></div>
 <div class="ttc" id="process_8h_html_ae808422a4d8a8052a34e17698ab7780d"><div class="ttname"><a href="process_8h.html#ae808422a4d8a8052a34e17698ab7780d">process_set_flags</a></div><div class="ttdeci">FOUNDATION_API void process_set_flags(process_t *proc, unsigned int flags)</div></div>
 <div class="ttc" id="platform_8h_html_ab5d798081ff1e38fc8d86a56b852da8e"><div class="ttname"><a href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a></div><div class="ttdeci">#define FOUNDATION_API</div></div>
-<div class="ttc" id="structstring__const__t_html"><div class="ttname"><a href="structstring__const__t.html">string_const_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00785">types.h:785</a></div></div>
+<div class="ttc" id="structstring__const__t_html"><div class="ttname"><a href="structstring__const__t.html">string_const_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00841">types.h:841</a></div></div>
 <div class="ttc" id="process_8h_html_aa2c62149fa35d08ebd5216ae5ce017ef"><div class="ttname"><a href="process_8h.html#aa2c62149fa35d08ebd5216ae5ce017ef">process_set_verb</a></div><div class="ttdeci">FOUNDATION_API void process_set_verb(process_t *proc, const char *verb, size_t length)</div></div>
 <div class="ttc" id="process_8h_html_a87052883bb26a695d23c120dfd451f07"><div class="ttname"><a href="process_8h.html#a87052883bb26a695d23c120dfd451f07">process_deallocate</a></div><div class="ttdeci">FOUNDATION_API void process_deallocate(process_t *proc)</div></div>
 <div class="ttc" id="process_8h_html_a836b338c41f806e71070fed182b8fe9a"><div class="ttname"><a href="process_8h.html#a836b338c41f806e71070fed182b8fe9a">process_finalize</a></div><div class="ttdeci">FOUNDATION_API void process_finalize(process_t *proc)</div></div>

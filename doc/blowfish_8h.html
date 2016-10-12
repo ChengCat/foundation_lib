@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Foundation Library: D:/foundation_lib/foundation/blowfish.h File Reference</title>
+<title>Foundation Library: E:/projects/foundation_lib/foundation/blowfish.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -222,7 +222,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Encrypt data using the given blowfish state object. Encryption is done in-place, no memory allocation is done internally. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Encrypt data using the given blowfish state object. Encryption is done in-place, no memory allocation is done internally. Length is expected to be a multiple of 8 bytes (any extra unaligned data will be ignored). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">blowfish</td><td>Blowfish state object </td></tr>
     <tr><td class="paramname">data</td><td>Data buffer </td></tr>
@@ -276,7 +276,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Decrypt data using the given blowfish state object. Decryption is done in-place, no memory allocation is done internally. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Decrypt data using the given blowfish state object. Decryption is done in-place, no memory allocation is done internally. Length is expected to be a multiple of 8 bytes (any extra unaligned data will be ignored). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">blowfish</td><td>Blowfish state object </td></tr>
     <tr><td class="paramname">data</td><td>Data buffer </td></tr>

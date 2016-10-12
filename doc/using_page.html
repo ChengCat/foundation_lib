@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -50,6 +50,20 @@
 Project setup</h1>
 <h2><a class="anchor" id="project_scons"></a>
 Ninja</h2>
+<p>Use the provided build generator in example/build/ninja and modify the configuration script in example/configure.py to suit your needs. The local variables module, sources, libs, includepaths and libpaths control the basic setup of the project.</p>
+<ul>
+<li>
+project - Name of the project (and the executable). By default this is also the subdirectory name holding the sources. </li>
+<li>
+sources - Source files inside the module subdirectory </li>
+<li>
+libs - External libraries to link with </li>
+<li>
+includepaths - External include paths </li>
+<li>
+libpaths - External library paths </li>
+</ul>
+<p>For further documentation on how to setup a Ninja build check out the <a class="el" href="build_page.html#ninja">Ninja</a> section.</p>
 <h2><a class="anchor" id="project_visual_studio"></a>
 Visual Studio</h2>
 <h2><a class="anchor" id="project_xcode"></a>
@@ -58,14 +72,39 @@ XCode</h2>
 Template application</h1>
 <h2><a class="anchor" id="template_initialize"></a>
 Initialization</h2>
+<p><code>int <a class="el" href="main_8h.html#aa60687c834a72be55551382be1fde19c">main_initialize(void)</a></code><br />
+ The initialization entry point of the application. It is expected to call <a class="el" href="foundation_8h.html#afa623d6638b10ee1d68b88b101b30def">foundation_initialize</a> and perform any other initialization in this function. It should return 0 if successful, or a negative value to indicate error in which case the application will terminate without running and use the returned value as exit code.</p>
+<p>The example application uses default values for all foundation configuration controls by doing<br />
+<code><a class="el" href="structfoundation__config__t.html">foundation_config_t</a> config;<br />
+memset(&amp;config, 0, sizeof(config));</code><br />
+For more information about the configuration controls, read the <a class="el" href="structfoundation__config__t.html">foundation_config_t</a> documentation.</p>
+<p>It also defines the application data with<br />
+<code><a class="el" href="structapplication__t.html">application_t</a> application;<br />
+ memset(&amp;application, 0, sizeof(application));<br />
+ application.name = string_const(STRING_CONST("Foundation example application"));<br />
+ application.short_name = string_const(STRING_CONST("example"));<br />
+ application.company = string_const(STRING_CONST("Rampant Pixels"));<br />
+ application.version = <a class="el" href="foundation_8h.html#a38f659aa17d26502b040e05e0fa819c2">foundation_version()</a>;<br />
+ application.flags = APPLICATION_UTILITY;<br />
+ application.exception_handler = example_exception_handler;</code><br />
+ Note that the string data passed in this structure must be constants and valid for the lifetime of the application. More information available in the <a class="el" href="structapplication__t.html">application_t</a> documentation.</p>
+<p>The example application also sets a default log suppression level and initializes the memory tracker. Finally it locates the base directory of the application and sets this as the current working directory.</p>
 <h2><a class="anchor" id="template_finalize"></a>
 Finalization</h2>
+<p><code>void <a class="el" href="main_8h.html#a5f940f9de3430ef1674dcf848127d936">main_finalize(void)</a></code><br />
+ The finalization entry point of the application. It is expected to do any custom finalization and cleanup and finally call <a class="el" href="foundation_8h.html#a525b28e9093176c7e14bdee59c585e64">foundation_finalize</a> to terminate the library operations.</p>
+<h2><a class="anchor" id="template_execution"></a>
+Execution</h2>
+<p><code>int <a class="el" href="main_8h.html#ab9aa7bd6ac0302e438ca9b8f32ef6799">main_run(void*)</a></code><br />
+ Execution entry point of the application. Called to execute the application once the initialization has completed successfully. The return value from main_run is used as the process exit code. This is where the application logic should be implemented.</p>
 <h2><a class="anchor" id="template_environment"></a>
 Environment</h2>
 <h2><a class="anchor" id="template_system"></a>
 System</h2>
-<h2><a class="anchor" id="template_config"></a>
-Config</h2>
+<h2><a class="anchor" id="template_platform"></a>
+Platform specifics</h2>
+<p>Android - ...</p>
+<p>iOS - ... </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

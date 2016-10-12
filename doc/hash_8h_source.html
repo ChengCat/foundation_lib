@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Foundation Library: D:/foundation_lib/foundation/hash.h Source File</title>
+<title>Foundation Library: E:/projects/foundation_lib/foundation/hash.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -97,7 +97,7 @@
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="hash_8h.html#a59b3f546cccb5ff57151e53b57bcd802">   68</a></span>&#160;<span class="preprocessor">#define static_hash_string( key, len, value ) \</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">  static_hash( key, string_length( key ), (hash_t)value )</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">  static_hash( key, len, (hash_t)value )</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#if BUILD_ENABLE_STATIC_HASH_DEBUG</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
@@ -116,19 +116,21 @@
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="hash_8h.html#a845a05d0d544b62c34e8d5623a1bce3f">   89</a></span>&#160;<span class="preprocessor">#define HASH_EMPTY_STRING 0xC2D00F032E25E509LL</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="hash_8h.html#a845a05d0d544b62c34e8d5623a1bce3f">   89</a></span>&#160;<span class="preprocessor">#define HASH_EMPTY_STRING 0xC2D00F032E25E509ULL</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="hash_8h.html#a6b951761304a833ffc5d929d9e8c5056">   92</a></span>&#160;<span class="preprocessor">#define HASH_NULL 0ULL</span></div>
 <div class="ttc" id="types_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">Foundation data types. </div></div>
 <div class="ttc" id="string_8h_html"><div class="ttname"><a href="string_8h.html">string.h</a></div><div class="ttdoc">String utility functions. </div></div>
 <div class="ttc" id="hash_8h_html_ac1137fdc2bd4fd6d9eb1e44db80ef8c2"><div class="ttname"><a href="hash_8h.html#ac1137fdc2bd4fd6d9eb1e44db80ef8c2">hash_to_string</a></div><div class="ttdeci">FOUNDATION_API string_const_t hash_to_string(hash_t value)</div></div>
 <div class="ttc" id="hash_8h_html_aa5fefca5b18446b909eb90ccd7556b16"><div class="ttname"><a href="hash_8h.html#aa5fefca5b18446b909eb90ccd7556b16">hash</a></div><div class="ttdeci">FOUNDATION_API FOUNDATION_PURECALL hash_t hash(const void *key, size_t len)</div></div>
-<div class="ttc" id="types_8h_html_afc91d3cceff94258bb6566969046caa5"><div class="ttname"><a href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a></div><div class="ttdeci">uint64_t hash_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00393">types.h:393</a></div></div>
+<div class="ttc" id="types_8h_html_afc91d3cceff94258bb6566969046caa5"><div class="ttname"><a href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a></div><div class="ttdeci">uint64_t hash_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00413">types.h:413</a></div></div>
 <div class="ttc" id="platform_8h_html_af463bb079d635ed9ab7980f5a0a26966"><div class="ttname"><a href="platform_8h.html#af463bb079d635ed9ab7980f5a0a26966">FOUNDATION_PURECALL</a></div><div class="ttdeci">#define FOUNDATION_PURECALL</div></div>
 <div class="ttc" id="assert_8h_html_a9e13dbbd22b4d6df2036d9188d41af53"><div class="ttname"><a href="assert_8h.html#a9e13dbbd22b4d6df2036d9188d41af53">FOUNDATION_ASSERT_MSGFORMAT</a></div><div class="ttdeci">#define FOUNDATION_ASSERT_MSGFORMAT(cond, msg,...)</div><div class="ttdef"><b>Definition:</b> <a href="assert_8h_source.html#l00106">assert.h:106</a></div></div>
 <div class="ttc" id="platform_8h_html"><div class="ttname"><a href="platform_8h.html">platform.h</a></div><div class="ttdoc">Platform abstractions. </div></div>
 <div class="ttc" id="assert_8h_html"><div class="ttname"><a href="assert_8h.html">assert.h</a></div><div class="ttdoc">Extended assert macros. </div></div>
 <div class="ttc" id="platform_8h_html_a6041d4ef4e29ee27117fcac64ba69820"><div class="ttname"><a href="platform_8h.html#a6041d4ef4e29ee27117fcac64ba69820">FOUNDATION_FORCEINLINE</a></div><div class="ttdeci">#define FOUNDATION_FORCEINLINE</div></div>
 <div class="ttc" id="platform_8h_html_ab5d798081ff1e38fc8d86a56b852da8e"><div class="ttname"><a href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a></div><div class="ttdeci">#define FOUNDATION_API</div></div>
-<div class="ttc" id="structstring__const__t_html"><div class="ttname"><a href="structstring__const__t.html">string_const_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00785">types.h:785</a></div></div>
+<div class="ttc" id="structstring__const__t_html"><div class="ttname"><a href="structstring__const__t.html">string_const_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00841">types.h:841</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

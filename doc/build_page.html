@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -173,6 +173,7 @@ Host specifics</h2>
 <p>On Windows the default toolchain is the Microsoft compiler suite. You should run the appropriate <code>vcvarsall.bat</code> environment setup batch script for the architecture you choose prior to starting builds (or use the preconfigured command prompts from Visual Studio installs).</p>
 <p>On MacOS X (and when cross compiling for iOS) the default toolchain is clang. The only supported architecture is x86-64 targetting MacOS X 10.7 or later, and arm7/arm64 targeting iOS 6.0 or later. The ninja will use the latest SDK and clang toolchain available by using the xcrun tool to locate SDK and binary paths.</p>
 <p>On Linux the default toolchain is clang. The supported architectures are x86, x86-64, arm6, arm7, arm64, mips and mips64.</p>
+<p>Building for Android requires NDK r11 or later. The default toolchain is clang.</p>
 <p>On Raspberry Pi the default toolchain is gcc. The only supported architecture is arm6 (with Raspberry Pi specific compiler switches).</p>
 <h2><a class="anchor" id="ninja_codesign"></a>
 Code signing</h2>
@@ -181,57 +182,55 @@ Code signing</h2>
 Build options</h2>
 <p>Some build variables can be set externally from the ninja build files. These variables are </p><ul>
 <li>
-android_ndkpath - Path to the Android NDK (no default) </li>
+android: ndkpath - Path to the Android NDK (no default) </li>
 <li>
-android_sdkpath - Path to the Android SDK (no default) </li>
+android: sdkpath - Path to the Android SDK (no default) </li>
 <li>
-android_keystore - Keystore to use when signing APK (default "~/.android/debug.keystore") </li>
+android: keystore - Keystore to use when signing APK (default "~/.android/debug.keystore") </li>
 <li>
-android_keyalias = Key alias to use when signing API (default "androiddebugkey") </li>
+android: keyalias = Key alias to use when signing API (default "androiddebugkey") </li>
 <li>
-android_keystorepass - Password for keystore used when signing APK (default "android") </li>
+android: keystorepass - Password for keystore used when signing APK (default "android") </li>
 <li>
-android_keypass - Password for key used when signing APK (default "android") </li>
+android: keypass - Password for key used when signing APK (default "android") </li>
 <li>
-android_platformversion - Android platform version to use when building (default "21") </li>
+android: platformversion - Android platform version to use when building (default "21") </li>
 <li>
-android_toolchainversion_gcc - GCC toolchain version to use when building (default "4.9") </li>
+android: gccversion - GCC toolchain version to use when building (default "4.9") </li>
 <li>
-android_toolchainversion_clang - CLang toolchain version to use when building (default "3.5") </li>
+android: tsa - Location of the Timestamping Authority </li>
 <li>
-android_tsa - Location of the Timestamping Authority </li>
+android: tsacert - Public key certificate for Timestamping Authority </li>
 <li>
-android_tsacert - Public key certificate for Timestamping Authority </li>
+ios: deploymenttarget - Minimum iOS target version (default "6.0") </li>
 <li>
-ios_deploymenttarget - Minimum iOS target version (default "6.0") </li>
+ios: organisation - Organisation identifier on format "TXYZAB01CD" (no default) </li>
 <li>
-ios_organisation - Organisation identifier on format "TXYZAB01CD" (no default) </li>
+ios: bundleidentifier - Bundle identifier on format "com.company.id" (no default) </li>
 <li>
-ios_bundleidentifier - Bundle identifier on format "com.company.id" (no default) </li>
+ios: signature - Certificate signature (no default) </li>
 <li>
-ios_signature - Certificate signature (no default) </li>
+ios: provisioning - Mobile provisioning profile path (no default) </li>
 <li>
-ios_provisioning - Mobile provisioning profile path (no default) </li>
+macosx: deploymenttarget - Minimum MacOS X target version (default "10.7") </li>
 <li>
-macosx_deploymenttarget - Minimum MacOS X target version (default "10.7") </li>
+macosx: organisation - Organisation identifier on format "TXYZAB01CD" (no default) </li>
 <li>
-macosx_organisation - Organisation identifier on format "TXYZAB01CD" (no default) </li>
+macosx: bundleidentifier - Bundle identifier on format "com.company.id" (no default) </li>
 <li>
-macosx_bundleidentifier - Bundle identifier on format "com.company.id" (no default) </li>
+msvc: toolchain - Path to Visual Studio toolchain to use (default value is autodetected) </li>
 <li>
-pnacl_sdkpath - Path to the PNaCl SDK (no default) </li>
+msvc: sdkpath - Path to Windows SDK to use (default value is autodetected) </li>
 <li>
-tizen_sdkpath - Path to the Tizen SDK (no default) </li>
+pnacl: sdkpath - Path to the PNaCl SDK (no default) </li>
 <li>
-tizen_platformversion - Version of the Tizen platform to use (default "2.3") </li>
+tizen: sdkpath - Path to the Tizen SDK (no default) </li>
 <li>
-tizen_gccversion - GCC toolchain version to use when building (default "4.8") </li>
+tizen: platformversion - Version of the Tizen platform to use (default "2.3") </li>
 <li>
-tizen_clangversion - CLang toolchain version to use when building (default "3.4") </li>
+tizen: gccversion - GCC toolchain version to use when building (default "4.8") </li>
 <li>
-msvc_toolchain - Path to Visual Studio toolchain to use (default value is autodetected) </li>
-<li>
-msvc_sdkpath - Path to Windows SDK to use (default value is autodetected) </li>
+tizen: clangversion - CLang toolchain version to use when building (default "3.4") </li>
 </ul>
 <p>The bundle identifier variables can contain expansion variables which will be substituted during build. These include </p><ul>
 <li>
@@ -243,18 +242,15 @@ configure.py script variables passed to generator </li>
 <li>
 build.json file in root project directory, read during configure.py execution </li>
 <li>
-environment variables, read during configure.py execution </li>
-<li>
 codesign.json file in root project directory, read at build time </li>
 </ul>
-<p>Passing variables to the generator in configure.py is a simple list of key-value pairs. For example <code>variables = [ ( 'bundleidentifier', 'com.rampantpixels.foundation.' ) ]</code>. Any variables that have a identical name with different platform prefix can be passed without any platform name as in the example. The value will be applied to all platform specific variables.</p>
+<p>Passing variables to the generator in configure.py is a simple list of key-value pairs. For example <code>variables = [ ( 'bundleidentifier', 'com.rampantpixels.foundation.$(binname)' ) ]</code>. Any variables that have a identical name with different platform prefix can be passed without any platform name as in the example. The value will be applied to all platform specific variables.</p>
 <p>The build.json is a simple host-local file which can hold any variable values listed. The value should be put in enclosing groups for each platforms (see example). The values will be set after parsing the configure.py variables. An example build.json file: </p><pre>{
     "android" : {
         "ndkpath" : "~/android-ndk",
         "sdkpath" : "~/android-sdk",
         "platformversion" : "21",
         "gccversion" : "4.9",
-        "clangversion" : "3.5"
     },
     "ios" : {
         "deploymenttarget" : "6.0"
@@ -265,34 +261,33 @@ codesign.json file in root project directory, read at build time </li>
     "msvc" : {
         "toolchain" : "C:/Program Files (x86)/Microsoft Visual Studio 12.0/VC/bin"
     }
-}</pre><p>You can override configure.py and build.json values using environment variables. The environment variable names should be the variable name in upper case. For example, to set the Minimum iOS target version set <code>IOS_DEPLOYMENTVERSION="6.0"</code> in the environment prior to invoking configure.py</p>
-<p>Finally, the codesign.json is read by the codesigning phase at build time and can hold the secrets related to code signing. This allows you to have the secret locally on the build machine without requiring recreation of the build scripts or storing secrets in version control. The format is the same as for build.json and the variables used are: </p><ul>
+}</pre><p>Finally, the codesign.json is read by the codesigning phase at build time and can hold the secrets related to code signing. This allows you to have the secret locally on the build machine without requiring recreation of the build scripts or storing secrets in version control. The format is the same as for build.json and the variables used are: </p><ul>
 <li>
-android_keystore </li>
+android: keystore </li>
 <li>
-android_keyalias </li>
+android: keyalias </li>
 <li>
-android_keystorepass </li>
+android: keystorepass </li>
 <li>
-android_keypass </li>
+android: keypass </li>
 <li>
-android_tsa </li>
+android: tsa </li>
 <li>
-android_tsacert </li>
+android: tsacert </li>
 <li>
-ios_organisation </li>
+ios: organisation </li>
 <li>
-ios_bundleidentifier </li>
+ios: bundleidentifier </li>
 <li>
-ios_signature </li>
+ios: signature </li>
 <li>
-ios_provisioning </li>
+ios: provisioning </li>
 <li>
-ios_organisation </li>
+macosx: organisation </li>
 <li>
-ios_bundleidentifier </li>
+macosx: bundleidentifier </li>
 <li>
-ios_signature </li>
+macosx: signature </li>
 </ul>
 <p>An example codesign.json file: </p><pre>{
     "android" : {
@@ -303,7 +298,7 @@ ios_signature </li>
     },
     "ios" : {
         "organisation" : "TXXXYZ12AB",
-        "bundleidentifier" : "com.mycompany.$(binname)",
+        "bundleidentifier" : "com.mycompany.\$(binname)",
         "signature" : "ABCDEF0123456789ABCDEF0123456789ABCDEF01",
         "provisioning" : "01234567-89AB-CDEF-0123-456789ABCDEF.mobileprovision"
     },
@@ -314,7 +309,7 @@ ios_signature </li>
     }
 }</pre><h1><a class="anchor" id="visual_studio"></a>
 Visual Studio</h1>
-<p>On Windows we currently support building with Microsoft and Intel compilers with Visual Studio 2013 Both 32-bit and 64-bit Windows are supported. To build with Visual Studio, open the foundation.sln solution file Visual Studio 2013 in <code>build/vs13</code>. To build all targets and configurations use batch build, select all targets and build.</p>
+<p>On Windows we currently support building with Microsoft and Intel compilers with Visual Studio 2015. Both 32-bit and 64-bit Windows are supported. To build with Visual Studio, open the foundation.sln solution file Visual Studio 2015 in <code>build/vs15</code>. To build all targets and configurations use batch build, select all targets and build.</p>
 <h1><a class="anchor" id="xcode"></a>
 XCode</h1>
 <p>To build with XCode, open the XCode workspace in <code>build/xcode/foundation-osx.xcworkspace</code> for MacOS X and <code>build/xcode/foundation-ios.xcworkspace</code> for iOS and build the appropriate targets. The workspace contains projects for both foundation library and test cases. The only supported architecture is x86-64 targetting MacOS X 10.7 or later, or for iOS arm7/arm64 targeting iOS 6.0 or later.</p>
@@ -339,7 +334,7 @@ Generic flags</h2>
 CLang flags</h2>
 <ul>
 <li>Include/build: <code>-I. -Itest -DFOUNDATION_COMPILE=1 -DBUILD_&lt;DEBUG|RELEASE|PROFILE|DEPLOY&gt;=1</code></li>
-<li>Warning: <code>-W -Wall -Werror</code></li>
+<li>Warning: <code>-W -Weverything -Werror</code></li>
 <li>All builds: <code>-funit-at-a-time -fstrict-aliasing -fno-math-errno -ffinite-math-only -funsafe-math-optimizations -fno-trapping-math -ffast-math -g</code></li>
 <li>Debug: <code>-O0</code></li>
 <li>Release: <code>-funroll-loops -O3</code></li>

@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -56,7 +56,6 @@
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
       <li><a href="#index_a"><span>a</span></a></li>
-      <li><a href="#index_c"><span>c</span></a></li>
       <li><a href="#index_d"><span>d</span></a></li>
       <li><a href="#index_e"><span>e</span></a></li>
       <li><a href="#index_f"><span>f</span></a></li>
@@ -82,16 +81,6 @@
 </ul>
 
 
-<h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
-<li>crash_dump_callback_fn
-: <a class="el" href="types_8h.html#a0214d4ef8a863dbb057494c1b8ae204d">types.h</a>
-</li>
-<li>crash_guard_fn
-: <a class="el" href="types_8h.html#acb826f46d2bd5fe7e9b26148647c00c4">types.h</a>
-</li>
-</ul>
-
-
 <h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
 <li>deltatime_t
 : <a class="el" href="types_8h.html#a1e045bd902c1e5ed1999ce2ecc7e3ef9">types.h</a>
@@ -100,8 +89,14 @@
 
 
 <h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
-<li>error_callback_fn
-: <a class="el" href="types_8h.html#a088cb0e0dabdf9321fdbccc513971eda">types.h</a>
+<li>error_handler_fn
+: <a class="el" href="types_8h.html#a12dec4b89fc152b9d9a82ddf36c38a5b">types.h</a>
+</li>
+<li>exception_handler_fn
+: <a class="el" href="types_8h.html#ac04ea814d64beda884a7747b42f2de40">types.h</a>
+</li>
+<li>exception_try_fn
+: <a class="el" href="types_8h.html#a697104bd133e400552eedc5b66e700a4">types.h</a>
 </li>
 </ul>
 
@@ -124,8 +119,8 @@
 
 
 <h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
-<li>log_callback_fn
-: <a class="el" href="types_8h.html#a3fdd24f89156fecea03f4851dab04335">types.h</a>
+<li>log_handler_fn
+: <a class="el" href="types_8h.html#aac0ba2e2202efb06a4901f982864dc0f">types.h</a>
 </li>
 </ul>
 
@@ -139,6 +134,9 @@
 </li>
 <li>memory_reallocate_fn
 : <a class="el" href="types_8h.html#a1fc94fab6dc161bb7be058e7d14d8def">types.h</a>
+</li>
+<li>memory_statistics_fn
+: <a class="el" href="types_8h.html#aa02aab99a07414cabe03b68b05ded4fc">types.h</a>
 </li>
 <li>memory_track_fn
 : <a class="el" href="types_8h.html#a82ac4d959712ea0ee67a5b0432860d33">types.h</a>
@@ -219,6 +217,12 @@
 <li>stream_seek_fn
 : <a class="el" href="types_8h.html#a5070430f73696adff258da7ec3be50d0">types.h</a>
 </li>
+<li>stream_sha256_fn
+: <a class="el" href="types_8h.html#afd7d45298b8b60c1c04420bb3e5937ac">types.h</a>
+</li>
+<li>stream_sha512_fn
+: <a class="el" href="types_8h.html#a241b4606fba1404b890362fc9bada9e2">types.h</a>
+</li>
 <li>stream_size_fn
 : <a class="el" href="types_8h.html#ad0aca9241ddee63c7764619b4a966c7c">types.h</a>
 </li>
@@ -242,7 +246,7 @@
 
 <h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
 <li>thread_fn
-: <a class="el" href="types_8h.html#a543e42ed5e2375f5a4ed52fe5eef5941">types.h</a>
+: <a class="el" href="types_8h.html#a6bae56cebb9cd0da2cb8f92987c09876">types.h</a>
 </li>
 <li>tick_t
 : <a class="el" href="types_8h.html#a6073f7f0a2c2f88c7ac7bd8dd93de227">types.h</a>

@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -60,8 +60,12 @@ Data Fields</h2></td></tr>
 <tr class="separator:a577c616e279ca4239529ad3674ee11cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a533dc0f1438621f938b060659b2f82b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aa0e10fb2271bfc464a1cdd0bb4e5fcc3">memory_untrack_fn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmemory__tracker__t.html#a533dc0f1438621f938b060659b2f82b8">untrack</a></td></tr>
 <tr class="separator:a533dc0f1438621f938b060659b2f82b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef9e24b4a2f625740cee988405f98dde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aa02aab99a07414cabe03b68b05ded4fc">memory_statistics_fn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmemory__tracker__t.html#aef9e24b4a2f625740cee988405f98dde">statistics</a></td></tr>
+<tr class="separator:aef9e24b4a2f625740cee988405f98dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7583634f1f3da3b28bfa5179ef3dd60d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#acce51891e2d43ec44bcf6ca01681d1a1">system_initialize_fn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmemory__tracker__t.html#a7583634f1f3da3b28bfa5179ef3dd60d">initialize</a></td></tr>
 <tr class="separator:a7583634f1f3da3b28bfa5179ef3dd60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4928d1ffb070c5e6ed52e72317ad0208"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a69b82a9148508ffda5ece199760623ab">system_finalize_fn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmemory__tracker__t.html#a4928d1ffb070c5e6ed52e72317ad0208">abort</a></td></tr>
+<tr class="separator:a4928d1ffb070c5e6ed52e72317ad0208"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d82e3ab85c048ea8fb119b209ade32e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a69b82a9148508ffda5ece199760623ab">system_finalize_fn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmemory__tracker__t.html#a9d82e3ab85c048ea8fb119b209ade32e">finalize</a></td></tr>
 <tr class="separator:a9d82e3ab85c048ea8fb119b209ade32e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -69,7 +73,7 @@ Data Fields</h2></td></tr>
 <div class="textblock"><p>Memory tracking system declarations with function pointers for all memory tracking entry points</p>
 <p>Memory tracker declaration </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00823">823</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00907">907</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="a577c616e279ca4239529ad3674ee11cd"></a>
 <div class="memitem">
@@ -82,7 +86,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Track a memory allocation </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00825">825</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00909">909</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -97,7 +101,22 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Untrack a memory allocation </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00827">827</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00911">911</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aef9e24b4a2f625740cee988405f98dde"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#aa02aab99a07414cabe03b68b05ded4fc">memory_statistics_fn</a> statistics</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Statistics </p>
+
+<p>Definition at line <a class="el" href="types_8h_source.html#l00913">913</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -112,7 +131,22 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Initialize memory tracker </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00829">829</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00915">915</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4928d1ffb070c5e6ed52e72317ad0208"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a69b82a9148508ffda5ece199760623ab">system_finalize_fn</a> abort</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Abort memory tracker </p>
+
+<p>Definition at line <a class="el" href="types_8h_source.html#l00917">917</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -125,14 +159,14 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Shutdown memory tracker </p>
+<p>Finalize memory tracker </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00831">831</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00919">919</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>D:/foundation_lib/foundation/<a class="el" href="types_8h_source.html">types.h</a></li>
+<li>E:/projects/foundation_lib/foundation/<a class="el" href="types_8h_source.html">types.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

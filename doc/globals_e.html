@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -62,6 +62,7 @@
       <li class="current"><a href="globals_e.html#index_e"><span>e</span></a></li>
       <li><a href="globals_f.html#index_f"><span>f</span></a></li>
       <li><a href="globals_h.html#index_h"><span>h</span></a></li>
+      <li><a href="globals_j.html#index_j"><span>j</span></a></li>
       <li><a href="globals_l.html#index_l"><span>l</span></a></li>
       <li><a href="globals_m.html#index_m"><span>m</span></a></li>
       <li><a href="globals_o.html#index_o"><span>o</span></a></li>
@@ -82,8 +83,14 @@
 <li>environment_application()
 : <a class="el" href="environment_8h.html#aa269ed5c42883db55bc5e2132dd3c023">environment.h</a>
 </li>
+<li>environment_application_directory()
+: <a class="el" href="environment_8h.html#a90417bb3dc5c4eb8f48ffd1f15d79082">environment.h</a>
+</li>
 <li>environment_bundle_identifier()
 : <a class="el" href="environment_8h.html#ac3022edcd862df679a2154aabbce4870">environment.h</a>
+</li>
+<li>environment_bundle_path()
+: <a class="el" href="environment_8h.html#a51270b2f8e27cc397b533c984dacb035">environment.h</a>
 </li>
 <li>environment_command_line()
 : <a class="el" href="environment_8h.html#a0bd1a8eea67e72b4e5d810f944793a8e">environment.h</a>
@@ -100,14 +107,11 @@
 <li>environment_executable_path()
 : <a class="el" href="environment_8h.html#ac9688dd1e08dc603baaf4000c1e4cf3a">environment.h</a>
 </li>
-<li>environment_home_directory()
-: <a class="el" href="environment_8h.html#a2900b43ec55c190826dafaf5bd47a143">environment.h</a>
-</li>
 <li>environment_initial_working_directory()
 : <a class="el" href="environment_8h.html#a256954576c709b57dc96db255ac313ff">environment.h</a>
 </li>
 <li>environment_set_current_working_directory()
-: <a class="el" href="environment_8h.html#a9c46ac0c3215746b3f1fd3134485a8e2">environment.h</a>
+: <a class="el" href="environment_8h.html#a5c1ba1f4a71e56605430549df6457906">environment.h</a>
 </li>
 <li>environment_temporary_directory()
 : <a class="el" href="environment_8h.html#a5590e0d4963f672fca3455459ad863fe">environment.h</a>
@@ -123,12 +127,6 @@
 </li>
 <li>ERROR_ASSERT
 : <a class="el" href="types_8h.html#ac7659d73a8cdedc08e9f566bb406689ca46aec4e3e56d2d652cd2626f99714b43">types.h</a>
-</li>
-<li>error_callback()
-: <a class="el" href="error_8h.html#a4d56ff4025a9412bbb92792dc64462f0">error.h</a>
-</li>
-<li>error_callback_fn
-: <a class="el" href="types_8h.html#a088cb0e0dabdf9321fdbccc513971eda">types.h</a>
 </li>
 <li>error_context
 : <a class="el" href="error_8h.html#a315fb3058c86cd17004c65a25c4699b0">error.h</a>
@@ -156,6 +154,12 @@
 </li>
 <li>ERROR_EXCEPTION
 : <a class="el" href="types_8h.html#ac7659d73a8cdedc08e9f566bb406689ca73e44dbfe596cd4504fab4d479c72683">types.h</a>
+</li>
+<li>error_handler()
+: <a class="el" href="error_8h.html#aa868c8929d1e60404e004856f54af5de">error.h</a>
+</li>
+<li>error_handler_fn
+: <a class="el" href="types_8h.html#a12dec4b89fc152b9d9a82ddf36c38a5b">types.h</a>
 </li>
 <li>ERROR_INTERNAL_FAILURE
 : <a class="el" href="types_8h.html#ac7659d73a8cdedc08e9f566bb406689caaad14cc5ef152d256b7f9ed27d653dcc">types.h</a>
@@ -190,8 +194,8 @@
 <li>ERROR_SCRIPT
 : <a class="el" href="types_8h.html#ac7659d73a8cdedc08e9f566bb406689cac5938564a631409b6c347746ab1bdb8d">types.h</a>
 </li>
-<li>error_set_callback()
-: <a class="el" href="error_8h.html#af1a730a6ad539897a23ac77a95271044">error.h</a>
+<li>error_set_handler()
+: <a class="el" href="error_8h.html#ad2a46dbe49791d07e13337fc165ab316">error.h</a>
 </li>
 <li>ERROR_SYSTEM_CALL_FAIL
 : <a class="el" href="types_8h.html#ac7659d73a8cdedc08e9f566bb406689cab4b6ca99d9e53365a55280bc23dab4ff">types.h</a>
@@ -233,13 +237,13 @@
 : <a class="el" href="event_8h.html#a653531124dbe0ae184473eaf19585871">event.h</a>
 </li>
 <li>event_post()
-: <a class="el" href="event_8h.html#ab918e4d8076ef6257fb05e94e43c47fe">event.h</a>
+: <a class="el" href="event_8h.html#a1821618d45ee42096dcddfc68fbd4c36">event.h</a>
 </li>
 <li>event_post_varg()
-: <a class="el" href="event_8h.html#a84fe3e29d00d0f88d7ebc10d9bfd892a">event.h</a>
+: <a class="el" href="event_8h.html#a9687b5f32c9ec22fe8cdaaefe0f6b1b7">event.h</a>
 </li>
 <li>event_post_vlist()
-: <a class="el" href="event_8h.html#a35a8c9a5c1e4055e140b8768effcadd0">event.h</a>
+: <a class="el" href="event_8h.html#ac9f45ccf6bcd1c89ecb92642e266ba54">event.h</a>
 </li>
 <li>event_stream_allocate()
 : <a class="el" href="event_8h.html#a8592e7625d4dc14b4158806cff39732a">event.h</a>
@@ -256,8 +260,35 @@
 <li>event_stream_process()
 : <a class="el" href="event_8h.html#a9a3bbe236fdf0c64ce3f8e2a64fb0fd7">event.h</a>
 </li>
+<li>event_stream_set_beacon()
+: <a class="el" href="event_8h.html#a398960dbdc06e1993974c56ea2808416">event.h</a>
+</li>
 <li>EVENTFLAG_DELAY
 : <a class="el" href="types_8h.html#a8f1486d03096eaad737dccc4e27c56be">types.h</a>
+</li>
+<li>exception_dump_name()
+: <a class="el" href="exception_8h.html#af34c07ada0c3ef13bb2dc499586e1de8">exception.h</a>
+</li>
+<li>exception_handler()
+: <a class="el" href="exception_8h.html#ac94e7a60086c643f8252dc1e5109fcd5">exception.h</a>
+</li>
+<li>exception_handler_fn
+: <a class="el" href="types_8h.html#ac04ea814d64beda884a7747b42f2de40">types.h</a>
+</li>
+<li>exception_raise_abort()
+: <a class="el" href="exception_8h.html#a1dbdaefa71cf4210d95db7b215d32b0a">exception.h</a>
+</li>
+<li>exception_raise_debug_break()
+: <a class="el" href="exception_8h.html#a80f6ab55acbcfe385cf5efef7b9e2767">exception.h</a>
+</li>
+<li>exception_set_handler()
+: <a class="el" href="exception_8h.html#ad854eb5ee027358f621327346514fcc3">exception.h</a>
+</li>
+<li>exception_try()
+: <a class="el" href="exception_8h.html#a2f2060975bafeee62792e135bf586561">exception.h</a>
+</li>
+<li>exception_try_fn
+: <a class="el" href="types_8h.html#a697104bd133e400552eedc5b66e700a4">types.h</a>
 </li>
 </ul>
 </div><!-- contents -->

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Foundation Library: D:/foundation_lib/foundation/error.h File Reference</title>
+<title>Foundation Library: E:/projects/foundation_lib/foundation/error.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -83,13 +83,13 @@ Functions</h2></td></tr>
 <tr class="separator:ace5156431b073a5be3ab4eb4cb905772"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a550e39194c0550da525408dde7a5a8f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error_8h.html#a550e39194c0550da525408dde7a5a8f8">error_report</a> (<a class="el" href="types_8h.html#aedc3ffc6b8ac675156f7e759316a2bac">error_level_t</a> level, <a class="el" href="types_8h.html#ac7659d73a8cdedc08e9f566bb406689c">error_t</a> err)</td></tr>
 <tr class="separator:a550e39194c0550da525408dde7a5a8f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d56ff4025a9412bbb92792dc64462f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="types_8h.html#a088cb0e0dabdf9321fdbccc513971eda">error_callback_fn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error_8h.html#a4d56ff4025a9412bbb92792dc64462f0">error_callback</a> (void)</td></tr>
-<tr class="separator:a4d56ff4025a9412bbb92792dc64462f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1a730a6ad539897a23ac77a95271044"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error_8h.html#af1a730a6ad539897a23ac77a95271044">error_set_callback</a> (<a class="el" href="types_8h.html#a088cb0e0dabdf9321fdbccc513971eda">error_callback_fn</a> callback)</td></tr>
-<tr class="separator:af1a730a6ad539897a23ac77a95271044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa868c8929d1e60404e004856f54af5de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="types_8h.html#a12dec4b89fc152b9d9a82ddf36c38a5b">error_handler_fn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error_8h.html#aa868c8929d1e60404e004856f54af5de">error_handler</a> (void)</td></tr>
+<tr class="separator:aa868c8929d1e60404e004856f54af5de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2a46dbe49791d07e13337fc165ab316"><td class="memItemLeft" align="right" valign="top"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error_8h.html#ad2a46dbe49791d07e13337fc165ab316">error_set_handler</a> (<a class="el" href="types_8h.html#a12dec4b89fc152b9d9a82ddf36c38a5b">error_handler_fn</a> handler)</td></tr>
+<tr class="separator:ad2a46dbe49791d07e13337fc165ab316"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Error context and reporting. Most error handling is done per-thread, including current error and error callback. If error context is not enabled in the build all error context macros evaluate to no-ops.</p>
+<div class="textblock"><p>Error context and reporting. Most error handling is done per-thread, including current error and error handler. If error context is not enabled in the build all error context macros evaluate to no-ops.</p>
 <p>Error functions are thread safe. </p>
 
 <p>Definition in file <a class="el" href="error_8h_source.html">error.h</a>.</p>
@@ -110,13 +110,14 @@ Functions</h2></td></tr>
 <p>Push a new error context and associated data on the error context stack. Both context and data must be valid for as long as it remains on the stack. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>Context name </td></tr>
+    <tr><td class="paramname">name_length</td><td>Context name length </td></tr>
     <tr><td class="paramname">data</td><td>Context data buffer </td></tr>
-    <tr><td class="paramname">length</td><td>Context data buffer size </td></tr>
+    <tr><td class="paramname">data_length</td><td>Context data buffer size </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="error_8h_source.html#l00066">66</a> of file <a class="el" href="error_8h_source.html">error.h</a>.</p>
+<p>Definition at line <a class="el" href="error_8h_source.html#l00067">67</a> of file <a class="el" href="error_8h_source.html">error.h</a>.</p>
 
 </div>
 </div>
@@ -134,7 +135,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Pop the top error context off the error context stack </p>
 
-<p>Definition at line <a class="el" href="error_8h_source.html#l00071">71</a> of file <a class="el" href="error_8h_source.html">error.h</a>.</p>
+<p>Definition at line <a class="el" href="error_8h_source.html#l00072">72</a> of file <a class="el" href="error_8h_source.html">error.h</a>.</p>
 
 </div>
 </div>
@@ -152,7 +153,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Clear the error context </p>
 
-<p>Definition at line <a class="el" href="error_8h_source.html#l00076">76</a> of file <a class="el" href="error_8h_source.html">error.h</a>.</p>
+<p>Definition at line <a class="el" href="error_8h_source.html#l00077">77</a> of file <a class="el" href="error_8h_source.html">error.h</a>.</p>
 
 </div>
 </div>
@@ -172,12 +173,12 @@ Functions</h2></td></tr>
 <p>Generate a error context stack description string in the given buffer, limited to the given size. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buffer</td><td>Destination buffer </td></tr>
-    <tr><td class="paramname">size</td><td>Maximum buffer size </td></tr>
+    <tr><td class="paramname">capacity</td><td>Buffer capacity </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="error_8h_source.html#l00084">84</a> of file <a class="el" href="error_8h_source.html">error.h</a>.</p>
+<p>Definition at line <a class="el" href="error_8h_source.html#l00085">85</a> of file <a class="el" href="error_8h_source.html">error.h</a>.</p>
 
 </div>
 </div>
@@ -195,7 +196,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the current error context, or 0 if no context set/available. </p>
 
-<p>Definition at line <a class="el" href="error_8h_source.html#l00088">88</a> of file <a class="el" href="error_8h_source.html">error.h</a>.</p>
+<p>Definition at line <a class="el" href="error_8h_source.html#l00089">89</a> of file <a class="el" href="error_8h_source.html">error.h</a>.</p>
 
 </div>
 </div>
@@ -219,7 +220,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="error_8h_source.html#l00095">95</a> of file <a class="el" href="error_8h_source.html">error.h</a>.</p>
+<p>Definition at line <a class="el" href="error_8h_source.html#l00096">96</a> of file <a class="el" href="error_8h_source.html">error.h</a>.</p>
 
 </div>
 </div>
@@ -237,7 +238,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Clean up thread local storage related to error context on thread exit. </p>
 
-<p>Definition at line <a class="el" href="error_8h_source.html#l00099">99</a> of file <a class="el" href="error_8h_source.html">error.h</a>.</p>
+<p>Definition at line <a class="el" href="error_8h_source.html#l00100">100</a> of file <a class="el" href="error_8h_source.html">error.h</a>.</p>
 
 </div>
 </div>
@@ -282,23 +283,23 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Report error for the calling thread. Does not affect error state for any other thread. If a error callback is set for the calling thread it will be called and the return value propagated. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Report error for the calling thread. Does not affect error state for any other thread. If a error handler is set for the calling thread it will be called and the return value propagated. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">level</td><td>Error level </td></tr>
     <tr><td class="paramname">err</td><td>Error identifier </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Return value from error callback if set, 0 if no callback set </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Return value from error handler if set, 0 if no handler set </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a4d56ff4025a9412bbb92792dc64462f0"></a>
+<a class="anchor" id="aa868c8929d1e60404e004856f54af5de"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="types_8h.html#a088cb0e0dabdf9321fdbccc513971eda">error_callback_fn</a> error_callback </td>
+          <td class="memname"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="el" href="types_8h.html#a12dec4b89fc152b9d9a82ddf36c38a5b">error_handler_fn</a> error_handler </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -306,26 +307,26 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get per-thread error handling callback </p><dl class="section return"><dt>Returns</dt><dd>Error callback </dd></dl>
+<p>Get per-thread error handling handler </p><dl class="section return"><dt>Returns</dt><dd>Error handler </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="af1a730a6ad539897a23ac77a95271044"></a>
+<a class="anchor" id="ad2a46dbe49791d07e13337fc165ab316"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void error_set_callback </td>
+          <td class="memname"><a class="el" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> void error_set_handler </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a088cb0e0dabdf9321fdbccc513971eda">error_callback_fn</a>&#160;</td>
-          <td class="paramname"><em>callback</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a12dec4b89fc152b9d9a82ddf36c38a5b">error_handler_fn</a>&#160;</td>
+          <td class="paramname"><em>handler</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set new per-thread error handling callback. The callback will be called each time the calling thread reports an error. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Set new per-thread error handling handler. The handler will be called each time the calling thread reports an error. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">callback</td><td>Error callback </td></tr>
+    <tr><td class="paramname">handler</td><td>Error handler </td></tr>
   </table>
   </dd>
 </dl>

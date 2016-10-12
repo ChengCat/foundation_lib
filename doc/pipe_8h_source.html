@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Foundation Library: D:/foundation_lib/foundation/pipe.h Source File</title>
+<title>Foundation Library: E:/projects/foundation_lib/foundation/pipe.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -91,15 +91,11 @@
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#if FOUNDATION_PLATFORM_POSIX || FOUNDATION_PLATFORM_PNACL</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">int</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<a class="code" href="pipe_8h.html#ae71c65df3db5c1ca948e685c521a4ad1">pipe_read_fd</a>(<a class="code" href="structstream__t.html">stream_t</a>* pipe);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">int</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<a class="code" href="pipe_8h.html#a20bae12b1593a3086ac835d7e45d96af">pipe_write_fd</a>(<a class="code" href="structstream__t.html">stream_t</a>* pipe);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">int</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<a class="code" href="pipe_8h.html#ae71c65df3db5c1ca948e685c521a4ad1">pipe_read_fd</a>(<a class="code" href="structstream__t.html">stream_t</a>* pipe);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">int</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<a class="code" href="pipe_8h.html#a20bae12b1593a3086ac835d7e45d96af">pipe_write_fd</a>(<a class="code" href="structstream__t.html">stream_t</a>* pipe);</div>
 <div class="ttc" id="types_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">Foundation data types. </div></div>
 <div class="ttc" id="pipe_8h_html_a20bae12b1593a3086ac835d7e45d96af"><div class="ttname"><a href="pipe_8h.html#a20bae12b1593a3086ac835d7e45d96af">pipe_write_fd</a></div><div class="ttdeci">FOUNDATION_API int pipe_write_fd(stream_t *pipe)</div></div>
 <div class="ttc" id="platform_8h_html"><div class="ttname"><a href="platform_8h.html">platform.h</a></div><div class="ttdoc">Platform abstractions. </div></div>
@@ -107,9 +103,9 @@
 <div class="ttc" id="pipe_8h_html_a4f3890a377aea67a870e8c416adf1944"><div class="ttname"><a href="pipe_8h.html#a4f3890a377aea67a870e8c416adf1944">pipe_close_read</a></div><div class="ttdeci">FOUNDATION_API void pipe_close_read(stream_t *pipe)</div></div>
 <div class="ttc" id="pipe_8h_html_a5b02df5ece5d25853ee0411578ca635f"><div class="ttname"><a href="pipe_8h.html#a5b02df5ece5d25853ee0411578ca635f">pipe_read_handle</a></div><div class="ttdeci">FOUNDATION_API void * pipe_read_handle(stream_t *pipe)</div></div>
 <div class="ttc" id="pipe_8h_html_a2bd548df2a2fdc88c5f752408fd6818b"><div class="ttname"><a href="pipe_8h.html#a2bd548df2a2fdc88c5f752408fd6818b">pipe_write_handle</a></div><div class="ttdeci">FOUNDATION_API void * pipe_write_handle(stream_t *pipe)</div></div>
-<div class="ttc" id="structstream__pipe__t_html"><div class="ttname"><a href="structstream__pipe__t.html">stream_pipe_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l01365">types.h:1365</a></div></div>
+<div class="ttc" id="structstream__pipe__t_html"><div class="ttname"><a href="structstream__pipe__t.html">stream_pipe_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l01582">types.h:1582</a></div></div>
 <div class="ttc" id="pipe_8h_html_ae71c65df3db5c1ca948e685c521a4ad1"><div class="ttname"><a href="pipe_8h.html#ae71c65df3db5c1ca948e685c521a4ad1">pipe_read_fd</a></div><div class="ttdeci">FOUNDATION_API int pipe_read_fd(stream_t *pipe)</div></div>
-<div class="ttc" id="structstream__t_html"><div class="ttname"><a href="structstream__t.html">stream_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l01300">types.h:1300</a></div></div>
+<div class="ttc" id="structstream__t_html"><div class="ttname"><a href="structstream__t.html">stream_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l01517">types.h:1517</a></div></div>
 <div class="ttc" id="pipe_8h_html_ad78b97aad8b8e8df7c80b310238f8af1"><div class="ttname"><a href="pipe_8h.html#ad78b97aad8b8e8df7c80b310238f8af1">pipe_initialize</a></div><div class="ttdeci">FOUNDATION_API void pipe_initialize(stream_pipe_t *pipe)</div></div>
 <div class="ttc" id="platform_8h_html_ab5d798081ff1e38fc8d86a56b852da8e"><div class="ttname"><a href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a></div><div class="ttdeci">#define FOUNDATION_API</div></div>
 <div class="ttc" id="pipe_8h_html_a4273710fe61f1ef261e12bf677bba90a"><div class="ttname"><a href="pipe_8h.html#a4273710fe61f1ef261e12bf677bba90a">pipe_allocate</a></div><div class="ttdeci">FOUNDATION_API stream_t * pipe_allocate(void)</div></div>

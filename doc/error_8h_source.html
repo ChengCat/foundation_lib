@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Foundation Library: D:/foundation_lib/foundation/error.h Source File</title>
+<title>Foundation Library: E:/projects/foundation_lib/foundation/error.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -75,11 +75,11 @@
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">int</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<a class="code" href="error_8h.html#a550e39194c0550da525408dde7a5a8f8">error_report</a>(<a class="code" href="types_8h.html#aedc3ffc6b8ac675156f7e759316a2bac">error_level_t</a> level, <a class="code" href="types_8h.html#ac7659d73a8cdedc08e9f566bb406689c">error_t</a> err);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="types_8h.html#a088cb0e0dabdf9321fdbccc513971eda">error_callback_fn</a></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<a class="code" href="error_8h.html#a4d56ff4025a9412bbb92792dc64462f0">error_callback</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="types_8h.html#a12dec4b89fc152b9d9a82ddf36c38a5b">error_handler_fn</a></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<a class="code" href="error_8h.html#aa868c8929d1e60404e004856f54af5de">error_handler</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<a class="code" href="error_8h.html#af1a730a6ad539897a23ac77a95271044">error_set_callback</a>(<a class="code" href="types_8h.html#a088cb0e0dabdf9321fdbccc513971eda">error_callback_fn</a> callback);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<a class="code" href="error_8h.html#ad2a46dbe49791d07e13337fc165ab316">error_set_handler</a>(<a class="code" href="types_8h.html#a12dec4b89fc152b9d9a82ddf36c38a5b">error_handler_fn</a> handler);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#if BUILD_ENABLE_ERROR_CONTEXT</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
@@ -90,72 +90,72 @@
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#define _error_context_buffer_proxy(...) \</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">  _error_context_buffer(__VA_ARGS__)</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="error_8h.html#a58b4dd310560fe2776cacc520ba43635">   66</a></span>&#160;<span class="preprocessor">#define error_context_push(...) do { \</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">  _error_context_push_proxy(__VA_ARGS__); \</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">  } while(0)</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="error_8h.html#a9b0de0eccc207abcd7319f0a0b9607c7">   71</a></span>&#160;<span class="preprocessor">#define error_context_pop() do { \</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">  _error_context_pop(); \</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">  } while(0)</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="error_8h.html#a8c73de2153183ce30be3a762b8b8530e">   76</a></span>&#160;<span class="preprocessor">#define error_context_clear() do { \</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">  _error_context_clear(); \</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">  } while(0)</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="error_8h.html#a6ba62814d0e0eeefa5b2c121145a5dff">   84</a></span>&#160;<span class="preprocessor">#define error_context_buffer(...) \</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">  _error_context_buffer_proxy(__VA_ARGS__)</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="error_8h.html#a315fb3058c86cd17004c65a25c4699b0">   88</a></span>&#160;<span class="preprocessor">#define error_context() \</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">  _error_context()</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="error_8h.html#a23f5661f637d7c38fa78a7eb6a50d867">   95</a></span>&#160;<span class="preprocessor">#define error_context_declare_local(decl) \</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">  decl</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="error_8h.html#a92900a9fc73d961fea0e2052ba08267f">   99</a></span>&#160;<span class="preprocessor">#define error_context_thread_finalize() do { \</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">  _error_context_thread_finalize(); \</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">  } while(0)</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;_error_context_push(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keywordtype">size_t</span> name_length, <span class="keyword">const</span> <span class="keywordtype">char</span>* data, <span class="keywordtype">size_t</span> data_length);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;_error_context_pop(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;_error_context_clear(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="structstring__t.html">string_t</a></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;_error_context_buffer(<span class="keywordtype">char</span>* str, <span class="keywordtype">size_t</span> length);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="structerror__context__t.html">error_context_t</a>*</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;_error_context(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;_error_context_thread_finalize(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#define error_context_push(...) do { </span><span class="comment">/* */</span><span class="preprocessor"> } while(0)</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#define error_context_pop() do { </span><span class="comment">/* */</span><span class="preprocessor"> } while(0)</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#define error_context_clear()  do { </span><span class="comment">/* */</span><span class="preprocessor"> } while(0)</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#define error_context_buffer(str, length) string_copy(str, length, 0, 0)</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#define error_context() 0</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#define error_context_declare_local(decl) do { </span><span class="comment">/* */</span><span class="preprocessor"> } while(0)</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#define error_context_thread_finalize() do { </span><span class="comment">/* */</span><span class="preprocessor"> } while(0)</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="error_8h.html#a58b4dd310560fe2776cacc520ba43635">   67</a></span>&#160;<span class="preprocessor">#define error_context_push(...) do { \</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">  _error_context_push_proxy(__VA_ARGS__); \</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">  } while(0)</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="error_8h.html#a9b0de0eccc207abcd7319f0a0b9607c7">   72</a></span>&#160;<span class="preprocessor">#define error_context_pop() do { \</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">  _error_context_pop(); \</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">  } while(0)</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="error_8h.html#a8c73de2153183ce30be3a762b8b8530e">   77</a></span>&#160;<span class="preprocessor">#define error_context_clear() do { \</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">  _error_context_clear(); \</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">  } while(0)</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="error_8h.html#a6ba62814d0e0eeefa5b2c121145a5dff">   85</a></span>&#160;<span class="preprocessor">#define error_context_buffer(...) \</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">  _error_context_buffer_proxy(__VA_ARGS__)</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="error_8h.html#a315fb3058c86cd17004c65a25c4699b0">   89</a></span>&#160;<span class="preprocessor">#define error_context() \</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">  _error_context()</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="error_8h.html#a23f5661f637d7c38fa78a7eb6a50d867">   96</a></span>&#160;<span class="preprocessor">#define error_context_declare_local(decl) \</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">  decl</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="error_8h.html#a92900a9fc73d961fea0e2052ba08267f">  100</a></span>&#160;<span class="preprocessor">#define error_context_thread_finalize() do { \</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">  _error_context_thread_finalize(); \</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">  } while(0)</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;_error_context_push(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keywordtype">size_t</span> name_length, <span class="keyword">const</span> <span class="keywordtype">char</span>* data, <span class="keywordtype">size_t</span> data_length);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;_error_context_pop(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;_error_context_clear(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="structstring__t.html">string_t</a></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;_error_context_buffer(<span class="keywordtype">char</span>* buffer, <span class="keywordtype">size_t</span> capacity);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="structerror__context__t.html">error_context_t</a>*</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;_error_context(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;_error_context_thread_finalize(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#define error_context_push(...) do { </span><span class="comment">/* */</span><span class="preprocessor"> } while(0)</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#define error_context_pop() do { </span><span class="comment">/* */</span><span class="preprocessor"> } while(0)</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#define error_context_clear()  do { </span><span class="comment">/* */</span><span class="preprocessor"> } while(0)</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#define error_context_buffer(str, length) string_copy(str, length, 0, 0)</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#define error_context() 0</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#define error_context_declare_local(decl) do { </span><span class="comment">/* */</span><span class="preprocessor"> } while(0)</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#define error_context_thread_finalize() do { </span><span class="comment">/* */</span><span class="preprocessor"> } while(0)</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="types_8h_html_a12dec4b89fc152b9d9a82ddf36c38a5b"><div class="ttname"><a href="types_8h.html#a12dec4b89fc152b9d9a82ddf36c38a5b">error_handler_fn</a></div><div class="ttdeci">int(* error_handler_fn)(error_level_t level, error_t error)</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00580">types.h:580</a></div></div>
 <div class="ttc" id="types_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">Foundation data types. </div></div>
-<div class="ttc" id="structstring__t_html"><div class="ttname"><a href="structstring__t.html">string_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00776">types.h:776</a></div></div>
+<div class="ttc" id="structstring__t_html"><div class="ttname"><a href="structstring__t.html">string_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00832">types.h:832</a></div></div>
 <div class="ttc" id="types_8h_html_ac7659d73a8cdedc08e9f566bb406689c"><div class="ttname"><a href="types_8h.html#ac7659d73a8cdedc08e9f566bb406689c">error_t</a></div><div class="ttdeci">error_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00061">types.h:61</a></div></div>
 <div class="ttc" id="types_8h_html_aedc3ffc6b8ac675156f7e759316a2bac"><div class="ttname"><a href="types_8h.html#aedc3ffc6b8ac675156f7e759316a2bac">error_level_t</a></div><div class="ttdeci">error_level_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00039">types.h:39</a></div></div>
+<div class="ttc" id="error_8h_html_aa868c8929d1e60404e004856f54af5de"><div class="ttname"><a href="error_8h.html#aa868c8929d1e60404e004856f54af5de">error_handler</a></div><div class="ttdeci">FOUNDATION_API error_handler_fn error_handler(void)</div></div>
 <div class="ttc" id="platform_8h_html"><div class="ttname"><a href="platform_8h.html">platform.h</a></div><div class="ttdoc">Platform abstractions. </div></div>
 <div class="ttc" id="error_8h_html_ace5156431b073a5be3ab4eb4cb905772"><div class="ttname"><a href="error_8h.html#ace5156431b073a5be3ab4eb4cb905772">error</a></div><div class="ttdeci">FOUNDATION_API error_t error(void)</div></div>
-<div class="ttc" id="error_8h_html_af1a730a6ad539897a23ac77a95271044"><div class="ttname"><a href="error_8h.html#af1a730a6ad539897a23ac77a95271044">error_set_callback</a></div><div class="ttdeci">FOUNDATION_API void error_set_callback(error_callback_fn callback)</div></div>
+<div class="ttc" id="error_8h_html_ad2a46dbe49791d07e13337fc165ab316"><div class="ttname"><a href="error_8h.html#ad2a46dbe49791d07e13337fc165ab316">error_set_handler</a></div><div class="ttdeci">FOUNDATION_API void error_set_handler(error_handler_fn handler)</div></div>
 <div class="ttc" id="error_8h_html_a550e39194c0550da525408dde7a5a8f8"><div class="ttname"><a href="error_8h.html#a550e39194c0550da525408dde7a5a8f8">error_report</a></div><div class="ttdeci">FOUNDATION_API int error_report(error_level_t level, error_t err)</div></div>
-<div class="ttc" id="types_8h_html_a088cb0e0dabdf9321fdbccc513971eda"><div class="ttname"><a href="types_8h.html#a088cb0e0dabdf9321fdbccc513971eda">error_callback_fn</a></div><div class="ttdeci">int(* error_callback_fn)(error_level_t level, error_t error)</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00548">types.h:548</a></div></div>
 <div class="ttc" id="platform_8h_html_ab5d798081ff1e38fc8d86a56b852da8e"><div class="ttname"><a href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a></div><div class="ttdeci">#define FOUNDATION_API</div></div>
-<div class="ttc" id="structerror__context__t_html"><div class="ttname"><a href="structerror__context__t.html">error_context_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00920">types.h:920</a></div></div>
-<div class="ttc" id="error_8h_html_a4d56ff4025a9412bbb92792dc64462f0"><div class="ttname"><a href="error_8h.html#a4d56ff4025a9412bbb92792dc64462f0">error_callback</a></div><div class="ttdeci">FOUNDATION_API error_callback_fn error_callback(void)</div></div>
+<div class="ttc" id="structerror__context__t_html"><div class="ttname"><a href="structerror__context__t.html">error_context_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l01020">types.h:1020</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

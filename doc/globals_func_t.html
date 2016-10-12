@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -57,11 +57,11 @@
     <ul class="tablist">
       <li><a href="globals_func.html#index_a"><span>a</span></a></li>
       <li><a href="globals_func_b.html#index_b"><span>b</span></a></li>
-      <li><a href="globals_func_c.html#index_c"><span>c</span></a></li>
       <li><a href="globals_func_d.html#index_d"><span>d</span></a></li>
       <li><a href="globals_func_e.html#index_e"><span>e</span></a></li>
       <li><a href="globals_func_f.html#index_f"><span>f</span></a></li>
       <li><a href="globals_func_h.html#index_h"><span>h</span></a></li>
+      <li><a href="globals_func_j.html#index_j"><span>j</span></a></li>
       <li><a href="globals_func_l.html#index_l"><span>l</span></a></li>
       <li><a href="globals_func_m.html#index_m"><span>m</span></a></li>
       <li><a href="globals_func_o.html#index_o"><span>o</span></a></li>
@@ -79,20 +79,17 @@
 &#160;
 
 <h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
+<li>thread_allocate()
+: <a class="el" href="thread_8h.html#a19f41cd958b384230ed2eace212607d9">thread.h</a>
+</li>
 <li>thread_attach_jvm()
 : <a class="el" href="thread_8h.html#ae8761e34685ed9798873dfc9cafd5dd4">thread.h</a>
-</li>
-<li>thread_create()
-: <a class="el" href="thread_8h.html#ad22bdaf28d1ded83934f6c011cd7b2c5">thread.h</a>
-</li>
-<li>thread_destroy()
-: <a class="el" href="thread_8h.html#a3984bf4c351f5fc44a6c5d6df5b9bc41">thread.h</a>
 </li>
 <li>thread_detach_jvm()
 : <a class="el" href="thread_8h.html#a972bfd2caa032e1aae3f6f0ad166202f">thread.h</a>
 </li>
-<li>thread_finalize()
-: <a class="el" href="thread_8h.html#af9781c4fb257cf853df4c1ecc9dd91cd">thread.h</a>
+<li>thread_exit()
+: <a class="el" href="thread_8h.html#af14e0f2ca133a42e1e8bb585e758c961">thread.h</a>
 </li>
 <li>thread_hardware()
 : <a class="el" href="thread_8h.html#a4b77a15d08a6da477275fac8be9de814">thread.h</a>
@@ -100,29 +97,26 @@
 <li>thread_id()
 : <a class="el" href="thread_8h.html#a2183ef6634b69daee7116aa0c40262b6">thread.h</a>
 </li>
+<li>thread_initialize()
+: <a class="el" href="thread_8h.html#a6f3f7bc87e761e36801cc3666d013d0e">thread.h</a>
+</li>
 <li>thread_is_main()
 : <a class="el" href="thread_8h.html#afa15ab5200455cdf808f729f92e23b12">thread.h</a>
 </li>
 <li>thread_is_running()
-: <a class="el" href="thread_8h.html#a26e23d7d1eba57cc7d9fb1e388459f21">thread.h</a>
+: <a class="el" href="thread_8h.html#ab410ffa48e09f5bd453bfee5b3b9a995">thread.h</a>
 </li>
 <li>thread_is_started()
-: <a class="el" href="thread_8h.html#a5febd83446786a20e217419e361fb72a">thread.h</a>
+: <a class="el" href="thread_8h.html#a98927334fc2d66cac3704945f2edae9e">thread.h</a>
 </li>
-<li>thread_is_thread()
-: <a class="el" href="thread_8h.html#a04824715523840065e2698bf4a6323f1">thread.h</a>
+<li>thread_join()
+: <a class="el" href="thread_8h.html#ab00eb52546c868e46e88d6cc95e6b6b8">thread.h</a>
 </li>
 <li>thread_name()
 : <a class="el" href="thread_8h.html#a35eceaf60b23726b4f2947262b1be045">thread.h</a>
 </li>
-<li>thread_ref()
-: <a class="el" href="thread_8h.html#acd739480eb25b735ba9819c3941547e1">thread.h</a>
-</li>
-<li>thread_result()
-: <a class="el" href="thread_8h.html#a30eb0de46e897c7be63851643c475f6f">thread.h</a>
-</li>
 <li>thread_self()
-: <a class="el" href="thread_8h.html#a6b436dbb19d06b8314649f12fe3fee63">thread.h</a>
+: <a class="el" href="thread_8h.html#a61cf15ce1c6b982efde1d618a0cd967a">thread.h</a>
 </li>
 <li>thread_set_hardware()
 : <a class="el" href="thread_8h.html#ab6c996808dbbd2343a8911221f117eda">thread.h</a>
@@ -133,17 +127,20 @@
 <li>thread_set_name()
 : <a class="el" href="thread_8h.html#ad325991edf1692eb15dd108dfa9be750">thread.h</a>
 </li>
-<li>thread_should_terminate()
-: <a class="el" href="thread_8h.html#a1f87ed5974907165517dfa52947654f9">thread.h</a>
+<li>thread_signal()
+: <a class="el" href="thread_8h.html#a522658ffc7245a326849b3a49099acdb">thread.h</a>
 </li>
 <li>thread_sleep()
 : <a class="el" href="thread_8h.html#a4bd4b31c8477fad1acb97f44ad71b77f">thread.h</a>
 </li>
 <li>thread_start()
-: <a class="el" href="thread_8h.html#aee5f916d0fc06961bc0685ee0ea27fad">thread.h</a>
+: <a class="el" href="thread_8h.html#a18fa08da6a6259b20e4267a77d1dbecf">thread.h</a>
 </li>
-<li>thread_terminate()
-: <a class="el" href="thread_8h.html#af063e871029acee35a91d66ea2b9bcf8">thread.h</a>
+<li>thread_try_wait()
+: <a class="el" href="thread_8h.html#ae744c59faff890732960286947cf5c10">thread.h</a>
+</li>
+<li>thread_wait()
+: <a class="el" href="thread_8h.html#a1896cd4cb0d33da292ddff8d176bb7b9">thread.h</a>
 </li>
 <li>thread_yield()
 : <a class="el" href="thread_8h.html#a63d4a788e651644dc455b30be9ef0a28">thread.h</a>

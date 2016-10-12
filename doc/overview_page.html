@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -76,8 +76,8 @@ Data types</h1>
 Object lifetime</h1>
 <p>Complex data types (objects) are handled in two ways. Either the caller have explicit lifetime control and accessed through raw pointers, or else has implicit control where the lifetime is handled by reference counting and accessed through object handles of type object_t (basically a 64-bit handle mapping into a lookup table).</p>
 <p>Explicit allocations are always handled by function calls of the format <em>&lt;module&gt;_t* &lt;module&gt;_allocate(...)</em> to allocate the object and <em>void &lt;module&gt;_deallocate(&lt;module&gt;_t* ptr)</em> to deallocate it, for example md5_allocate and md5_deallocate in <a class="el" href="md5_8h.html" title="MD5 algorithm. ">md5.h</a>. The corresponding calls for initializing/finalizing a struct places on the stack is <em>void &lt;module&gt;_initialize(&lt;module&gt;_t* ptr)</em> and <em>void &lt;module&gt;_finalize(&lt;module&gt;_t* ptr)</em>. All objects that are initialized must be finalized in order to free any allocated resources correctly. Objects that are allocated on the heap with allocate/deallocate should not be initialized/finalized as this is done implicitly by the allocation and deallocation.</p>
-<p>Implicit allocators are always handled by function calls of the format <em>object_t &lt;module&gt;_create(...)</em> to allocate a new object, <em>&lt;module&gt;_ref(object_t id)</em> to explicitly add a new reference to an existing object and <em>void &lt;module&gt;_destroy(object_t id)</em> to release a reference to an existing object (and implicitly deallocate it when reference count reaches zero), for example <a class="el" href="thread_8h.html#ad22bdaf28d1ded83934f6c011cd7b2c5">thread_create</a>, <a class="el" href="thread_8h.html#acd739480eb25b735ba9819c3941547e1">thread_ref</a> and <a class="el" href="thread_8h.html#a3984bf4c351f5fc44a6c5d6df5b9bc41">thread_destroy</a> in <a class="el" href="thread_8h.html" title="Threads. ">thread.h</a>. Implicitly allocated objects does not need to be initialized/finalized.</p>
-<p>Reference counted data types have a predefined maximum number of concurrently allocated objects defined in the <a class="el" href="structfoundation__config__t.html">foundation_config_t</a> object passed to <a class="el" href="foundation_8h.html#afa623d6638b10ee1d68b88b101b30def">foundation_initialize</a>, for example <a class="el" href="structfoundation__config__t.html#a92546608bb67f96781ce16ae303999e0">foundation_config_t::thread_max</a> for threads. </p>
+<p>Implicit allocators are always handled by function calls of the format <em>object_t &lt;module&gt;_create(...)</em> to allocate a new object, <em>&lt;module&gt;_ref(object_t id)</em> to explicitly add a new reference to an existing object and <em>void &lt;module&gt;_destroy(object_t id)</em> to release a reference to an existing object (and implicitly deallocate it when reference count reaches zero). Implicitly allocated objects does not need to be initialized/finalized.</p>
+<p>Reference counted data types have a predefined maximum number of concurrently allocated objects defined in the <a class="el" href="structfoundation__config__t.html">foundation_config_t</a> object passed to <a class="el" href="foundation_8h.html#afa623d6638b10ee1d68b88b101b30def">foundation_initialize</a>, for example <a class="el" href="structfoundation__config__t.html#ac895e5fec3c8a53c2b237c0ae3fbb2a9">foundation_config_t::library_max</a> for dynamically loaded libraries. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

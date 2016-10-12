@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Foundation Library: D:/foundation_lib/foundation/types.h File Reference</title>
+<title>Foundation Library: E:/projects/foundation_lib/foundation/types.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -78,9 +78,15 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmd5__t.html">md5_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsha256__t.html">sha256_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsha512__t.html">sha512_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmemory__system__t.html">memory_system_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmemory__tracker__t.html">memory_tracker_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmemory__statistics__t.html">memory_statistics_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionversion__t.html">version_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,6 +138,10 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsemaphore__t.html">semaphore_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbeacon__t.html">beacon_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthread__t.html">thread_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstream__t.html">stream_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstream__buffer__t.html">stream_buffer_t</a></td></tr>
@@ -141,6 +151,8 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstream__ringbuffer__t.html">stream_ringbuffer_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstream__vtable__t.html">stream_vtable_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjson__token__t.html">json_token_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -197,16 +209,24 @@ Macros</h2></td></tr>
 <tr class="separator:adb886a3d8a99aea43724e547c7790c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaebeffeca05f381e0b81278fc58d58f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#aaebeffeca05f381e0b81278fc58d58f0">PROCESS_STILL_ACTIVE</a></td></tr>
 <tr class="separator:aaebeffeca05f381e0b81278fc58d58f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92a314579b3f97af917b738b3cad9152"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a92a314579b3f97af917b738b3cad9152">FOUNDATION_CRASH_DUMP_GENERATED</a></td></tr>
-<tr class="separator:a92a314579b3f97af917b738b3cad9152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07a9d82bfcc2c0ff8128ca5a827a03a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a07a9d82bfcc2c0ff8128ca5a827a03a4">PROCESS_EXIT_FAILURE</a></td></tr>
+<tr class="separator:a07a9d82bfcc2c0ff8128ca5a827a03a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c1fd50c111970f543ffcbf850c06ca5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a5c1fd50c111970f543ffcbf850c06ca5">PROCESS_EXIT_SUCCESS</a></td></tr>
+<tr class="separator:a5c1fd50c111970f543ffcbf850c06ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf8edbfc90b9ff048097a8237949aa20"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#adf8edbfc90b9ff048097a8237949aa20">FOUNDATION_EXCEPTION_CAUGHT</a></td></tr>
+<tr class="separator:adf8edbfc90b9ff048097a8237949aa20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f19384dff8834a3c77778a7e92985d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a3f19384dff8834a3c77778a7e92985d0">FOUNDATION_DECLARE_EVENT</a></td></tr>
 <tr class="separator:a3f19384dff8834a3c77778a7e92985d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46bc8f4b1a18771347b825c00120e689"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a46bc8f4b1a18771347b825c00120e689">FOUNDATION_DECLARE_HASHMAP</a>(size)</td></tr>
 <tr class="separator:a46bc8f4b1a18771347b825c00120e689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1da65123bf4d771f39109bcb622f31ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a1da65123bf4d771f39109bcb622f31ff">FOUNDATION_DECLARE_HASHTABLE32</a>(size)</td></tr>
+<tr class="separator:a1da65123bf4d771f39109bcb622f31ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3750e755e73f5bee59aad3789783a8d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#ae3750e755e73f5bee59aad3789783a8d">FOUNDATION_DECLARE_HASHTABLE64</a>(size)</td></tr>
+<tr class="separator:ae3750e755e73f5bee59aad3789783a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48f7c24700eb66beee4fd2fbfdb05656"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a48f7c24700eb66beee4fd2fbfdb05656">FOUNDATION_DECLARE_OBJECT</a></td></tr>
 <tr class="separator:a48f7c24700eb66beee4fd2fbfdb05656"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac93d961efaec4e58f4842c4e5a6c7109"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#ac93d961efaec4e58f4842c4e5a6c7109">FOUNDATION_DECLARE_RINGBUFFER</a></td></tr>
-<tr class="separator:ac93d961efaec4e58f4842c4e5a6c7109"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a521c9d62e399180f098e1a859254167f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a521c9d62e399180f098e1a859254167f">FOUNDATION_DECLARE_RINGBUFFER</a>(buffersize)</td></tr>
+<tr class="separator:a521c9d62e399180f098e1a859254167f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add4e202cf15626311877247265efea97"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#add4e202cf15626311877247265efea97">FOUNDATION_DECLARE_STREAM</a></td></tr>
 <tr class="separator:add4e202cf15626311877247265efea97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -228,12 +248,12 @@ Typedefs</h2></td></tr>
 <tr class="separator:a67439855fdbb969fcb9caead61ebdba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd9f26b216cc0b0ff9e5f8bd0bf68987"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#afd9f26b216cc0b0ff9e5f8bd0bf68987">semaphore_t</a></td></tr>
 <tr class="separator:afd9f26b216cc0b0ff9e5f8bd0bf68987"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a088cb0e0dabdf9321fdbccc513971eda"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a088cb0e0dabdf9321fdbccc513971eda">error_callback_fn</a>) (<a class="el" href="types_8h.html#aedc3ffc6b8ac675156f7e759316a2bac">error_level_t</a> level, <a class="el" href="types_8h.html#ac7659d73a8cdedc08e9f566bb406689c">error_t</a> <a class="el" href="error_8h.html#ace5156431b073a5be3ab4eb4cb905772">error</a>)</td></tr>
-<tr class="separator:a088cb0e0dabdf9321fdbccc513971eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12dec4b89fc152b9d9a82ddf36c38a5b"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a12dec4b89fc152b9d9a82ddf36c38a5b">error_handler_fn</a>) (<a class="el" href="types_8h.html#aedc3ffc6b8ac675156f7e759316a2bac">error_level_t</a> level, <a class="el" href="types_8h.html#ac7659d73a8cdedc08e9f566bb406689c">error_t</a> <a class="el" href="error_8h.html#ace5156431b073a5be3ab4eb4cb905772">error</a>)</td></tr>
+<tr class="separator:a12dec4b89fc152b9d9a82ddf36c38a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a799d2e0e91701e66ce45e2f3e9bf3666"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a799d2e0e91701e66ce45e2f3e9bf3666">assert_handler_fn</a>) (<a class="el" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, const char *condition, size_t cond_length, const char *file, size_t file_length, unsigned int line, const char *msg, size_t msg_length)</td></tr>
 <tr class="separator:a799d2e0e91701e66ce45e2f3e9bf3666"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fdd24f89156fecea03f4851dab04335"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a3fdd24f89156fecea03f4851dab04335">log_callback_fn</a>) (<a class="el" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <a class="el" href="types_8h.html#aedc3ffc6b8ac675156f7e759316a2bac">error_level_t</a> severity, const char *msg, size_t length)</td></tr>
-<tr class="separator:a3fdd24f89156fecea03f4851dab04335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac0ba2e2202efb06a4901f982864dc0f"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#aac0ba2e2202efb06a4901f982864dc0f">log_handler_fn</a>) (<a class="el" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <a class="el" href="types_8h.html#aedc3ffc6b8ac675156f7e759316a2bac">error_level_t</a> severity, const char *msg, size_t length)</td></tr>
+<tr class="separator:aac0ba2e2202efb06a4901f982864dc0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acce51891e2d43ec44bcf6ca01681d1a1"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#acce51891e2d43ec44bcf6ca01681d1a1">system_initialize_fn</a>) (void)</td></tr>
 <tr class="separator:acce51891e2d43ec44bcf6ca01681d1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69b82a9148508ffda5ece199760623ab"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a69b82a9148508ffda5ece199760623ab">system_finalize_fn</a>) (void)</td></tr>
@@ -248,16 +268,18 @@ Typedefs</h2></td></tr>
 <tr class="separator:a82ac4d959712ea0ee67a5b0432860d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0e10fb2271bfc464a1cdd0bb4e5fcc3"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#aa0e10fb2271bfc464a1cdd0bb4e5fcc3">memory_untrack_fn</a>) (void *p)</td></tr>
 <tr class="separator:aa0e10fb2271bfc464a1cdd0bb4e5fcc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa02aab99a07414cabe03b68b05ded4fc"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structmemory__statistics__t.html">memory_statistics_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#aa02aab99a07414cabe03b68b05ded4fc">memory_statistics_fn</a>) (void)</td></tr>
+<tr class="separator:aa02aab99a07414cabe03b68b05ded4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d670150c082e0d31356c7141f9adbaf"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a1d670150c082e0d31356c7141f9adbaf">profile_write_fn</a>) (void *data, size_t size)</td></tr>
 <tr class="separator:a1d670150c082e0d31356c7141f9adbaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44ac39da39767c09504a49d2a5eacc04"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a44ac39da39767c09504a49d2a5eacc04">profile_read_fn</a>) (void *data, size_t size)</td></tr>
 <tr class="separator:a44ac39da39767c09504a49d2a5eacc04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a543e42ed5e2375f5a4ed52fe5eef5941"><td class="memItemLeft" align="right" valign="top">typedef void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a543e42ed5e2375f5a4ed52fe5eef5941">thread_fn</a>) (<a class="el" href="types_8h.html#a72bc7eac2560a0cc8a0fded52453c3da">object_t</a> thread, void *arg)</td></tr>
-<tr class="separator:a543e42ed5e2375f5a4ed52fe5eef5941"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb826f46d2bd5fe7e9b26148647c00c4"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#acb826f46d2bd5fe7e9b26148647c00c4">crash_guard_fn</a>) (void *arg)</td></tr>
-<tr class="separator:acb826f46d2bd5fe7e9b26148647c00c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0214d4ef8a863dbb057494c1b8ae204d"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a0214d4ef8a863dbb057494c1b8ae204d">crash_dump_callback_fn</a>) (const char *file, size_t length)</td></tr>
-<tr class="separator:a0214d4ef8a863dbb057494c1b8ae204d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bae56cebb9cd0da2cb8f92987c09876"><td class="memItemLeft" align="right" valign="top">typedef void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a6bae56cebb9cd0da2cb8f92987c09876">thread_fn</a>) (void *arg)</td></tr>
+<tr class="separator:a6bae56cebb9cd0da2cb8f92987c09876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a697104bd133e400552eedc5b66e700a4"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a697104bd133e400552eedc5b66e700a4">exception_try_fn</a>) (void *arg)</td></tr>
+<tr class="separator:a697104bd133e400552eedc5b66e700a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac04ea814d64beda884a7747b42f2de40"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#ac04ea814d64beda884a7747b42f2de40">exception_handler_fn</a>) (const char *file, size_t length)</td></tr>
+<tr class="separator:ac04ea814d64beda884a7747b42f2de40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97e3bb5904621938d5200d6ec7368342"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a97e3bb5904621938d5200d6ec7368342">object_deallocate_fn</a>) (<a class="el" href="types_8h.html#a72bc7eac2560a0cc8a0fded52453c3da">object_t</a> id, void *object)</td></tr>
 <tr class="separator:a97e3bb5904621938d5200d6ec7368342"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd199f2ea5dbeb4470859c52d9e51bad"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structstream__t.html">stream_t</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#abd199f2ea5dbeb4470859c52d9e51bad">stream_open_fn</a>) (const char *path, size_t length, unsigned int mode)</td></tr>
@@ -282,6 +304,10 @@ Typedefs</h2></td></tr>
 <tr class="separator:a4017b2351fd53a30ebfde89a58d330fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30a6b4bb200a478f3b406356fca6d310"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structuint128__t.html">uint128_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a30a6b4bb200a478f3b406356fca6d310">stream_md5_fn</a>) (<a class="el" href="structstream__t.html">stream_t</a> *stream)</td></tr>
 <tr class="separator:a30a6b4bb200a478f3b406356fca6d310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd7d45298b8b60c1c04420bb3e5937ac"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structuint256__t.html">uint256_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#afd7d45298b8b60c1c04420bb3e5937ac">stream_sha256_fn</a>) (<a class="el" href="structstream__t.html">stream_t</a> *stream)</td></tr>
+<tr class="separator:afd7d45298b8b60c1c04420bb3e5937ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a241b4606fba1404b890362fc9bada9e2"><td class="memItemLeft" align="right" valign="top">typedef uint512_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a241b4606fba1404b890362fc9bada9e2">stream_sha512_fn</a>) (<a class="el" href="structstream__t.html">stream_t</a> *stream)</td></tr>
+<tr class="separator:a241b4606fba1404b890362fc9bada9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2aaf1e261e2cb52736dbf352d0d126b9"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a2aaf1e261e2cb52736dbf352d0d126b9">stream_buffer_read_fn</a>) (<a class="el" href="structstream__t.html">stream_t</a> *stream)</td></tr>
 <tr class="separator:a2aaf1e261e2cb52736dbf352d0d126b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe8f713c9575cc8894dfd988f69e4ab7"><td class="memItemLeft" align="right" valign="top">typedef size_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#afe8f713c9575cc8894dfd988f69e4ab7">stream_available_read_fn</a>) (<a class="el" href="structstream__t.html">stream_t</a> *stream)</td></tr>
@@ -395,7 +421,8 @@ Enumerations</h2></td></tr>
 <a class="el" href="types_8h.html#aebb40016c198e3e5e1f82c86929dc454afbd9449f95d66fa7c650f849e7a2a462">STREAMTYPE_PIPE</a>, 
 <a class="el" href="types_8h.html#aebb40016c198e3e5e1f82c86929dc454a2b2652acbfe98dc1655eafe92793972c">STREAMTYPE_STDSTREAM</a>, 
 <br />
-&#160;&#160;<a class="el" href="types_8h.html#aebb40016c198e3e5e1f82c86929dc454af3e500e9eeffd47adba81f60949b5829">STREAMTYPE_LAST_RESERVED</a>
+&#160;&#160;<a class="el" href="types_8h.html#aebb40016c198e3e5e1f82c86929dc454a3c7e0b75a91ac76377f215cb3a9a0a45">STREAMTYPE_CUSTOM</a>, 
+<a class="el" href="types_8h.html#aebb40016c198e3e5e1f82c86929dc454af3e500e9eeffd47adba81f60949b5829">STREAMTYPE_LAST_RESERVED</a>
 <br />
  }<tr class="separator:aebb40016c198e3e5e1f82c86929dc454"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
@@ -416,19 +443,22 @@ Enumerations</h2></td></tr>
  }<tr class="separator:acf3e51731d559a8e74f8a715459d595a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 <tr class="memitem:aceacf2b0489a69b78b27bfb371ac8749"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749">foundation_event_id</a> { <br />
-&#160;&#160;<a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749a8d5248bcba4472a1eee23d0aa23cd700">FOUNDATIONEVENT_START</a>, 
+&#160;&#160;<a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749ab1f4ceb069bfe60f7788f723eb8f3bb3">FOUNDATIONEVENT_NOEVENT</a>, 
+<a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749a8d5248bcba4472a1eee23d0aa23cd700">FOUNDATIONEVENT_START</a>, 
 <a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749a40cb1a524f20993ac7ee97dd1c363653">FOUNDATIONEVENT_TERMINATE</a>, 
 <a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749a7f917cd050efcc5b69ddd3564bd43f5e">FOUNDATIONEVENT_PAUSE</a>, 
-<a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749a64b18e092c6e68b97340f4f880a3eaaf">FOUNDATIONEVENT_RESUME</a>, 
 <br />
-&#160;&#160;<a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749ad0355504a259bfb81847628dda0bbc56">FOUNDATIONEVENT_FOCUS_GAIN</a>, 
+&#160;&#160;<a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749a64b18e092c6e68b97340f4f880a3eaaf">FOUNDATIONEVENT_RESUME</a>, 
+<a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749ad0355504a259bfb81847628dda0bbc56">FOUNDATIONEVENT_FOCUS_GAIN</a>, 
 <a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749a2a1dec6176c8b1a86608f4a2a59b51c6">FOUNDATIONEVENT_FOCUS_LOST</a>, 
 <a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749a762ba6df4f34dcfcaf52b7e8e5503f77">FOUNDATIONEVENT_FILE_CREATED</a>, 
-<a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749a2111108f6b1e285241eb638f026b7140">FOUNDATIONEVENT_FILE_DELETED</a>, 
 <br />
-&#160;&#160;<a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749af0cfa2012a45bd184a6d08b843d16493">FOUNDATIONEVENT_FILE_MODIFIED</a>, 
+&#160;&#160;<a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749a2111108f6b1e285241eb638f026b7140">FOUNDATIONEVENT_FILE_DELETED</a>, 
+<a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749af0cfa2012a45bd184a6d08b843d16493">FOUNDATIONEVENT_FILE_MODIFIED</a>, 
 <a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749a0442f41a5f6fa15ba66c02798fc60f89">FOUNDATIONEVENT_LOW_MEMORY_WARNING</a>, 
-<a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749a9b528cf058696af8379cfe96994078bd">FOUNDATIONEVENT_DEVICE_ORIENTATION</a>
+<a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749a9b528cf058696af8379cfe96994078bd">FOUNDATIONEVENT_DEVICE_ORIENTATION</a>, 
+<br />
+&#160;&#160;<a class="el" href="types_8h.html#aceacf2b0489a69b78b27bfb371ac8749ae7e80d2d12c88d8e0a91e457475eaa0c">FOUNDATIONEVENT_LAST_RESERVED</a>
 <br />
  }<tr class="separator:aceacf2b0489a69b78b27bfb371ac8749"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
@@ -461,6 +491,16 @@ Enumerations</h2></td></tr>
 <br />
  }<tr class="separator:a8679947ece7c775e61f1b598d271eb63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
+<tr class="memitem:ad8d46073828f92f54e3ffda046e3c1ec"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#ad8d46073828f92f54e3ffda046e3c1ec">json_type_t</a> { <br />
+&#160;&#160;<a class="el" href="types_8h.html#ad8d46073828f92f54e3ffda046e3c1ecaef1b2fb1bcc9012effaae713daf7b458">JSON_UNDEFINED</a>, 
+<a class="el" href="types_8h.html#ad8d46073828f92f54e3ffda046e3c1eca7750125a86a953cfd57b3a4e1fa67bff">JSON_OBJECT</a>, 
+<a class="el" href="types_8h.html#ad8d46073828f92f54e3ffda046e3c1eca97462341a4eba4320d62d49597eabb6a">JSON_ARRAY</a>, 
+<a class="el" href="types_8h.html#ad8d46073828f92f54e3ffda046e3c1eca02bfd03b07e5b9ecd6ee0d257dc37daf">JSON_STRING</a>, 
+<br />
+&#160;&#160;<a class="el" href="types_8h.html#ad8d46073828f92f54e3ffda046e3c1ecabab3da19e2d87881990c5d0bf088dc63">JSON_PRIMITIVE</a>
+<br />
+ }<tr class="separator:ad8d46073828f92f54e3ffda046e3c1ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Foundation data types, enumerations and typedefs. Provides platform abstractions of system specific data types and provides the base language used in all libraries built on this foundation library. </p>
@@ -478,7 +518,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Memory hint, memory allocationis persistent (retained when function returns) </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00319">319</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00339">339</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -493,7 +533,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Memory hint, memory is temporary (extremely short lived and generally freed before function returns or scope ends) </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00322">322</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00342">342</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -508,7 +548,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Memory hint, memory allocation is local to the calling thread </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00324">324</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00344">344</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -523,7 +563,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Memory flag, memory should be allocated in low 32-bit address space </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00326">326</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00346">346</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -538,7 +578,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Memory flag, memory should be initialized to zero during allocation </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00328">328</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00348">348</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -553,7 +593,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Event flag, event is delayed and will be delivered at a later timestamp </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00331">331</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00351">351</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -568,7 +608,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Application flag, application is a command line utility and should not have a normal windowing system interaction loop </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00335">335</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00355">355</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -583,7 +623,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Application flag, application is a daemon/service </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00337">337</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00357">357</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -598,7 +638,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Stream mode/flag, stream is readable </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00340">340</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00360">360</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -613,7 +653,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Stream mode/flag, stream is writable </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00342">342</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00362">362</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -626,9 +666,9 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Stream flag, stream is truncated on open </p>
+<p>Stream flag, stream is truncated on open if writable </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00344">344</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00364">364</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -643,7 +683,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Stream flag, stream target is created if it does not previously exist </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00346">346</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00366">366</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -658,7 +698,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Stream flag, stream position is set to end on open </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00348">348</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00368">368</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -673,7 +713,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Stream flag/mode, stream I/O is binary (I/O is in ascii if flag not set) </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00350">350</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00370">370</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -688,7 +728,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Stream flag, stream is synchronized on each write </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00352">352</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00372">372</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -703,7 +743,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Process flag, spawn method will block until process ends and then return process exit code </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00356">356</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00376">376</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -718,7 +758,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Process flag, spawn method will immediately return with code 0 unless an error occurs during spawning </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00359">359</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00379">379</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -733,7 +773,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Process flag, create a console window for process </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00361">361</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00381">381</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -748,7 +788,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Process flag, create stdout/stdin pipes to process </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00363">363</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00383">383</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -763,7 +803,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Process flag, use ShellExecute instead of CreateProcess (Windows platform only) </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00365">365</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00385">385</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -778,7 +818,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Process flag, use LSOpenApplication instead of fork/execve (MacOSX platform only) </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00367">367</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00387">387</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -793,7 +833,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Process exit code, returned when given invalid arguments </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00370">370</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00390">390</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -808,7 +848,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Process exit code, returned when process was terminated by signal </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00372">372</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00392">392</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -823,7 +863,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Process exit code, returned when process wait was interrupted </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00374">374</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00394">394</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -838,7 +878,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Process exit code, returned when process wait failed for unknown reasons </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00376">376</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00396">396</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -853,22 +893,52 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Process exit code, returned when detached process is still running </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00378">378</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00398">398</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a92a314579b3f97af917b738b3cad9152"></a>
+<a class="anchor" id="a07a9d82bfcc2c0ff8128ca5a827a03a4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define FOUNDATION_CRASH_DUMP_GENERATED</td>
+          <td class="memname">#define PROCESS_EXIT_FAILURE</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Identifier returned from threads and crash guards after a fatal exception (crash) has been caught </p>
+<p>Process exit code, generic failure </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00740">740</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00400">400</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5c1fd50c111970f543ffcbf850c06ca5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PROCESS_EXIT_SUCCESS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Process exit code, generic success </p>
+
+<p>Definition at line <a class="el" href="types_8h_source.html#l00402">402</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adf8edbfc90b9ff048097a8237949aa20"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FOUNDATION_EXCEPTION_CAUGHT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Identifier returned from threads and exception_try after an exception has been caught (and optionally a dump generated) </p>
+
+<p>Definition at line <a class="el" href="types_8h_source.html#l00798">798</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -883,7 +953,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Declares the base event data layout. Event structures should use the macro as first declaration in an event struct to place the base data in the correct place: <code>typedef struct { FOUNDATION_DECLARE_EVENT; int some_other_data; [...] } my_event_t;</code> </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00935">935</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l01035">1035</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -902,7 +972,45 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Declare an inlined hashmap of given size </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l01018">1018</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l01111">1111</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1da65123bf4d771f39109bcb622f31ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FOUNDATION_DECLARE_HASHTABLE32</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">size</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Declare an inlined 32-bit hashtable of given size </p>
+
+<p>Definition at line <a class="el" href="types_8h_source.html#l01158">1158</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae3750e755e73f5bee59aad3789783a8d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FOUNDATION_DECLARE_HASHTABLE64</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">size</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Declare an inlined 64-bit hashtable of given size </p>
+
+<p>Definition at line <a class="el" href="types_8h_source.html#l01163">1163</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -917,22 +1025,26 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Declares the base object data layout. Object structures should be 8-byte align for platform compatibility. Use the macro as first declaration in an object struct: <code>typedef struct ALIGN(8) { FOUNDATION_DECLARE_OBJECT; int some_other_data; [...] } my_object_t;</code></p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l01082">1082</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l01209">1209</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac93d961efaec4e58f4842c4e5a6c7109"></a>
+<a class="anchor" id="a521c9d62e399180f098e1a859254167f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">#define FOUNDATION_DECLARE_RINGBUFFER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">buffersize</td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Declares the base ring buffer data layout. Use the macro as first declaration in a ring buffer struct: <code>typedef struct { FOUNDATION_DECLARE_RINGBUFFER; int some_other_data; [...] } my_ringbuffer_t;</code> </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l01197">1197</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l01346">1346</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -947,7 +1059,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Declares the base stream data layout. Stream structures should be 8-byte align for platform compatibility. Use the macro as first declaration in a stream struct: <code>typedef <a class="el" href="platform_8h.html#a13a257def8a65949e8cc691826aabfeb">FOUNDATION_ALIGNED_STRUCT(my_stream_t, 8)</a> { FOUNDATION_DECLARE_STREAM; int some_other_data; [...] };</code> </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l01285">1285</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l01502">1502</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -963,7 +1075,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Hash value </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00393">393</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00413">413</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -978,7 +1090,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Tick type used for absolute time measurements or timestamps </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00395">395</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00415">415</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -993,7 +1105,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Deltatime type used for floating point time differences </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00397">397</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00417">417</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1008,7 +1120,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Object handle used for identifying reference counted objects </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00399">399</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00419">419</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1023,7 +1135,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Default is 16 bit, typedef to 32 bit if need to sort more than 2^16 items in one array </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00401">401</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00421">421</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1038,7 +1150,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>UUID, 128-bit unique identifier </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00403">403</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00423">423</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1053,7 +1165,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Platform specific mutex representation, opaque data type </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00496">496</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00520">520</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1068,20 +1180,20 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Platform specific representation of a semaphore </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00528">528</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00560">560</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a088cb0e0dabdf9321fdbccc513971eda"></a>
+<a class="anchor" id="a12dec4b89fc152b9d9a82ddf36c38a5b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef int(*  error_callback_fn) (<a class="el" href="types_8h.html#aedc3ffc6b8ac675156f7e759316a2bac">error_level_t</a> level, <a class="el" href="types_8h.html#ac7659d73a8cdedc08e9f566bb406689c">error_t</a> <a class="el" href="error_8h.html#ace5156431b073a5be3ab4eb4cb905772">error</a>)</td>
+          <td class="memname">typedef int(*  error_handler_fn) (<a class="el" href="types_8h.html#aedc3ffc6b8ac675156f7e759316a2bac">error_level_t</a> level, <a class="el" href="types_8h.html#ac7659d73a8cdedc08e9f566bb406689c">error_t</a> <a class="el" href="error_8h.html#ace5156431b073a5be3ab4eb4cb905772">error</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Error handler callback which is passed the error level and reported error. It should return an implementation specific code which is then returned from the call to error_report </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Error handler which is passed the error level and reported error. It should return an implementation specific code which is then returned from the call to error_report </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">level</td><td>Error level </td></tr>
     <tr><td class="paramname">error</td><td>Error code </td></tr>
@@ -1090,7 +1202,7 @@ Enumerations</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Implementation specific code which is passed back as return from error_report </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00548">548</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00580">580</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1103,7 +1215,7 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Assert handler callback which is passed assert data and should do impementation specific processing and return a code indicating if execution can continue or need to be aborted. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Assert handler which is passed assert data and should do impementation specific processing and return a code indicating if execution can continue or need to be aborted. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>Error context </td></tr>
     <tr><td class="paramname">condition</td><td>String expressing the condition that failed </td></tr>
@@ -1118,20 +1230,20 @@ Enumerations</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>1 if assert was not handled and execution should break, 0 if assert handled and execution can continue </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00562">562</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00594">594</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a3fdd24f89156fecea03f4851dab04335"></a>
+<a class="anchor" id="aac0ba2e2202efb06a4901f982864dc0f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(*  log_callback_fn) (<a class="el" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <a class="el" href="types_8h.html#aedc3ffc6b8ac675156f7e759316a2bac">error_level_t</a> severity, const char *msg, size_t length)</td>
+          <td class="memname">typedef void(*  log_handler_fn) (<a class="el" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <a class="el" href="types_8h.html#aedc3ffc6b8ac675156f7e759316a2bac">error_level_t</a> severity, const char *msg, size_t length)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Log output callback. Called after each log message processed and output by the log functions. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Log output handler. Called after each log message processed and output by the log functions. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>Log context </td></tr>
     <tr><td class="paramname">severity</td><td>Log severity </td></tr>
@@ -1141,7 +1253,7 @@ Enumerations</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00572">572</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00604">604</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1156,7 +1268,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Subsystem initialization function prototype. Return value should be the success state of initialization </p><dl class="section return"><dt>Returns</dt><dd>0 on success, &lt;0 if failure (errors should be reported through log_error or error_report) </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00579">579</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00622">622</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1171,7 +1283,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Subsystem finalization function prototype. Will be called for each successfully initialized subsystem on global finalization </p>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00583">583</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00626">626</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1195,7 +1307,7 @@ Enumerations</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to allocated memory block if successful, 0 if error </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00592">592</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00635">635</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1219,7 +1331,7 @@ Enumerations</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to allocated memory block if successful, 0 if error </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00602">602</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00645">645</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1239,7 +1351,7 @@ Enumerations</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00607">607</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00650">650</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1260,7 +1372,7 @@ Enumerations</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00613">613</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00656">656</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1280,7 +1392,22 @@ Enumerations</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00618">618</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00661">661</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa02aab99a07414cabe03b68b05ded4fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="structmemory__statistics__t.html">memory_statistics_t</a>(*  memory_statistics_fn) (void)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Memory tracker statistics function prototype. Implementation of a memory tracker must provide an implementation with this prototype for memory statistics </p><dl class="section return"><dt>Returns</dt><dd>Memory statistics </dd></dl>
+
+<p>Definition at line <a class="el" href="types_8h_source.html#l00666">666</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1301,7 +1428,7 @@ Enumerations</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00623">623</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00671">671</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1322,63 +1449,62 @@ Enumerations</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00628">628</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00676">676</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a543e42ed5e2375f5a4ed52fe5eef5941"></a>
+<a class="anchor" id="a6bae56cebb9cd0da2cb8f92987c09876"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void*(*  thread_fn) (<a class="el" href="types_8h.html#a72bc7eac2560a0cc8a0fded52453c3da">object_t</a> thread, void *arg)</td>
+          <td class="memname">typedef void*(*  thread_fn) (void *arg)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Thread entry point function prototype </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">thread</td><td>Thread object handle </td></tr>
     <tr><td class="paramname">arg</td><td>Argument passed by caller when starting the thread </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Implementation specific data which can be obtained through thread_result </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00634">634</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00681">681</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="acb826f46d2bd5fe7e9b26148647c00c4"></a>
+<a class="anchor" id="a697104bd133e400552eedc5b66e700a4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef int(*  crash_guard_fn) (void *arg)</td>
+          <td class="memname">typedef int(*  exception_try_fn) (void *arg)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Any function to be used in conjunction with the crash guard functionality of the library should have this prototype to allow the crash guard to catch and handle exceptions correctly </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Any function to be used in conjunction with the exception handling in the library should have this prototype </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">arg</td><td>Implementation specific argument passed to crash_guard </td></tr>
+    <tr><td class="paramname">arg</td><td>Implementation specific argument passed to exception_try </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Implementation specific return value which is forwarded as return value from crash_guard (note that FOUNDATION_CRASH_DUMP_GENERATED is reserved) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Implementation specific return value which is forwarded as return value from exception_try (note that FOUNDATION_EXCEPTION_CAUGHT is reserved) </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00642">642</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00688">688</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0214d4ef8a863dbb057494c1b8ae204d"></a>
+<a class="anchor" id="ac04ea814d64beda884a7747b42f2de40"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(*  crash_dump_callback_fn) (const char *file, size_t length)</td>
+          <td class="memname">typedef void(*  exception_handler_fn) (const char *file, size_t length)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Crash callback function prototype, used to notify that an exception occurred and the process state was saved to a dump file </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Exception handler function prototype, used to notify that an exception occurred and the process state was saved to a dump file </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">file</td><td>Dump file path </td></tr>
     <tr><td class="paramname">length</td><td>Length of file path </td></tr>
@@ -1386,7 +1512,7 @@ Enumerations</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00648">648</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00694">694</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1407,7 +1533,7 @@ Enumerations</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00653">653</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00699">699</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1430,7 +1556,7 @@ Enumerations</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Newly allocated stream, null if it could not be opened </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00660">660</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00706">706</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1453,7 +1579,7 @@ Enumerations</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of bytes actually read </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00667">667</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00713">713</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1476,7 +1602,7 @@ Enumerations</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of bytes actually written </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00674">674</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00720">720</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1497,7 +1623,7 @@ Enumerations</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if stream at end, false if not </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00679">679</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00725">725</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1517,7 +1643,7 @@ Enumerations</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00683">683</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00729">729</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1538,7 +1664,7 @@ Enumerations</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00688">688</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00734">734</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1559,7 +1685,7 @@ Enumerations</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Stream size, 0 if invalid stream or unknown (like a network stream) </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00693">693</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00739">739</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1581,7 +1707,7 @@ Enumerations</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00700">700</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00746">746</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1602,7 +1728,7 @@ Enumerations</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Current stream position, 0 if invalid stream or unknown </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00705">705</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00751">751</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1623,7 +1749,7 @@ Enumerations</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Last modification timestamp, 0 if invalid stream or unknown </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00710">710</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00756">756</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1644,7 +1770,49 @@ Enumerations</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Digest of stream content, 0 if invalid stream or unknown </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00716">716</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00762">762</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afd7d45298b8b60c1c04420bb3e5937ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="structuint256__t.html">uint256_t</a>(*  stream_sha256_fn) (<a class="el" href="structstream__t.html">stream_t</a> *stream)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get stream digest. Only available if stream size is known and stream is seekable. Does not modify the current stream position. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>Stream </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Digest of stream content, 0 if invalid stream or unknown </dd></dl>
+
+<p>Definition at line <a class="el" href="types_8h_source.html#l00768">768</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a241b4606fba1404b890362fc9bada9e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef uint512_t(*  stream_sha512_fn) (<a class="el" href="structstream__t.html">stream_t</a> *stream)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get stream digest. Only available if stream size is known and stream is seekable. Does not modify the current stream position. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>Stream </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Digest of stream content, 0 if invalid stream or unknown </dd></dl>
+
+<p>Definition at line <a class="el" href="types_8h_source.html#l00774">774</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1664,7 +1832,7 @@ Enumerations</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00721">721</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00779">779</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1685,7 +1853,7 @@ Enumerations</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of bytes that can be read without blocking </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00726">726</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00784">784</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1705,7 +1873,7 @@ Enumerations</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00731">731</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00789">789</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -1726,7 +1894,7 @@ Enumerations</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Clone of stream, 0 if not supported or invalid source stream </dd></dl>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00736">736</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00794">794</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -2042,6 +2210,9 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="aebb40016c198e3e5e1f82c86929dc454a2b2652acbfe98dc1655eafe92793972c"></a>STREAMTYPE_STDSTREAM&#160;</td><td class="fielddoc">
 <p>Standard stream (stdin, stderr, stdout) </p>
 </td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aebb40016c198e3e5e1f82c86929dc454a3c7e0b75a91ac76377f215cb3a9a0a45"></a>STREAMTYPE_CUSTOM&#160;</td><td class="fielddoc">
+<p>Custom unknown stream type </p>
+</td></tr>
 <tr><td class="fieldname"><a class="anchor" id="aebb40016c198e3e5e1f82c86929dc454af3e500e9eeffd47adba81f60949b5829"></a>STREAMTYPE_LAST_RESERVED&#160;</td><td class="fielddoc">
 <p>Last reserved built-in stream type, not a valid type </p>
 </td></tr>
@@ -2073,7 +2244,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00215">215</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00217">217</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -2108,7 +2279,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00225">225</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00227">227</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -2123,7 +2294,10 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Foundation library level event identifiers. These event identifiers are only valid in conjunction with foundation event streams. Other event streams will use their own event identifiers with the same value, and event streams should be treated as separate "namespaces" for event identifiers. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aceacf2b0489a69b78b27bfb371ac8749a8d5248bcba4472a1eee23d0aa23cd700"></a>FOUNDATIONEVENT_START&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aceacf2b0489a69b78b27bfb371ac8749ab1f4ceb069bfe60f7788f723eb8f3bb3"></a>FOUNDATIONEVENT_NOEVENT&#160;</td><td class="fielddoc">
+<p>Not an event, used a sentinel to denote no event </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aceacf2b0489a69b78b27bfb371ac8749a8d5248bcba4472a1eee23d0aa23cd700"></a>FOUNDATIONEVENT_START&#160;</td><td class="fielddoc">
 <p>Application has been asked to start </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="aceacf2b0489a69b78b27bfb371ac8749a40cb1a524f20993ac7ee97dd1c363653"></a>FOUNDATIONEVENT_TERMINATE&#160;</td><td class="fielddoc">
@@ -2156,9 +2330,12 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="aceacf2b0489a69b78b27bfb371ac8749a9b528cf058696af8379cfe96994078bd"></a>FOUNDATIONEVENT_DEVICE_ORIENTATION&#160;</td><td class="fielddoc">
 <p>Device orientation changed </p>
 </td></tr>
+<tr><td class="fieldname"><a class="anchor" id="aceacf2b0489a69b78b27bfb371ac8749ae7e80d2d12c88d8e0a91e457475eaa0c"></a>FOUNDATIONEVENT_LAST_RESERVED&#160;</td><td class="fielddoc">
+<p>Last reserved event id </p>
+</td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00244">244</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00246">246</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -2187,7 +2364,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00271">271</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00277">277</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -2222,7 +2399,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00283">283</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00289">289</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>
@@ -2260,7 +2437,39 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="types_8h_source.html#l00299">299</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+<p>Definition at line <a class="el" href="types_8h_source.html#l00305">305</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad8d46073828f92f54e3ffda046e3c1ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="types_8h.html#ad8d46073828f92f54e3ffda046e3c1ec">json_type_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>JSON token type </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ad8d46073828f92f54e3ffda046e3c1ecaef1b2fb1bcc9012effaae713daf7b458"></a>JSON_UNDEFINED&#160;</td><td class="fielddoc">
+<p>Invalid type </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad8d46073828f92f54e3ffda046e3c1eca7750125a86a953cfd57b3a4e1fa67bff"></a>JSON_OBJECT&#160;</td><td class="fielddoc">
+<p>Object </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad8d46073828f92f54e3ffda046e3c1eca97462341a4eba4320d62d49597eabb6a"></a>JSON_ARRAY&#160;</td><td class="fielddoc">
+<p>Array </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad8d46073828f92f54e3ffda046e3c1eca02bfd03b07e5b9ecd6ee0d257dc37daf"></a>JSON_STRING&#160;</td><td class="fielddoc">
+<p>String </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad8d46073828f92f54e3ffda046e3c1ecabab3da19e2d87881990c5d0bf088dc63"></a>JSON_PRIMITIVE&#160;</td><td class="fielddoc">
+<p>Primitive </p>
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="types_8h_source.html#l00325">325</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
 
 </div>
 </div>

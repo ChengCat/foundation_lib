@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Foundation Library: D:/foundation_lib/foundation/build.h File Reference</title>
+<title>Foundation Library: E:/projects/foundation_lib/foundation/build.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -60,8 +60,8 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a9f6df1afb3e79ce2835f56b46e2e008e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="build_8h.html#a9f6df1afb3e79ce2835f56b46e2e008e">BUILD_ENABLE_CONFIG_DEBUG</a></td></tr>
-<tr class="separator:a9f6df1afb3e79ce2835f56b46e2e008e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b3010634ab6f4a7106ca8c3bf957642"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="build_8h.html#a6b3010634ab6f4a7106ca8c3bf957642">BUILD_ENABLE_MEMORY_STATISTICS</a></td></tr>
+<tr class="separator:a6b3010634ab6f4a7106ca8c3bf957642"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34822f7a63af74d86aaa1084401f0631"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="build_8h.html#a34822f7a63af74d86aaa1084401f0631">BUILD_MONOLITHIC</a></td></tr>
 <tr class="separator:a34822f7a63af74d86aaa1084401f0631"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d7f192e6ad36f4431ab00c0d3e5a136"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="build_8h.html#a8d7f192e6ad36f4431ab00c0d3e5a136">BUILD_DEFAULT_STREAM_BYTEORDER</a></td></tr>
@@ -84,8 +84,6 @@ Macros</h2></td></tr>
 <tr class="separator:aeea2d85992d19ada2b335651b0747028"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a452ba56a386f9cba47c64ca56d35c1d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="build_8h.html#a452ba56a386f9cba47c64ca56d35c1d2">BUILD_ENABLE_DEBUG_LOG</a></td></tr>
 <tr class="separator:a452ba56a386f9cba47c64ca56d35c1d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f6df1afb3e79ce2835f56b46e2e008e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="build_8h.html#a9f6df1afb3e79ce2835f56b46e2e008e">BUILD_ENABLE_CONFIG_DEBUG</a></td></tr>
-<tr class="separator:a9f6df1afb3e79ce2835f56b46e2e008e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14600f55ebbc1336abf5313bc228e107"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="build_8h.html#a14600f55ebbc1336abf5313bc228e107">BUILD_ENABLE_PROFILE</a></td></tr>
 <tr class="separator:a14600f55ebbc1336abf5313bc228e107"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a123163940bda0609bc624f38d38a9a4b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="build_8h.html#a123163940bda0609bc624f38d38a9a4b">BUILD_ENABLE_MEMORY_CONTEXT</a></td></tr>
@@ -115,18 +113,18 @@ BUILD_DEPLOY - Deploy build </li>
 
 <p>Definition in file <a class="el" href="build_8h_source.html">build.h</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a9f6df1afb3e79ce2835f56b46e2e008e"></a>
+<a class="anchor" id="a6b3010634ab6f4a7106ca8c3bf957642"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define BUILD_ENABLE_CONFIG_DEBUG</td>
+          <td class="memname">#define BUILD_ENABLE_MEMORY_STATISTICS</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Control if extra debug logging is enabled in the config module. Default is disabled in all builds. </p>
+<p>Enable gathering of memory allocation statistics. By default enabled in debug and release builds, disabled in profile and deploy builds. </p>
 
-<p>Definition at line <a class="el" href="build_8h_source.html#l00251">251</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
+<p>Definition at line <a class="el" href="build_8h_source.html#l00218">218</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
 
 </div>
 </div>
@@ -141,7 +139,7 @@ BUILD_DEPLOY - Deploy build </li>
 </div><div class="memdoc">
 <p>Control if tests are built as a single monolithic binary or as one executable per test case. Default is enabled on mobile/console platforms and code coverage builds, and disabled in all other configurations. </p>
 
-<p>Definition at line <a class="el" href="build_8h_source.html#l00257">257</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
+<p>Definition at line <a class="el" href="build_8h_source.html#l00263">263</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
 
 </div>
 </div>
@@ -156,7 +154,7 @@ BUILD_DEPLOY - Deploy build </li>
 </div><div class="memdoc">
 <p>The default stream byte order used if the byte order is not explicitly set on a stream. Default value is little endian, matching most supported architectures. </p>
 
-<p>Definition at line <a class="el" href="build_8h_source.html#l00235">235</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
+<p>Definition at line <a class="el" href="build_8h_source.html#l00241">241</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
 
 </div>
 </div>
@@ -171,7 +169,7 @@ BUILD_DEPLOY - Deploy build </li>
 </div><div class="memdoc">
 <p>The maximum length of a stream path string. Used to limit temporary memory usage. </p>
 
-<p>Definition at line <a class="el" href="build_8h_source.html#l00238">238</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
+<p>Definition at line <a class="el" href="build_8h_source.html#l00244">244</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
 
 </div>
 </div>
@@ -186,7 +184,7 @@ BUILD_DEPLOY - Deploy build </li>
 </div><div class="memdoc">
 <p>Set to 1 for debug build, 0 otherwise. Debug builds are by default unoptimized with full debugging functionality enabled such as asserts, logging, memory tracking and other features. </p>
 
-<p>Definition at line <a class="el" href="build_8h_source.html#l00243">243</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
+<p>Definition at line <a class="el" href="build_8h_source.html#l00249">249</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
 
 </div>
 </div>
@@ -201,7 +199,7 @@ BUILD_DEPLOY - Deploy build </li>
 </div><div class="memdoc">
 <p>Set to 1 for release build, 0 otherwise. Release builds are by default optimized but with a normal set of debugging functionality enabled such as asserts, some logging and memory tracking. </p>
 
-<p>Definition at line <a class="el" href="build_8h_source.html#l00244">244</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
+<p>Definition at line <a class="el" href="build_8h_source.html#l00250">250</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
 
 </div>
 </div>
@@ -216,7 +214,7 @@ BUILD_DEPLOY - Deploy build </li>
 </div><div class="memdoc">
 <p>Set to 1 for profile build, 0 otherwise. Profile builds are by default fully optimized and all debugging functionality disabled, but with profiling calls enabled. </p>
 
-<p>Definition at line <a class="el" href="build_8h_source.html#l00245">245</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
+<p>Definition at line <a class="el" href="build_8h_source.html#l00251">251</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
 
 </div>
 </div>
@@ -231,7 +229,7 @@ BUILD_DEPLOY - Deploy build </li>
 </div><div class="memdoc">
 <p>Set to 1 for deploy build, 0 otherwise. Deploy builds are by default fully optimized and have all debugging and profiling functionality disabled. </p>
 
-<p>Definition at line <a class="el" href="build_8h_source.html#l00246">246</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
+<p>Definition at line <a class="el" href="build_8h_source.html#l00252">252</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
 
 </div>
 </div>
@@ -246,7 +244,7 @@ BUILD_DEPLOY - Deploy build </li>
 </div><div class="memdoc">
 <p>Control if runtime asserts are enabled. Default value is enabled in debug and release builds, and disabled in profile and deploy builds. If asserts are disabled, all assert macros will reduce to void (no evaluated code). See <a class="el" href="assert_8h.html" title="Extended assert macros. ">assert.h</a> documentation for more information on asserts. </p>
 
-<p>Definition at line <a class="el" href="build_8h_source.html#l00247">247</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
+<p>Definition at line <a class="el" href="build_8h_source.html#l00253">253</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
 
 </div>
 </div>
@@ -261,7 +259,7 @@ BUILD_DEPLOY - Deploy build </li>
 </div><div class="memdoc">
 <p>Control if error context tracking is enabled. Default value is enabled in debug and release builds, and disabled in profile and deploy builds. If error context tracking is disabled, all calls to set error context will reduce to void (no evaluated code). See <a class="el" href="error_8h.html" title="Error context and reporting. ">error.h</a> documentation for more information on error context tracking. </p>
 
-<p>Definition at line <a class="el" href="build_8h_source.html#l00248">248</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
+<p>Definition at line <a class="el" href="build_8h_source.html#l00254">254</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
 
 </div>
 </div>
@@ -274,9 +272,9 @@ BUILD_DEPLOY - Deploy build </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Control if logging is enabled. Default value is enabled in debug and release builds on all platforms, disabled in profile and deploy builds on console/mobile platform families, and enabled in profile and deploy builds on all other platforms. If logging is disabled, all calls to log functions will reduce to void (no evaluated code). See <a class="el" href="log_8h.html" title="Log output, filtering, context handling and callbacks. ">log.h</a> documentation for more information on log functions. </p>
+<p>Control if logging is enabled. Default value is enabled in debug and release builds on all platforms, disabled in profile and deploy builds on console/mobile platform families, and enabled in profile and deploy builds on all other platforms. If logging is disabled, all calls to log functions will reduce to void (no evaluated code). See <a class="el" href="log_8h.html" title="Log output, filtering and context handling. ">log.h</a> documentation for more information on log functions. </p>
 
-<p>Definition at line <a class="el" href="build_8h_source.html#l00249">249</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
+<p>Definition at line <a class="el" href="build_8h_source.html#l00255">255</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
 
 </div>
 </div>
@@ -291,22 +289,7 @@ BUILD_DEPLOY - Deploy build </li>
 </div><div class="memdoc">
 <p>Control if debug logging is enabled. Similar to BUILD_ENABLE_LOG, but explicitly controls debug level logging. Default value is enabled in debug builds, and disabled in all other builds. Depends on <a class="el" href="build_8h.html#aeea2d85992d19ada2b335651b0747028">BUILD_ENABLE_LOG</a> </p>
 
-<p>Definition at line <a class="el" href="build_8h_source.html#l00250">250</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9f6df1afb3e79ce2835f56b46e2e008e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BUILD_ENABLE_CONFIG_DEBUG</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Control if extra debug logging is enabled in the config module. Default is disabled in all builds. </p>
-
-<p>Definition at line <a class="el" href="build_8h_source.html#l00251">251</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
+<p>Definition at line <a class="el" href="build_8h_source.html#l00256">256</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
 
 </div>
 </div>
@@ -321,7 +304,7 @@ BUILD_DEPLOY - Deploy build </li>
 </div><div class="memdoc">
 <p>Control if profiling is enabled. Default value is enabled in debug, release and profile builds, and disabled in deploy builds. If profiling is disabled, all calls to profile functions will reduce to void (no evaluated code). See <a class="el" href="profile_8h.html" title="Profiling. ">profile.h</a> documentation for more information on profiling calls. </p>
 
-<p>Definition at line <a class="el" href="build_8h_source.html#l00252">252</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
+<p>Definition at line <a class="el" href="build_8h_source.html#l00258">258</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
 
 </div>
 </div>
@@ -336,7 +319,7 @@ BUILD_DEPLOY - Deploy build </li>
 </div><div class="memdoc">
 <p>Control is memory context tracking is enabled. Default value is enabled in debug and release builds, and disabled in profile and deploy builds. If memory context tracking is disabled, all calls to track memory context will reduce to void (no evaluated code). See <a class="el" href="memory_8h.html" title="Memory management. ">memory.h</a> documentation for more information on memory context tracking. </p>
 
-<p>Definition at line <a class="el" href="build_8h_source.html#l00253">253</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
+<p>Definition at line <a class="el" href="build_8h_source.html#l00259">259</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
 
 </div>
 </div>
@@ -351,7 +334,7 @@ BUILD_DEPLOY - Deploy build </li>
 </div><div class="memdoc">
 <p>Control if memory tracking is enabled. Default value is enabled in debug and release builds, and disabled in profile and deploy builds. If memory tracking is enabled, each memoruy allocation and deallocation will incur a slight overhead to track the origin of the call and enable memory leak detection. For more information on memory tracking, check the <a class="el" href="memory_8h.html" title="Memory management. ">memory.h</a> documentation. </p>
 
-<p>Definition at line <a class="el" href="build_8h_source.html#l00254">254</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
+<p>Definition at line <a class="el" href="build_8h_source.html#l00260">260</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
 
 </div>
 </div>
@@ -366,7 +349,7 @@ BUILD_DEPLOY - Deploy build </li>
 </div><div class="memdoc">
 <p>Control if memory guarding is enabled. Default value is enabled in debug and release builds, and disabled in profile and deploy builds. Memory guarding incurs a slight memory overhead on each allocation, and enables over/underwrite detection on memory deallocation. For more information on memory guarding, check the <a class="el" href="memory_8h.html" title="Memory management. ">memory.h</a> documentation. </p>
 
-<p>Definition at line <a class="el" href="build_8h_source.html#l00255">255</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
+<p>Definition at line <a class="el" href="build_8h_source.html#l00261">261</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
 
 </div>
 </div>
@@ -381,7 +364,7 @@ BUILD_DEPLOY - Deploy build </li>
 </div><div class="memdoc">
 <p>Control if static string hashing debugging is enabled. Default value is enabled in debug and release builds on desktop platforms, and disabled all other build configurations and/or platforms. Static string hash debugging enables sanity checking in statically hashed strings, as well as reverse lookup of string hashes. See <a class="el" href="hash_8h.html" title="Murmur3 hash. ">hash.h</a> documentation for more information on statically hashed strings. </p>
 
-<p>Definition at line <a class="el" href="build_8h_source.html#l00256">256</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
+<p>Definition at line <a class="el" href="build_8h_source.html#l00262">262</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
 
 </div>
 </div>
@@ -396,7 +379,7 @@ BUILD_DEPLOY - Deploy build </li>
 </div><div class="memdoc">
 <p>Control if tests are built as a single monolithic binary or as one executable per test case. Default is enabled on mobile/console platforms and code coverage builds, and disabled in all other configurations. </p>
 
-<p>Definition at line <a class="el" href="build_8h_source.html#l00257">257</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
+<p>Definition at line <a class="el" href="build_8h_source.html#l00263">263</a> of file <a class="el" href="build_8h_source.html">build.h</a>.</p>
 
 </div>
 </div>

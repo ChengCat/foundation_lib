@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Foundation Library: D:/foundation_lib/foundation/pnacl.h Source File</title>
+<title>Foundation Library: E:/projects/foundation_lib/foundation/pnacl.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Foundation Library
-   &#160;<span id="projectnumber">1.4.0</span>
+   &#160;<span id="projectnumber">1.5.2</span>
    </div>
    <div id="projectbrief">Cross-platform application foundation library in C</div>
   </td>
@@ -89,57 +89,56 @@
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="string_8h.html">string.h</a>&gt;</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &lt;sys/types.h&gt;</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &lt;sys/wait.h&gt;</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;sys/errno.h&gt;</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &lt;sys/time.h&gt;</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#include &lt;ppapi/c/ppp.h&gt;</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &lt;ppapi/c/pp_instance.h&gt;</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#include &lt;ppapi/c/pp_resource.h&gt;</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#include &lt;ppapi/c/pp_errors.h&gt;</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="structpnacl__array__t.html">   54</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structpnacl__array__t.html">pnacl_array_t</a> {</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structpnacl__array__t.html#a735984d41155bc1032e09bece8f8d66d">   56</a></span>&#160;  <span class="keywordtype">void</span>*         <a class="code" href="structpnacl__array__t.html#a735984d41155bc1032e09bece8f8d66d">data</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="structpnacl__array__t.html#a16ff2d8e15ade4948398b0aeb80124a8">   58</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>  <a class="code" href="structpnacl__array__t.html#a16ff2d8e15ade4948398b0aeb80124a8">count</a>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;} <a class="code" href="structpnacl__array__t.html">pnacl_array_t</a>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">int</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<a class="code" href="pnacl_8h.html#a0ed10cb8412cf5cade79e0dc04c30d31">pnacl_module_initialize</a>(PP_Module module_id, PPB_GetInterface get_browser);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keyword">const</span> <span class="keywordtype">void</span>*</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<a class="code" href="pnacl_8h.html#ae8a3ac7217b8d64b6bf8615cff9245b3">pnacl_module_interface</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* interface, <span class="keywordtype">size_t</span> length);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<a class="code" href="pnacl_8h.html#a95f46186a21ef47ad98436dea5bc1905">pnacl_module_finalize</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="structstring__const__t.html">string_const_t</a></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<a class="code" href="pnacl_8h.html#a0c6ab28faf382d25de3d556acafebb49">pnacl_error_message</a>(<span class="keywordtype">int</span> err);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> PP_Instance</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<a class="code" href="pnacl_8h.html#a1f17606efc5a1c0b21690d0cdf24f3f0">pnacl_instance</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keyword">const</span> <span class="keywordtype">void</span>*</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<a class="code" href="pnacl_8h.html#aeba6fbd7750686d5a2ee530ff013f270">pnacl_interface</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* interface, <span class="keywordtype">size_t</span> length);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span>*</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<a class="code" href="pnacl_8h.html#a8e3d3e63baf252613ce2c1a0d0316e57">pnacl_array_output</a>(<span class="keywordtype">void</span>* arr, uint32_t count, uint32_t size);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<a class="code" href="pnacl_8h.html#a0c482190759e54555f537ea891b5bb30">pnacl_post_log</a>(<a class="code" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <a class="code" href="types_8h.html#aedc3ffc6b8ac675156f7e759316a2bac">error_level_t</a> severity, <span class="keyword">const</span> <span class="keywordtype">char</span>* msg, <span class="keywordtype">size_t</span> msglen);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">int</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<a class="code" href="pnacl_8h.html#adab20405c91b92ab18d18ce4ad08fe3a">pnacl_main</a>(PP_Instance instance);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#if FOUNDATION_COMPILER_CLANG</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#  pragma clang diagnostic pop</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &lt;sys/errno.h&gt;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;sys/time.h&gt;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &lt;ppapi/c/ppp.h&gt;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#include &lt;ppapi/c/pp_instance.h&gt;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &lt;ppapi/c/pp_resource.h&gt;</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#include &lt;ppapi/c/pp_errors.h&gt;</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="structpnacl__array__t.html">   53</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structpnacl__array__t.html">pnacl_array_t</a> {</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="structpnacl__array__t.html#a735984d41155bc1032e09bece8f8d66d">   55</a></span>&#160;  <span class="keywordtype">void</span>*         <a class="code" href="structpnacl__array__t.html#a735984d41155bc1032e09bece8f8d66d">data</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="structpnacl__array__t.html#a16ff2d8e15ade4948398b0aeb80124a8">   57</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>  <a class="code" href="structpnacl__array__t.html#a16ff2d8e15ade4948398b0aeb80124a8">count</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;} <a class="code" href="structpnacl__array__t.html">pnacl_array_t</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">int</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<a class="code" href="pnacl_8h.html#a0ed10cb8412cf5cade79e0dc04c30d31">pnacl_module_initialize</a>(PP_Module module_id, PPB_GetInterface get_browser);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keyword">const</span> <span class="keywordtype">void</span>*</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<a class="code" href="pnacl_8h.html#ae8a3ac7217b8d64b6bf8615cff9245b3">pnacl_module_interface</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* interface, <span class="keywordtype">size_t</span> length);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<a class="code" href="pnacl_8h.html#a95f46186a21ef47ad98436dea5bc1905">pnacl_module_finalize</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <a class="code" href="structstring__const__t.html">string_const_t</a></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<a class="code" href="pnacl_8h.html#a0c6ab28faf382d25de3d556acafebb49">pnacl_error_message</a>(<span class="keywordtype">int</span> err);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> PP_Instance</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<a class="code" href="pnacl_8h.html#a1f17606efc5a1c0b21690d0cdf24f3f0">pnacl_instance</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keyword">const</span> <span class="keywordtype">void</span>*</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<a class="code" href="pnacl_8h.html#aeba6fbd7750686d5a2ee530ff013f270">pnacl_interface</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* interface, <span class="keywordtype">size_t</span> length);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span>*</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<a class="code" href="pnacl_8h.html#a8e3d3e63baf252613ce2c1a0d0316e57">pnacl_array_output</a>(<span class="keywordtype">void</span>* arr, uint32_t count, uint32_t size);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<a class="code" href="pnacl_8h.html#a0c482190759e54555f537ea891b5bb30">pnacl_post_log</a>(<a class="code" href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a> context, <a class="code" href="types_8h.html#aedc3ffc6b8ac675156f7e759316a2bac">error_level_t</a> severity, <span class="keyword">const</span> <span class="keywordtype">char</span>* msg, <span class="keywordtype">size_t</span> msglen);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<a class="code" href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a> <span class="keywordtype">int</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<a class="code" href="pnacl_8h.html#adab20405c91b92ab18d18ce4ad08fe3a">pnacl_main</a>(PP_Instance instance);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#if FOUNDATION_COMPILER_CLANG</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#  pragma clang diagnostic pop</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="types_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">Foundation data types. </div></div>
 <div class="ttc" id="string_8h_html"><div class="ttname"><a href="string_8h.html">string.h</a></div><div class="ttdoc">String utility functions. </div></div>
 <div class="ttc" id="time_8h_html"><div class="ttname"><a href="time_8h.html">time.h</a></div><div class="ttdoc">Time measurements. </div></div>
-<div class="ttc" id="structpnacl__array__t_html_a16ff2d8e15ade4948398b0aeb80124a8"><div class="ttname"><a href="structpnacl__array__t.html#a16ff2d8e15ade4948398b0aeb80124a8">pnacl_array_t::count</a></div><div class="ttdeci">unsigned int count</div><div class="ttdef"><b>Definition:</b> <a href="pnacl_8h_source.html#l00058">pnacl.h:58</a></div></div>
-<div class="ttc" id="types_8h_html_afc91d3cceff94258bb6566969046caa5"><div class="ttname"><a href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a></div><div class="ttdeci">uint64_t hash_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00393">types.h:393</a></div></div>
+<div class="ttc" id="structpnacl__array__t_html_a16ff2d8e15ade4948398b0aeb80124a8"><div class="ttname"><a href="structpnacl__array__t.html#a16ff2d8e15ade4948398b0aeb80124a8">pnacl_array_t::count</a></div><div class="ttdeci">unsigned int count</div><div class="ttdef"><b>Definition:</b> <a href="pnacl_8h_source.html#l00057">pnacl.h:57</a></div></div>
+<div class="ttc" id="types_8h_html_afc91d3cceff94258bb6566969046caa5"><div class="ttname"><a href="types_8h.html#afc91d3cceff94258bb6566969046caa5">hash_t</a></div><div class="ttdeci">uint64_t hash_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00413">types.h:413</a></div></div>
 <div class="ttc" id="types_8h_html_aedc3ffc6b8ac675156f7e759316a2bac"><div class="ttname"><a href="types_8h.html#aedc3ffc6b8ac675156f7e759316a2bac">error_level_t</a></div><div class="ttdeci">error_level_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00039">types.h:39</a></div></div>
 <div class="ttc" id="platform_8h_html"><div class="ttname"><a href="platform_8h.html">platform.h</a></div><div class="ttdoc">Platform abstractions. </div></div>
 <div class="ttc" id="pnacl_8h_html_a1f17606efc5a1c0b21690d0cdf24f3f0"><div class="ttname"><a href="pnacl_8h.html#a1f17606efc5a1c0b21690d0cdf24f3f0">pnacl_instance</a></div><div class="ttdeci">FOUNDATION_API PP_Instance pnacl_instance(void)</div></div>
@@ -147,14 +146,14 @@
 <div class="ttc" id="pnacl_8h_html_a0c6ab28faf382d25de3d556acafebb49"><div class="ttname"><a href="pnacl_8h.html#a0c6ab28faf382d25de3d556acafebb49">pnacl_error_message</a></div><div class="ttdeci">FOUNDATION_API string_const_t pnacl_error_message(int err)</div></div>
 <div class="ttc" id="pnacl_8h_html_adab20405c91b92ab18d18ce4ad08fe3a"><div class="ttname"><a href="pnacl_8h.html#adab20405c91b92ab18d18ce4ad08fe3a">pnacl_main</a></div><div class="ttdeci">FOUNDATION_API int pnacl_main(PP_Instance instance)</div></div>
 <div class="ttc" id="pnacl_8h_html_a0c482190759e54555f537ea891b5bb30"><div class="ttname"><a href="pnacl_8h.html#a0c482190759e54555f537ea891b5bb30">pnacl_post_log</a></div><div class="ttdeci">FOUNDATION_API void pnacl_post_log(hash_t context, error_level_t severity, const char *msg, size_t msglen)</div></div>
-<div class="ttc" id="structpnacl__array__t_html"><div class="ttname"><a href="structpnacl__array__t.html">pnacl_array_t</a></div><div class="ttdef"><b>Definition:</b> <a href="pnacl_8h_source.html#l00054">pnacl.h:54</a></div></div>
-<div class="ttc" id="structpnacl__array__t_html_a735984d41155bc1032e09bece8f8d66d"><div class="ttname"><a href="structpnacl__array__t.html#a735984d41155bc1032e09bece8f8d66d">pnacl_array_t::data</a></div><div class="ttdeci">void * data</div><div class="ttdef"><b>Definition:</b> <a href="pnacl_8h_source.html#l00056">pnacl.h:56</a></div></div>
+<div class="ttc" id="structpnacl__array__t_html"><div class="ttname"><a href="structpnacl__array__t.html">pnacl_array_t</a></div><div class="ttdef"><b>Definition:</b> <a href="pnacl_8h_source.html#l00053">pnacl.h:53</a></div></div>
+<div class="ttc" id="structpnacl__array__t_html_a735984d41155bc1032e09bece8f8d66d"><div class="ttname"><a href="structpnacl__array__t.html#a735984d41155bc1032e09bece8f8d66d">pnacl_array_t::data</a></div><div class="ttdeci">void * data</div><div class="ttdef"><b>Definition:</b> <a href="pnacl_8h_source.html#l00055">pnacl.h:55</a></div></div>
 <div class="ttc" id="pnacl_8h_html_ae8a3ac7217b8d64b6bf8615cff9245b3"><div class="ttname"><a href="pnacl_8h.html#ae8a3ac7217b8d64b6bf8615cff9245b3">pnacl_module_interface</a></div><div class="ttdeci">FOUNDATION_API const void * pnacl_module_interface(const char *interface, size_t length)</div></div>
 <div class="ttc" id="pnacl_8h_html_aeba6fbd7750686d5a2ee530ff013f270"><div class="ttname"><a href="pnacl_8h.html#aeba6fbd7750686d5a2ee530ff013f270">pnacl_interface</a></div><div class="ttdeci">FOUNDATION_API const void * pnacl_interface(const char *interface, size_t length)</div></div>
 <div class="ttc" id="pnacl_8h_html_a0ed10cb8412cf5cade79e0dc04c30d31"><div class="ttname"><a href="pnacl_8h.html#a0ed10cb8412cf5cade79e0dc04c30d31">pnacl_module_initialize</a></div><div class="ttdeci">FOUNDATION_API int pnacl_module_initialize(PP_Module module_id, PPB_GetInterface get_browser)</div></div>
 <div class="ttc" id="pnacl_8h_html_a8e3d3e63baf252613ce2c1a0d0316e57"><div class="ttname"><a href="pnacl_8h.html#a8e3d3e63baf252613ce2c1a0d0316e57">pnacl_array_output</a></div><div class="ttdeci">FOUNDATION_API void * pnacl_array_output(void *arr, uint32_t count, uint32_t size)</div></div>
 <div class="ttc" id="platform_8h_html_ab5d798081ff1e38fc8d86a56b852da8e"><div class="ttname"><a href="platform_8h.html#ab5d798081ff1e38fc8d86a56b852da8e">FOUNDATION_API</a></div><div class="ttdeci">#define FOUNDATION_API</div></div>
-<div class="ttc" id="structstring__const__t_html"><div class="ttname"><a href="structstring__const__t.html">string_const_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00785">types.h:785</a></div></div>
+<div class="ttc" id="structstring__const__t_html"><div class="ttname"><a href="structstring__const__t.html">string_const_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00841">types.h:841</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
